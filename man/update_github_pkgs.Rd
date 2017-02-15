@@ -9,6 +9,9 @@ update_github_pkgs(force = FALSE)
 \arguments{
 \item{force}{A flag indicating whether to update even if the package has not changed since the last update.}
 }
+\value{
+A character vector of the installed github packages.
+}
 \description{
 Updates all packages that were installed from GitHub
 }
