@@ -1,0 +1,55 @@
+Package: poispkgs
+Title: Attach R Packages used by Poison Consulting
+Version: 0.0.1
+Date: 2017-02-15
+Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
+Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
+    Can also be used to install and update packages.
+Depends:
+    R (>= 3.2.0),
+    abind,
+    assertthat,
+    beepr,
+    datacheckr,
+    doParallel,
+    devtools,
+    foreach,
+    ggplot2,
+    ggrepel,
+    knitr,
+    kootqlt,
+    markdown,
+    poisix,
+    poismap,
+    poisplot,
+    poisutils,
+    plyr,
+    readxl,
+    reshape2,
+    rmarkdown,
+    RSQLite,
+    scales,
+    stringr,
+    subfoldr,
+    purrr,
+    readr,
+    lubridate,
+    tidyr,
+    magrittr,
+    dplyr,
+    tmbr,
+    jmbr
+Remotes:
+    poissonconsulting/kootqlt,
+    poissonconsulting/poisix,
+    poissonconsulting/poismap,
+    poissonconsulting/poisutils,
+    poissonconsulting/poisplot,
+    poissonconsulting/subfoldr,
+    poissonconsulting/jmbr,
+    poissonconsulting/tmbr
+SystemRequirements:
+    JAGS (>= 4.2.0)
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 6.0.1

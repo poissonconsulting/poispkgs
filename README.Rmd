@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
+
+# poispkgs
+
+Attaches CRAN and GitHub Packages Used in Poison Consulting analyses.
+
+## Installation
+
+To install and load `poispkgs` execute the following code at the R terminal:
+```
+# install.packages("devtools")
+devtools::install_github("poissonconsulting/poispkgs")
+library(poispkgs)
+```
+
+## Demonstration
+```{r}
+search()
+library(poispkgs)
+search()
+```
