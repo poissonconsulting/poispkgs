@@ -39,6 +39,8 @@ Depends:
     dplyr,
     tmbr,
     jmbr
+Imports:
+    utils
 Remotes:
     poissonconsulting/kootqlt,
     poissonconsulting/poisix,
