@@ -4,8 +4,14 @@
 \alias{update_github_pkgs}
 \title{Update GitHub Packages}
 \usage{
-update_github_pkgs()
+update_github_pkgs(force = FALSE)
+}
+\arguments{
+\item{force}{A flag indicating whether to update even if the package has not changed since the last update.}
 }
 \description{
-Updates all packages that installed from GitHub
+Updates all packages that were installed from GitHub
+}
+\references{
+Modified from \url{https://stackoverflow.com/questions/32538052/update-all-packages-from-github/35016988#35016988}
 }
