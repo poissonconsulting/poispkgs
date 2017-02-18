@@ -27,6 +27,7 @@ search()
 library(poispkgs)
 #> Loading required package: abind
 #> Loading required package: assertthat
+#> Loading required package: assertr
 #> Loading required package: beepr
 #> Loading required package: datacheckr
 #> Loading required package: doParallel
@@ -143,8 +144,8 @@ search()
 #> [31] "package:ggrepel"    "package:ggplot2"    "package:devtools"  
 #> [34] "package:doParallel" "package:parallel"   "package:iterators" 
 #> [37] "package:foreach"    "package:datacheckr" "package:beepr"     
-#> [40] "package:assertthat" "package:abind"      "package:stats"     
-#> [43] "package:graphics"   "package:grDevices"  "package:utils"     
-#> [46] "package:datasets"   "package:methods"    "Autoloads"         
-#> [49] "package:base"
+#> [40] "package:assertr"    "package:assertthat" "package:abind"     
+#> [43] "package:stats"      "package:graphics"   "package:grDevices" 
+#> [46] "package:utils"      "package:datasets"   "package:methods"   
+#> [49] "Autoloads"          "package:base"
 ```

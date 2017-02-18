@@ -1,6 +1,5 @@
 #' @importFrom abind abind
-#' @importFrom assertthat assert_that
-#' @importFrom beepr beep
+#' @importFrom assertr verify
 #' @importFrom datacheckr check_flag
 #' @importFrom devtools install_github
 #' @importFrom doParallel registerDoParallel
