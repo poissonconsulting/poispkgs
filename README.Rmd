@@ -12,6 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
+![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
 

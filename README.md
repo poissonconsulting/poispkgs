@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
+![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg) [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
 
 poispkgs
 ========
@@ -28,7 +28,6 @@ library(poispkgs)
 #> Loading required package: abind
 #> Loading required package: assertthat
 #> Loading required package: assertr
-#> Loading required package: beepr
 #> Loading required package: datacheckr
 #> Loading required package: doParallel
 #> Loading required package: foreach
@@ -66,6 +65,11 @@ library(poispkgs)
 #> Loading required package: scales
 #> Loading required package: stringr
 #> Loading required package: subfoldr
+#> 
+#> Attaching package: 'subfoldr'
+#> The following object is masked from 'package:devtools':
+#> 
+#>     load_data
 #> Loading required package: purrr
 #> 
 #> Attaching package: 'purrr'
@@ -81,9 +85,9 @@ library(poispkgs)
 #> Loading required package: readr
 #> 
 #> Attaching package: 'readr'
-#> The following objects are masked from 'package:scales':
+#> The following object is masked from 'package:scales':
 #> 
-#>     col_factor, col_numeric
+#>     col_factor
 #> Loading required package: tidyr
 #> 
 #> Attaching package: 'tidyr'
@@ -143,9 +147,9 @@ search()
 #> [28] "package:markdown"   "package:kootqlt"    "package:knitr"     
 #> [31] "package:ggrepel"    "package:ggplot2"    "package:devtools"  
 #> [34] "package:doParallel" "package:parallel"   "package:iterators" 
-#> [37] "package:foreach"    "package:datacheckr" "package:beepr"     
-#> [40] "package:assertr"    "package:assertthat" "package:abind"     
-#> [43] "package:stats"      "package:graphics"   "package:grDevices" 
-#> [46] "package:utils"      "package:datasets"   "package:methods"   
-#> [49] "Autoloads"          "package:base"
+#> [37] "package:foreach"    "package:datacheckr" "package:assertr"   
+#> [40] "package:assertthat" "package:abind"      "package:stats"     
+#> [43] "package:graphics"   "package:grDevices"  "package:utils"     
+#> [46] "package:datasets"   "package:methods"    "Autoloads"         
+#> [49] "package:base"
 ```

@@ -1,4 +1,5 @@
 #' @importFrom abind abind
+#' @importFrom assertthat is.number
 #' @importFrom assertr verify
 #' @importFrom datacheckr check_flag
 #' @importFrom devtools install_github
