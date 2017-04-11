@@ -1,7 +1,7 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.3
-Date: 2017-03-31
+Version: 0.0.4
+Date: 2017-04-11
 Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
 Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
     Can also be used to install and update packages.
@@ -14,7 +14,6 @@ Depends:
     doParallel,
     devtools,
     foreach,
-    ggplot2,
     ggrepel,
     knitr,
     kootqlt,
@@ -31,14 +30,11 @@ Depends:
     scales,
     stringr,
     subfoldr,
-    purrr,
-    readr,
     lubridate,
-    tidyr,
     magrittr,
-    dplyr,
     tmbr,
-    jmbr
+    jmbr,
+    tidyverse
 Imports:
     utils
 Remotes:
