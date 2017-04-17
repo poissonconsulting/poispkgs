@@ -1,18 +1,19 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.4
-Date: 2017-04-11
+Version: 0.0.5
+Date: 2017-04-17
 Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
 Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
     Can also be used to install and update packages.
 Depends:
-    R (>= 3.2.0),
+    R (>= 3.3.3),
     abind,
     assertthat,
     assertr,
     datacheckr,
     doParallel,
     devtools,
+    forcats,
     foreach,
     ggrepel,
     knitr,

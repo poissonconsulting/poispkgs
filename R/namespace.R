@@ -4,6 +4,7 @@
 #' @importFrom datacheckr check_flag
 #' @importFrom devtools install_github
 #' @importFrom doParallel registerDoParallel
+#' @importFrom forcats as_factor
 #' @importFrom foreach foreach
 #' @importFrom ggrepel geom_label_repel
 #' @importFrom jmbr is.jmb_model
