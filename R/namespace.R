@@ -13,6 +13,7 @@
 #' @importFrom lubridate date
 #' @importFrom magrittr %<>% %>%
 #' @importFrom markdown renderMarkdown
+#' @importFrom newdata new_data
 #' @importFrom plyr ddply
 #' @importFrom poisix cleanup_date
 #' @importFrom poismap latlong2eastnorth
