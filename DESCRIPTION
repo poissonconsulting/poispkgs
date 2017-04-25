@@ -46,7 +46,7 @@ Remotes:
     poissonconsulting/poisutils,
     poissonconsulting/poisplot,
     poissonconsulting/subfoldr,
-    poissonconsulting/newdat,
+    poissonconsulting/newdata,
     poissonconsulting/jmbr,
     poissonconsulting/tmbr
 SystemRequirements:
