@@ -1,3 +1,4 @@
+#' @import fishbc
 #' @importFrom abind abind
 #' @importFrom assertthat is.number
 #' @importFrom assertr verify

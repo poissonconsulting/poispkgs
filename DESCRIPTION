@@ -1,7 +1,7 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.0.9006
-Date: 2017-04-24
+Version: 0.0.0.9007
+Date: 2017-07-12
 Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
 Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
     Can also be used to install and update packages.
@@ -13,6 +13,7 @@ Depends:
     datacheckr,
     doParallel,
     devtools,
+    fishbc,
     forcats,
     foreach,
     ggrepel,
@@ -40,6 +41,7 @@ Depends:
 Imports:
     utils
 Remotes:
+    poissonconsulting/fishbc,
     poissonconsulting/kootqlt,
     poissonconsulting/poisix,
     poissonconsulting/poismap,
