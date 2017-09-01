@@ -47,4 +47,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Creditation
 
-The code to install and load lots of packages is based on that in the [tidyverse](https://github.com/tidyverse/tidyverse) R package.
+The code to attach lots of packages is based on that in the [tidyverse](https://github.com/tidyverse/tidyverse) R package.
