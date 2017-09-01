@@ -2,7 +2,9 @@ Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
 Version: 0.0.0.9009
 Date: 2017-09-01
-Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
+Authors@R: c(
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
+    person("Chris", "Muir", role = "ctb"))
 Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
     Can also be used to install and update packages.
 Depends:
@@ -29,8 +31,10 @@ Imports:
     poissqlite,
     poisutils,
     plyr,
+    purrr,
     readxl,
     reshape2,
+    rstudioapi,
     rmarkdown,
     RSQLite,
     scales,
@@ -61,6 +65,6 @@ Remotes:
     gaborcsardi/crayon
 SystemRequirements:
     JAGS (>= 4.2.0)
-License: MIT + file LICENSE
+License: GPL-3 | file LICENSE
 LazyData: true
 RoxygenNote: 6.0.1

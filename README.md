@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg) [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs) [![codecov](https://codecov.io/gh/poissonconsulting/tmbr/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/tmbr) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/joethorley/stability-badges#unstable) [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs) [![codecov](https://codecov.io/gh/poissonconsulting/tmbr/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/tmbr) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 poispkgs
 ========
@@ -34,6 +34,7 @@ library(poispkgs)
 #> Loading required package: iterators
 #> Loading required package: parallel
 #> Loading required package: devtools
+#> Loading required package: fishbc
 #> Loading required package: forcats
 #> Loading required package: ggrepel
 #> Loading required package: ggplot2
@@ -42,6 +43,7 @@ library(poispkgs)
 #> Most of the data in the kootqlt R package and database is BC Hydro property.
 #> Distribution of the data to any other third party is strictly prohibited.
 #> For more information type: disclaimer_qlt()
+#> Loading required package: newdata
 #> Loading required package: markdown
 #> Loading required package: poisix
 #> Loading required package: lubridate
@@ -51,7 +53,14 @@ library(poispkgs)
 #> 
 #>     date
 #> Loading required package: poismap
+#> Loading required package: sf
+#> Linking to GEOS 3.6.2, GDAL 2.2.0, proj.4 4.9.3
+#> Loading required package: raster
+#> Loading required package: sp
 #> Loading required package: poisplot
+#> Loading required package: poisspatial
+#> Loading required package: poissqlite
+#> Loading required package: DBI
 #> Loading required package: poisutils
 #> Loading required package: plyr
 #> 
@@ -72,9 +81,17 @@ library(poispkgs)
 #> 
 #>     load_data
 #> Loading required package: magrittr
+#> 
+#> Attaching package: 'magrittr'
+#> The following object is masked from 'package:raster':
+#> 
+#>     extract
 #> Loading required package: tmbr
 #> Loading required package: broom
 #> Loading required package: mbr
+#> Loading required package: bayesplot
+#> This is bayesplot version 1.3.0
+#> Plotting theme set to bayesplot::theme_default()
 #> Loading required package: mcmcr
 #> Loading required package: coda
 #> Loading required package: dplyr
@@ -84,6 +101,9 @@ library(poispkgs)
 #> 
 #>     arrange, count, desc, failwith, id, mutate, rename, summarise,
 #>     summarize
+#> The following objects are masked from 'package:raster':
+#> 
+#>     intersect, select, union
 #> The following objects are masked from 'package:lubridate':
 #> 
 #>     intersect, setdiff, union
@@ -95,6 +115,9 @@ library(poispkgs)
 #>     intersect, setdiff, setequal, union
 #> 
 #> Attaching package: 'mcmcr'
+#> The following object is masked from 'package:bayesplot':
+#> 
+#>     rhat
 #> The following object is masked from 'package:ggplot2':
 #> 
 #>     derive
@@ -114,38 +137,43 @@ library(poispkgs)
 #> date():        lubridate, base
 #> derive():      ggplot2, mcmcr
 #> discard():     purrr, scales
+#> extract():     magrittr, tidyr, raster
 #> failwith():    dplyr, plyr
 #> filter():      dplyr, stats
 #> has_name():    tibble, assertthat
 #> here():        lubridate, plyr
 #> id():          dplyr, plyr
-#> intersect():   lubridate, base
+#> intersect():   lubridate, raster, base
 #> lag():         dplyr, stats
 #> mutate():      dplyr, plyr
 #> rename():      dplyr, plyr
+#> select():      dplyr, raster
 #> setdiff():     lubridate, base
 #> summarise():   dplyr, plyr
 #> summarize():   dplyr, plyr
-#> union():       lubridate, base
+#> union():       lubridate, raster, base
 #> when():        purrr, foreach
 search()
-#>  [1] ".GlobalEnv"         "package:poispkgs"   "package:purrr"     
-#>  [4] "package:readr"      "package:tidyr"      "package:tibble"    
-#>  [7] "package:tidyverse"  "package:jmbr"       "package:tmbr"      
-#> [10] "package:mbr"        "package:mcmcr"      "package:dplyr"     
-#> [13] "package:coda"       "package:broom"      "package:magrittr"  
-#> [16] "package:subfoldr"   "package:stringr"    "package:scales"    
-#> [19] "package:RSQLite"    "package:rmarkdown"  "package:reshape2"  
-#> [22] "package:readxl"     "package:plyr"       "package:poisutils" 
-#> [25] "package:poisplot"   "package:poismap"    "package:poisix"    
-#> [28] "package:lubridate"  "package:markdown"   "package:kootqlt"   
-#> [31] "package:knitr"      "package:ggrepel"    "package:ggplot2"   
-#> [34] "package:forcats"    "package:devtools"   "package:doParallel"
-#> [37] "package:parallel"   "package:iterators"  "package:foreach"   
-#> [40] "package:datacheckr" "package:assertr"    "package:assertthat"
-#> [43] "package:abind"      "package:stats"      "package:graphics"  
-#> [46] "package:grDevices"  "package:utils"      "package:datasets"  
-#> [49] "package:methods"    "Autoloads"          "package:base"
+#>  [1] ".GlobalEnv"          "package:poispkgs"    "package:purrr"      
+#>  [4] "package:readr"       "package:tidyr"       "package:tibble"     
+#>  [7] "package:tidyverse"   "package:jmbr"        "package:tmbr"       
+#> [10] "package:mbr"         "package:mcmcr"       "package:dplyr"      
+#> [13] "package:coda"        "package:bayesplot"   "package:broom"      
+#> [16] "package:magrittr"    "package:subfoldr"    "package:stringr"    
+#> [19] "package:scales"      "package:RSQLite"     "package:rmarkdown"  
+#> [22] "package:reshape2"    "package:readxl"      "package:plyr"       
+#> [25] "package:poisutils"   "package:poissqlite"  "package:DBI"        
+#> [28] "package:poisspatial" "package:poisplot"    "package:poismap"    
+#> [31] "package:raster"      "package:sp"          "package:sf"         
+#> [34] "package:poisix"      "package:lubridate"   "package:markdown"   
+#> [37] "package:newdata"     "package:kootqlt"     "package:knitr"      
+#> [40] "package:ggrepel"     "package:ggplot2"     "package:forcats"    
+#> [43] "package:fishbc"      "package:devtools"    "package:doParallel" 
+#> [46] "package:parallel"    "package:iterators"   "package:foreach"    
+#> [49] "package:datacheckr"  "package:assertr"     "package:assertthat" 
+#> [52] "package:abind"       "package:stats"       "package:graphics"   
+#> [55] "package:grDevices"   "package:utils"       "package:datasets"   
+#> [58] "package:methods"     "Autoloads"           "package:base"
 ```
 
 Contribution
