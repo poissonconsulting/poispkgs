@@ -1,12 +1,11 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.0.9009
+Version: 0.0.0.9010
 Date: 2017-09-01
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
 Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
-    Can also be used to install and update packages.
 Depends:
     R (>= 3.3.3),
 Imports:
@@ -17,7 +16,6 @@ Imports:
     doParallel,
     devtools,
     fishbc,
-    forcats,
     foreach,
     ggrepel,
     knitr,
@@ -31,23 +29,14 @@ Imports:
     poissqlite,
     poisutils,
     plyr,
-    purrr,
-    readxl,
     reshape2,
-    rstudioapi,
     rmarkdown,
     RSQLite,
     scales,
-    stringr,
     subfoldr,
-    lubridate,
-    magrittr,
     tmbr,
     jmbr,
-    tidyverse,
-    utils,
-    crayon,
-    boxes
+    tidyverse
 Remotes:
     poissonconsulting/fishbc,
     poissonconsulting/kootqlt,
@@ -60,11 +49,10 @@ Remotes:
     poissonconsulting/subfoldr,
     poissonconsulting/newdata,
     poissonconsulting/jmbr,
-    poissonconsulting/tmbr,
-    r-lib/boxes,
-    gaborcsardi/crayon
+    poissonconsulting/tmbr
 SystemRequirements:
     JAGS (>= 4.2.0)
 License: GPL-3 | file LICENSE
 LazyData: true
 RoxygenNote: 6.0.1
+Suggests: testthat

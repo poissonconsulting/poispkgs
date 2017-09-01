@@ -5,3 +5,5 @@
 ^README-.*\.png$
 ^appveyor\.yml$
 ^CONDUCT\.md$
+^docs$
+^document.R$
