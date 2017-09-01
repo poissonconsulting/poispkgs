@@ -5,7 +5,10 @@ Date: 2017-09-01
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
-Description: Attaches R Packages commonly used in Poison Consulting analyses in the preferred order.
+Description: Attaches CRAN and GitHub R packages used in Poison Consulting scripts in the preferred order.
+License: GPL-3 | file LICENSE
+URL: https://github.com/poissonconsulting/poispkgs
+BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
     R (>= 3.3.3),
 Imports:
@@ -37,6 +40,7 @@ Imports:
     tmbr,
     jmbr,
     tidyverse
+Suggests: testthat
 Remotes:
     poissonconsulting/fishbc,
     poissonconsulting/kootqlt,
@@ -52,7 +56,5 @@ Remotes:
     poissonconsulting/tmbr
 SystemRequirements:
     JAGS (>= 4.2.0)
-License: GPL-3 | file LICENSE
 LazyData: true
 RoxygenNote: 6.0.1
-Suggests: testthat
