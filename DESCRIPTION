@@ -5,7 +5,7 @@ Date: 2017-09-01
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
-Description: Attaches CRAN and GitHub R packages used in Poison Consulting scripts in the preferred order.
+Description: Attaches CRAN and GitHub R packages commonly used in Poison Consulting scripts in the preferred order.
 License: GPL-3 | file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs

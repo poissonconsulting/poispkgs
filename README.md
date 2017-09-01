@@ -5,7 +5,7 @@
 poispkgs
 ========
 
-Attaches CRAN and GitHub Packages used in Poison Consulting analyses.
+An R package to attach CRAN and GitHub Packages used in Poison Consulting analyses.
 
 Demonstration
 -------------
