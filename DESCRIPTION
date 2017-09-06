@@ -1,16 +1,14 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.0.9010
-Date: 2017-09-01
+Version: 0.0.0.9011
+Date: 2017-09-06
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
 Description: Attaches CRAN and GitHub R packages commonly used in Poison Consulting scripts in the preferred order.
 License: GPL-3 | file LICENSE
-URL: https://github.com/poissonconsulting/poispkgs
-BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
-    R (>= 3.3.3),
+    R (>= 3.3.0),
 Imports:
     abind,
     assertthat,
@@ -25,6 +23,7 @@ Imports:
     kootqlt,
     newdata,
     markdown,
+    poisdata,
     poisix,
     poismap,
     poisplot,
@@ -45,6 +44,8 @@ Remotes:
     poissonconsulting/fishbc,
     poissonconsulting/kootqlt,
     poissonconsulting/poisix,
+    poissonconsulting/poisdata,
+    poissonconsulting/poismap,
     poissonconsulting/poismap,
     poissonconsulting/poisutils,
     poissonconsulting/poisplot,
@@ -54,6 +55,8 @@ Remotes:
     poissonconsulting/newdata,
     poissonconsulting/jmbr,
     poissonconsulting/tmbr
+URL: https://github.com/poissonconsulting/poispkgs
+BugReports: https://github.com/poissonconsulting/poispkgs
 SystemRequirements:
     JAGS (>= 4.2.0)
 LazyData: true
