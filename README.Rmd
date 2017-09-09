@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
 [![codecov](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs)
-[![License: GPL3](https://img.shields.io/badge/License-GPL3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/poispkgs)](https://cran.r-project.org/package=poispkgs)
 
 # poispkgs
@@ -43,8 +43,5 @@ Please report any [issues](https://github.com/poissonconsulting/poispkgs/issues)
 
 [Pull requests](https://github.com/poissonconsulting/poispkgs/pulls) are always welcome.
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
-
-## Creditation
-
-The code to attach lots of packages is based on that in the [tidyverse](https://github.com/tidyverse/tidyverse) R package.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/poissonconsulting/poispkgs/blob/master/CONDUCT.md). 
+By participating in this project you agree to abide by its terms.
