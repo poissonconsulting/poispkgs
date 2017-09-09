@@ -1,16 +1,12 @@
-#' @importFrom abind abind
-#' @importFrom assertthat is.number
-#' @importFrom assertr verify
 #' @importFrom datacheckr check_flag
 #' @importFrom devtools install_github
 #' @importFrom doParallel registerDoParallel
-#' @import fishbc
 #' @importFrom foreach foreach
 #' @importFrom ggrepel geom_label_repel
 #' @importFrom jmbr is.jmb_model
 #' @importFrom knitr knit
-#' @importFrom kootqlt download_qlt_data
 #' @importFrom markdown renderMarkdown
+#' @importFrom magrittr %<>%
 #' @importFrom newdata new_data
 #' @importFrom plyr ddply
 #' @importFrom poisdata read_hobo_csv

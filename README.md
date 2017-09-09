@@ -16,25 +16,18 @@ search()
 #> [4] "package:grDevices" "package:utils"     "package:datasets" 
 #> [7] "package:methods"   "Autoloads"         "package:base"
 library(poispkgs)
-#> Loading required package: abind
-#> Loading required package: assertthat
-#> Loading required package: assertr
 #> Loading required package: datacheckr
 #> Loading required package: doParallel
 #> Loading required package: foreach
 #> Loading required package: iterators
 #> Loading required package: parallel
 #> Loading required package: devtools
-#> Loading required package: fishbc
 #> Loading required package: ggrepel
 #> Loading required package: ggplot2
 #> Loading required package: knitr
-#> Loading required package: kootqlt
-#> Most of the data in the kootqlt R package and database is BC Hydro property.
-#> Distribution of the data to any other third party is strictly prohibited.
-#> For more information type: disclaimer_qlt()
 #> Loading required package: newdata
 #> Loading required package: markdown
+#> Loading required package: magrittr
 #> Loading required package: poisdata
 #> Loading required package: poisix
 #> Loading required package: lubridate
@@ -109,6 +102,9 @@ library(poispkgs)
 #> The following object is masked from 'package:coda':
 #> 
 #>     traceplot
+#> The following object is masked from 'package:magrittr':
+#> 
+#>     extract
 #> Loading required package: tidyverse
 #> Loading tidyverse: tibble
 #> Loading tidyverse: tidyr
@@ -124,10 +120,9 @@ library(poispkgs)
 #> date():        lubridate, base
 #> derive():      ggplot2, mcmcr
 #> discard():     purrr, scales
-#> extract():     tidyr, rstan
+#> extract():     magrittr, tidyr, rstan
 #> failwith():    dplyr, plyr
 #> filter():      dplyr, stats
-#> has_name():    tibble, assertthat
 #> here():        lubridate, plyr
 #> id():          dplyr, plyr
 #> intersect():   lubridate, base
@@ -150,15 +145,13 @@ search()
 #> [22] "package:reshape2"    "package:plyr"        "package:poisutils"  
 #> [25] "package:poissqlite"  "package:DBI"         "package:poisspatial"
 #> [28] "package:poisplot"    "package:poisix"      "package:lubridate"  
-#> [31] "package:poisdata"    "package:markdown"    "package:newdata"    
-#> [34] "package:kootqlt"     "package:knitr"       "package:ggrepel"    
-#> [37] "package:ggplot2"     "package:fishbc"      "package:devtools"   
-#> [40] "package:doParallel"  "package:parallel"    "package:iterators"  
-#> [43] "package:foreach"     "package:datacheckr"  "package:assertr"    
-#> [46] "package:assertthat"  "package:abind"       "package:stats"      
-#> [49] "package:graphics"    "package:grDevices"   "package:utils"      
-#> [52] "package:datasets"    "package:methods"     "Autoloads"          
-#> [55] "package:base"
+#> [31] "package:poisdata"    "package:magrittr"    "package:markdown"   
+#> [34] "package:newdata"     "package:knitr"       "package:ggrepel"    
+#> [37] "package:ggplot2"     "package:devtools"    "package:doParallel" 
+#> [40] "package:parallel"    "package:iterators"   "package:foreach"    
+#> [43] "package:datacheckr"  "package:stats"       "package:graphics"   
+#> [46] "package:grDevices"   "package:utils"       "package:datasets"   
+#> [49] "package:methods"     "Autoloads"           "package:base"
 ```
 
 Installation
