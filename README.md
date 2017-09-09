@@ -16,6 +16,7 @@ search()
 #> [4] "package:grDevices" "package:utils"     "package:datasets" 
 #> [7] "package:methods"   "Autoloads"         "package:base"
 library(poispkgs)
+#> Loading required package: assertr
 #> Loading required package: datacheckr
 #> Loading required package: doParallel
 #> Loading required package: foreach
@@ -51,6 +52,8 @@ library(poispkgs)
 #> Loading required package: rmarkdown
 #> Loading required package: RSQLite
 #> Loading required package: scales
+#> Loading required package: sf
+#> Linking to GEOS 3.6.2, GDAL 2.2.0, proj.4 4.9.3
 #> Loading required package: subfoldr
 #> 
 #> Attaching package: 'subfoldr'
@@ -141,17 +144,18 @@ search()
 #> [10] "package:StanHeaders" "package:jmbr"        "package:tmbr"       
 #> [13] "package:mbr"         "package:mcmcr"       "package:dplyr"      
 #> [16] "package:coda"        "package:broom"       "package:subfoldr"   
-#> [19] "package:scales"      "package:RSQLite"     "package:rmarkdown"  
-#> [22] "package:reshape2"    "package:plyr"        "package:poisutils"  
-#> [25] "package:poissqlite"  "package:DBI"         "package:poisspatial"
-#> [28] "package:poisplot"    "package:poisix"      "package:lubridate"  
-#> [31] "package:poisdata"    "package:magrittr"    "package:markdown"   
-#> [34] "package:newdata"     "package:knitr"       "package:ggrepel"    
-#> [37] "package:ggplot2"     "package:devtools"    "package:doParallel" 
-#> [40] "package:parallel"    "package:iterators"   "package:foreach"    
-#> [43] "package:datacheckr"  "package:stats"       "package:graphics"   
-#> [46] "package:grDevices"   "package:utils"       "package:datasets"   
-#> [49] "package:methods"     "Autoloads"           "package:base"
+#> [19] "package:sf"          "package:scales"      "package:RSQLite"    
+#> [22] "package:rmarkdown"   "package:reshape2"    "package:plyr"       
+#> [25] "package:poisutils"   "package:poissqlite"  "package:DBI"        
+#> [28] "package:poisspatial" "package:poisplot"    "package:poisix"     
+#> [31] "package:lubridate"   "package:poisdata"    "package:magrittr"   
+#> [34] "package:markdown"    "package:newdata"     "package:knitr"      
+#> [37] "package:ggrepel"     "package:ggplot2"     "package:devtools"   
+#> [40] "package:doParallel"  "package:parallel"    "package:iterators"  
+#> [43] "package:foreach"     "package:datacheckr"  "package:assertr"    
+#> [46] "package:stats"       "package:graphics"    "package:grDevices"  
+#> [49] "package:utils"       "package:datasets"    "package:methods"    
+#> [52] "Autoloads"           "package:base"
 ```
 
 Installation
