@@ -1,7 +1,7 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.0.9012
-Date: 2017-09-09
+Version: 0.0.0.9013
+Date: 2017-09-20
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
@@ -12,32 +12,32 @@ BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
     R (>= 3.3.0),
     assertr,
-    datacheckr,
     doParallel,
-    devtools,
     foreach,
-    ggrepel,
-    knitr,
-    newdata,
+    RSQLite,
+    plyr,
+    reshape2,
     markdown,
+    rmarkdown,
+    knitr,
+    ggrepel,
+    scales,
+    sf,
+    devtools,
     magrittr,
+    tidyverse,
+    datacheckr,
+    newdata,
     poisdata,
     poisix,
     poisplot,
     poisspatial,
     poissqlite,
     poisutils,
-    plyr,
-    reshape2,
-    rmarkdown,
-    RSQLite,
-    scales,
-    sf,
     subfoldr,
     tmbr,
     jmbr,
-    smbr,
-    tidyverse
+    smbr
 Suggests: testthat
 Remotes:
     poissonconsulting/datacheckr,
