@@ -31,44 +31,37 @@ library(poispkgs)
 #> Loading required package: ggplot2
 #> Loading required package: scales
 #> Loading required package: sf
-#> Linking to GEOS 3.6.2, GDAL 2.2.0, proj.4 4.9.3
+#> Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3
 #> Loading required package: devtools
 #> Loading required package: magrittr
 #> Loading required package: tidyverse
-#> Loading tidyverse: tibble
-#> Loading tidyverse: tidyr
-#> Loading tidyverse: readr
-#> Loading tidyverse: purrr
-#> Loading tidyverse: dplyr
-#> Conflicts with tidy packages ----------------------------------------------
-#> accumulate(): purrr, foreach
-#> arrange():    dplyr, plyr
-#> col_factor(): readr, scales
-#> compact():    purrr, plyr
-#> count():      dplyr, plyr
-#> discard():    purrr, scales
-#> failwith():   dplyr, plyr
-#> filter():     dplyr, stats
-#> id():         dplyr, plyr
-#> lag():        dplyr, stats
-#> mutate():     dplyr, plyr
-#> rename():     dplyr, plyr
-#> summarise():  dplyr, plyr
-#> summarize():  dplyr, plyr
-#> when():       purrr, foreach
+#> ── Attaching packages ─────────────────────────────────────────────── tidyverse 1.2.1 ──
+#> ✔ tibble  1.3.4     ✔ purrr   0.2.4
+#> ✔ tidyr   0.7.2     ✔ dplyr   0.7.4
+#> ✔ readr   1.1.1     ✔ stringr 1.2.0
+#> ✔ tibble  1.3.4     ✔ forcats 0.2.0
+#> ── Conflicts ────────────────────────────────────────────────── tidyverse_conflicts() ──
+#> ✖ purrr::accumulate() masks foreach::accumulate()
+#> ✖ dplyr::arrange()    masks plyr::arrange()
+#> ✖ readr::col_factor() masks scales::col_factor()
+#> ✖ purrr::compact()    masks plyr::compact()
+#> ✖ dplyr::count()      masks plyr::count()
+#> ✖ purrr::discard()    masks scales::discard()
+#> ✖ tidyr::extract()    masks magrittr::extract()
+#> ✖ dplyr::failwith()   masks plyr::failwith()
+#> ✖ dplyr::filter()     masks stats::filter()
+#> ✖ dplyr::id()         masks plyr::id()
+#> ✖ dplyr::lag()        masks stats::lag()
+#> ✖ dplyr::mutate()     masks plyr::mutate()
+#> ✖ dplyr::rename()     masks plyr::rename()
+#> ✖ purrr::set_names()  masks magrittr::set_names()
+#> ✖ dplyr::summarise()  masks plyr::summarise()
+#> ✖ dplyr::summarize()  masks plyr::summarize()
+#> ✖ purrr::when()       masks foreach::when()
 #> Loading required package: datacheckr
 #> Loading required package: newdata
 #> Loading required package: poisdata
 #> Loading required package: poisix
-#> Loading required package: lubridate
-#> 
-#> Attaching package: 'lubridate'
-#> The following object is masked from 'package:plyr':
-#> 
-#>     here
-#> The following object is masked from 'package:base':
-#> 
-#>     date
 #> Loading required package: poisplot
 #> Loading required package: poisspatial
 #> Loading required package: poissqlite
@@ -83,6 +76,15 @@ library(poispkgs)
 #> Loading required package: tmbr
 #> Loading required package: broom
 #> Loading required package: mbr
+#> Loading required package: lubridate
+#> 
+#> Attaching package: 'lubridate'
+#> The following object is masked from 'package:plyr':
+#> 
+#>     here
+#> The following object is masked from 'package:base':
+#> 
+#>     date
 #> Loading required package: mcmcr
 #> Loading required package: coda
 #> 
@@ -93,6 +95,11 @@ library(poispkgs)
 #> The following object is masked from 'package:ggplot2':
 #> 
 #>     derive
+#> 
+#> Attaching package: 'mbr'
+#> The following object is masked from 'package:poisutils':
+#> 
+#>     is.syntactic
 #> Loading required package: jmbr
 #> Loading required package: smbr
 #> Loading required package: rstan
@@ -119,21 +126,22 @@ search()
 #>  [1] ".GlobalEnv"          "package:poispkgs"    "package:smbr"       
 #>  [4] "package:rstan"       "package:StanHeaders" "package:jmbr"       
 #>  [7] "package:tmbr"        "package:mbr"         "package:mcmcr"      
-#> [10] "package:coda"        "package:broom"       "package:subfoldr"   
-#> [13] "package:poisutils"   "package:poissqlite"  "package:DBI"        
-#> [16] "package:poisspatial" "package:poisplot"    "package:poisix"     
-#> [19] "package:lubridate"   "package:poisdata"    "package:newdata"    
-#> [22] "package:datacheckr"  "package:dplyr"       "package:purrr"      
-#> [25] "package:readr"       "package:tidyr"       "package:tibble"     
-#> [28] "package:tidyverse"   "package:magrittr"    "package:devtools"   
-#> [31] "package:sf"          "package:scales"      "package:ggrepel"    
-#> [34] "package:ggplot2"     "package:knitr"       "package:rmarkdown"  
-#> [37] "package:markdown"    "package:reshape2"    "package:plyr"       
-#> [40] "package:RSQLite"     "package:doParallel"  "package:parallel"   
-#> [43] "package:iterators"   "package:foreach"     "package:assertr"    
-#> [46] "package:stats"       "package:graphics"    "package:grDevices"  
-#> [49] "package:utils"       "package:datasets"    "package:methods"    
-#> [52] "Autoloads"           "package:base"
+#> [10] "package:coda"        "package:lubridate"   "package:broom"      
+#> [13] "package:subfoldr"    "package:poisutils"   "package:poissqlite" 
+#> [16] "package:DBI"         "package:poisspatial" "package:poisplot"   
+#> [19] "package:poisix"      "package:poisdata"    "package:newdata"    
+#> [22] "package:datacheckr"  "package:forcats"     "package:stringr"    
+#> [25] "package:dplyr"       "package:purrr"       "package:readr"      
+#> [28] "package:tidyr"       "package:tibble"      "package:tidyverse"  
+#> [31] "package:magrittr"    "package:devtools"    "package:sf"         
+#> [34] "package:scales"      "package:ggrepel"     "package:ggplot2"    
+#> [37] "package:knitr"       "package:rmarkdown"   "package:markdown"   
+#> [40] "package:reshape2"    "package:plyr"        "package:RSQLite"    
+#> [43] "package:doParallel"  "package:parallel"    "package:iterators"  
+#> [46] "package:foreach"     "package:assertr"     "package:stats"      
+#> [49] "package:graphics"    "package:grDevices"   "package:utils"      
+#> [52] "package:datasets"    "package:methods"     "Autoloads"          
+#> [55] "package:base"
 ```
 
 Installation
