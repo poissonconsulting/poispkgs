@@ -41,8 +41,6 @@ library(poispkgs)
 #> Loading required package: scales
 #> Loading required package: sf
 #> Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3
-#> Loading required package: mapview
-#> Loading required package: leaflet
 #> Loading required package: devtools
 #> Loading required package: magrittr
 #> Loading required package: readxl
@@ -146,15 +144,14 @@ search()
 #> [25] "package:dplyr"       "package:purrr"       "package:readr"      
 #> [28] "package:tidyr"       "package:tibble"      "package:tidyverse"  
 #> [31] "package:readxl"      "package:magrittr"    "package:devtools"   
-#> [34] "package:mapview"     "package:leaflet"     "package:sf"         
-#> [37] "package:scales"      "package:ggrepel"     "package:ggplot2"    
-#> [40] "package:knitr"       "package:rmarkdown"   "package:markdown"   
-#> [43] "package:units"       "package:reshape2"    "package:plyr"       
-#> [46] "package:RSQLite"     "package:doParallel"  "package:parallel"   
-#> [49] "package:iterators"   "package:foreach"     "package:assertr"    
-#> [52] "package:stats"       "package:graphics"    "package:grDevices"  
-#> [55] "package:utils"       "package:datasets"    "package:methods"    
-#> [58] "Autoloads"           "package:base"
+#> [34] "package:sf"          "package:scales"      "package:ggrepel"    
+#> [37] "package:ggplot2"     "package:knitr"       "package:rmarkdown"  
+#> [40] "package:markdown"    "package:units"       "package:reshape2"   
+#> [43] "package:plyr"        "package:RSQLite"     "package:doParallel" 
+#> [46] "package:parallel"    "package:iterators"   "package:foreach"    
+#> [49] "package:assertr"     "package:stats"       "package:graphics"   
+#> [52] "package:grDevices"   "package:utils"       "package:datasets"   
+#> [55] "package:methods"     "Autoloads"           "package:base"
 ```
 
 ## Installation

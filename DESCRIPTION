@@ -24,7 +24,6 @@ Depends:
     ggrepel,
     scales,
     sf,
-    mapview,
     devtools,
     magrittr,
     readxl,

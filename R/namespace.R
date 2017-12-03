@@ -6,7 +6,6 @@
 #' @importFrom ggrepel geom_label_repel
 #' @importFrom jmbr is.jmb_model
 #' @importFrom knitr knit
-#' @importFrom mapview mapview
 #' @importFrom markdown renderMarkdown
 #' @importFrom magrittr %<>%
 #' @importFrom newdata new_data
