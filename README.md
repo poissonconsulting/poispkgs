@@ -1,14 +1,22 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/joethorley/stability-badges#unstable) [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs) [![codecov](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/poispkgs)](https://cran.r-project.org/package=poispkgs)
 
-poispkgs
-========
+[![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/joethorley/stability-badges#unstable)
+[![Travis-CI Build
+Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
+[![codecov](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/poispkgs)](https://cran.r-project.org/package=poispkgs)
 
-An R package to attach CRAN and GitHub Packages used in Poison Consulting analyses.
+# poispkgs
 
-Demonstration
--------------
+An R package to attach CRAN and GitHub Packages used in Poison
+Consulting analyses.
+
+## Demonstration
 
 ``` r
 search()
@@ -24,6 +32,7 @@ library(poispkgs)
 #> Loading required package: RSQLite
 #> Loading required package: plyr
 #> Loading required package: reshape2
+#> Loading required package: units
 #> Loading required package: markdown
 #> Loading required package: rmarkdown
 #> Loading required package: knitr
@@ -32,15 +41,18 @@ library(poispkgs)
 #> Loading required package: scales
 #> Loading required package: sf
 #> Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3
+#> Loading required package: mapview
+#> Loading required package: leaflet
 #> Loading required package: devtools
 #> Loading required package: magrittr
+#> Loading required package: readxl
 #> Loading required package: tidyverse
-#> ── Attaching packages ─────────────────────────────────────────────── tidyverse 1.2.1 ──
+#> ── Attaching packages ──────────────────────────────────────────── tidyverse 1.2.1 ──
 #> ✔ tibble  1.3.4     ✔ purrr   0.2.4
 #> ✔ tidyr   0.7.2     ✔ dplyr   0.7.4
 #> ✔ readr   1.1.1     ✔ stringr 1.2.0
 #> ✔ tibble  1.3.4     ✔ forcats 0.2.0
-#> ── Conflicts ────────────────────────────────────────────────── tidyverse_conflicts() ──
+#> ── Conflicts ─────────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ purrr::accumulate() masks foreach::accumulate()
 #> ✖ dplyr::arrange()    masks plyr::arrange()
 #> ✖ readr::col_factor() masks scales::col_factor()
@@ -58,7 +70,7 @@ library(poispkgs)
 #> ✖ dplyr::summarise()  masks plyr::summarise()
 #> ✖ dplyr::summarize()  masks plyr::summarize()
 #> ✖ purrr::when()       masks foreach::when()
-#> Loading required package: datacheckr
+#> Loading required package: checkr
 #> Loading required package: newdata
 #> Loading required package: poisdata
 #> Loading required package: poisix
@@ -130,31 +142,34 @@ search()
 #> [13] "package:subfoldr"    "package:poisutils"   "package:poissqlite" 
 #> [16] "package:DBI"         "package:poisspatial" "package:poisplot"   
 #> [19] "package:poisix"      "package:poisdata"    "package:newdata"    
-#> [22] "package:datacheckr"  "package:forcats"     "package:stringr"    
+#> [22] "package:checkr"      "package:forcats"     "package:stringr"    
 #> [25] "package:dplyr"       "package:purrr"       "package:readr"      
 #> [28] "package:tidyr"       "package:tibble"      "package:tidyverse"  
-#> [31] "package:magrittr"    "package:devtools"    "package:sf"         
-#> [34] "package:scales"      "package:ggrepel"     "package:ggplot2"    
-#> [37] "package:knitr"       "package:rmarkdown"   "package:markdown"   
-#> [40] "package:reshape2"    "package:plyr"        "package:RSQLite"    
-#> [43] "package:doParallel"  "package:parallel"    "package:iterators"  
-#> [46] "package:foreach"     "package:assertr"     "package:stats"      
-#> [49] "package:graphics"    "package:grDevices"   "package:utils"      
-#> [52] "package:datasets"    "package:methods"     "Autoloads"          
-#> [55] "package:base"
+#> [31] "package:readxl"      "package:magrittr"    "package:devtools"   
+#> [34] "package:mapview"     "package:leaflet"     "package:sf"         
+#> [37] "package:scales"      "package:ggrepel"     "package:ggplot2"    
+#> [40] "package:knitr"       "package:rmarkdown"   "package:markdown"   
+#> [43] "package:units"       "package:reshape2"    "package:plyr"       
+#> [46] "package:RSQLite"     "package:doParallel"  "package:parallel"   
+#> [49] "package:iterators"   "package:foreach"     "package:assertr"    
+#> [52] "package:stats"       "package:graphics"    "package:grDevices"  
+#> [55] "package:utils"       "package:datasets"    "package:methods"    
+#> [58] "Autoloads"           "package:base"
 ```
 
-Installation
-------------
+## Installation
 
     # install.packages("devtools")
     devtools::install_github("poissonconsulting/poispkgs")
 
-Contribution
-------------
+## Contribution
 
-Please report any [issues](https://github.com/poissonconsulting/poispkgs/issues).
+Please report any
+[issues](https://github.com/poissonconsulting/poispkgs/issues).
 
-[Pull requests](https://github.com/poissonconsulting/poispkgs/pulls) are always welcome.
+[Pull requests](https://github.com/poissonconsulting/poispkgs/pulls) are
+always welcome.
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/poissonconsulting/poispkgs/blob/master/CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of
+Conduct](https://github.com/poissonconsulting/poispkgs/blob/master/CONDUCT.md).
+By participating in this project you agree to abide by its terms.
