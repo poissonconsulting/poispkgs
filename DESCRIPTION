@@ -1,7 +1,7 @@
 Package: poispkgs
 Title: Attach R Packages used by Poison Consulting
-Version: 0.0.0.9013
-Date: 2017-09-20
+Version: 0.0.0.9014
+Date: 2017-12-02
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
@@ -14,9 +14,11 @@ Depends:
     assertr,
     doParallel,
     foreach,
+    mapview,
     RSQLite,
     plyr,
     reshape2,
+    units,
     markdown,
     rmarkdown,
     knitr,
@@ -25,8 +27,9 @@ Depends:
     sf,
     devtools,
     magrittr,
+    readxl,
     tidyverse,
-    datacheckr,
+    checkr,
     newdata,
     poisdata,
     poisix,
@@ -40,7 +43,7 @@ Depends:
     smbr
 Suggests: testthat
 Remotes:
-    poissonconsulting/datacheckr,
+    poissonconsulting/checkr,
     poissonconsulting/poisix,
     poissonconsulting/poisdata,
     poissonconsulting/poisutils,
