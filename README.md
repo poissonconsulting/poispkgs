@@ -45,12 +45,12 @@ library(poispkgs)
 #> Loading required package: magrittr
 #> Loading required package: readxl
 #> Loading required package: tidyverse
-#> ── Attaching packages ──────────────────────────────────────────── tidyverse 1.2.1 ──
+#> ── Attaching packages ─────────────────────────────────────────── tidyverse 1.2.1 ──
 #> ✔ tibble  1.3.4     ✔ purrr   0.2.4
 #> ✔ tidyr   0.7.2     ✔ dplyr   0.7.4
 #> ✔ readr   1.1.1     ✔ stringr 1.2.0
 #> ✔ tibble  1.3.4     ✔ forcats 0.2.0
-#> ── Conflicts ─────────────────────────────────────────────── tidyverse_conflicts() ──
+#> ── Conflicts ────────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ purrr::accumulate() masks foreach::accumulate()
 #> ✖ dplyr::arrange()    masks plyr::arrange()
 #> ✖ readr::col_factor() masks scales::col_factor()
