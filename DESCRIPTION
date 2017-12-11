@@ -1,11 +1,11 @@
 Package: poispkgs
-Title: Attach R Packages used by Poison Consulting
-Version: 0.0.0.9014
-Date: 2017-12-02
+Title: Attach R Packages used by Poisson Consulting
+Version: 0.0.0.9015
+Date: 2017-12-11
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
-Description: Attaches CRAN and GitHub R packages commonly used in Poison Consulting scripts in the preferred order.
+Description: Attaches CRAN and PoisRAN R packages commonly used in Poisson Consulting scripts in the preferred order.
 License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
@@ -22,8 +22,10 @@ Depends:
     rmarkdown,
     knitr,
     ggrepel,
+    ggmap,
     scales,
     sf,
+    mapview,
     devtools,
     magrittr,
     readxl,
@@ -41,18 +43,6 @@ Depends:
     jmbr,
     smbr
 Suggests: testthat
-Remotes:
-    poissonconsulting/checkr,
-    poissonconsulting/poisix,
-    poissonconsulting/poisdata,
-    poissonconsulting/poisutils,
-    poissonconsulting/poisplot,
-    poissonconsulting/poisspatial,
-    poissonconsulting/poissqlite,
-    poissonconsulting/subfoldr,
-    poissonconsulting/newdata,
-    poissonconsulting/jmbr,
-    poissonconsulting/smbr,
-    poissonconsulting/tmbr
+Additional_repositories: http://poissonconsulting.github.io/drat
 LazyData: true
 RoxygenNote: 6.0.1
