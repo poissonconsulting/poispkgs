@@ -1,7 +1,7 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.0.9015
-Date: 2017-12-11
+Version: 0.0.0.9016
+Date: 2017-12-12
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Chris", "Muir", role = "ctb"))
@@ -17,6 +17,7 @@ Depends:
     RSQLite,
     plyr,
     reshape2,
+    kootqlt,
     units,
     markdown,
     rmarkdown,

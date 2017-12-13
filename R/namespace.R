@@ -7,6 +7,7 @@
 #' @importFrom ggmap ggmap
 #' @importFrom jmbr is.jmb_model
 #' @importFrom knitr knit
+#' @importFrom kootqlt qlt_download_data
 #' @importFrom markdown renderMarkdown
 #' @importFrom magrittr %<>%
 #' @importFrom mapview mapview
