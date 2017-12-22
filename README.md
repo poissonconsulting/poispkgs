@@ -32,10 +32,6 @@ library(poispkgs)
 #> Loading required package: RSQLite
 #> Loading required package: plyr
 #> Loading required package: reshape2
-#> Loading required package: kootqlt
-#> Most of the data in the kootqlt R package and database is BC Hydro property.
-#> Distribution of the data to any other third party is strictly prohibited.
-#> For more information type: cat(qlt_disclaimer())
 #> Loading required package: units
 #> Loading required package: markdown
 #> Loading required package: rmarkdown
@@ -57,12 +53,12 @@ library(poispkgs)
 #>     inset
 #> Loading required package: readxl
 #> Loading required package: tidyverse
-#> ── Attaching packages ────────────────────────────────────────── tidyverse 1.2.1 ──
+#> ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
 #> ✔ tibble  1.3.4     ✔ purrr   0.2.4
 #> ✔ tidyr   0.7.2     ✔ dplyr   0.7.4
 #> ✔ readr   1.1.1     ✔ stringr 1.2.0
 #> ✔ tibble  1.3.4     ✔ forcats 0.2.0
-#> ── Conflicts ───────────────────────────────────────────── tidyverse_conflicts() ──
+#> ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ purrr::accumulate() masks foreach::accumulate()
 #> ✖ dplyr::arrange()    masks plyr::arrange()
 #> ✖ readr::col_factor() masks scales::col_factor()
@@ -160,13 +156,12 @@ search()
 #> [34] "package:mapview"     "package:leaflet"     "package:sf"         
 #> [37] "package:scales"      "package:ggmap"       "package:ggrepel"    
 #> [40] "package:ggplot2"     "package:knitr"       "package:rmarkdown"  
-#> [43] "package:markdown"    "package:units"       "package:kootqlt"    
-#> [46] "package:reshape2"    "package:plyr"        "package:RSQLite"    
-#> [49] "package:doParallel"  "package:parallel"    "package:iterators"  
-#> [52] "package:foreach"     "package:assertr"     "package:stats"      
-#> [55] "package:graphics"    "package:grDevices"   "package:utils"      
-#> [58] "package:datasets"    "package:methods"     "Autoloads"          
-#> [61] "package:base"
+#> [43] "package:markdown"    "package:units"       "package:reshape2"   
+#> [46] "package:plyr"        "package:RSQLite"     "package:doParallel" 
+#> [49] "package:parallel"    "package:iterators"   "package:foreach"    
+#> [52] "package:assertr"     "package:stats"       "package:graphics"   
+#> [55] "package:grDevices"   "package:utils"       "package:datasets"   
+#> [58] "package:methods"     "Autoloads"           "package:base"
 ```
 
 ## Installation
