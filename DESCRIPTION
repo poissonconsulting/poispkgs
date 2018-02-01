@@ -20,6 +20,7 @@ Depends:
     units,
     markdown,
     rmarkdown,
+    rlang,
     knitr,
     ggrepel,
     ggmap,
