@@ -1,9 +1,10 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.0.9017
-Date: 2017-12-21
+Version: 0.0.0.9018
+Date: 2018-02-01
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
+    person("Seb", "Dalgarno", role = "aut"),
     person("Chris", "Muir", role = "ctb"))
 Description: Attaches CRAN and PoisRAN R packages commonly used in Poisson Consulting scripts in the preferred order.
 License: MIT + file LICENSE
@@ -21,6 +22,7 @@ Depends:
     markdown,
     rmarkdown,
     rlang,
+    slackr,
     knitr,
     ggrepel,
     ggmap,
