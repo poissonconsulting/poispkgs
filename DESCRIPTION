@@ -1,7 +1,7 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.0.9018
-Date: 2018-02-01
+Version: 0.0.0.9019
+Date: 2018-04-07
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Seb", "Dalgarno", role = "aut"),
@@ -22,7 +22,7 @@ Depends:
     markdown,
     rmarkdown,
     rlang,
-    slackr,
+    viridis,
     knitr,
     ggrepel,
     ggmap,

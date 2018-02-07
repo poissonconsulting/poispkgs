@@ -66,152 +66,181 @@
 <section id="poispkgs" class="level1"><div class="page-header"><h1>poispkgs</h1></div>
 <p>An R package to attach CRAN and GitHub Packages used in Poison Consulting analyses.</p>
 <section id="demonstration" class="level2"><h2>Demonstration</h2>
-<pre class="sourceCode r" id="cb1"><code class="sourceCode r"><div class="sourceLine" id="cb1-1" data-line-number="1">
-<span class="kw">search</span>()</div>
-<div class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#&gt; [1] ".GlobalEnv"        "package:stats"     "package:graphics" </span></div>
-<div class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">#&gt; [4] "package:grDevices" "package:utils"     "package:datasets" </span></div>
-<div class="sourceLine" id="cb1-4" data-line-number="4"><span class="co">#&gt; [7] "package:methods"   "Autoloads"         "package:base"</span></div>
-<div class="sourceLine" id="cb1-5" data-line-number="5">
-<span class="kw">library</span>(poispkgs)</div>
-<div class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">#&gt; Loading required package: assertr</span></div>
-<div class="sourceLine" id="cb1-7" data-line-number="7"><span class="co">#&gt; Loading required package: doParallel</span></div>
-<div class="sourceLine" id="cb1-8" data-line-number="8"><span class="co">#&gt; Loading required package: foreach</span></div>
-<div class="sourceLine" id="cb1-9" data-line-number="9"><span class="co">#&gt; Loading required package: iterators</span></div>
-<div class="sourceLine" id="cb1-10" data-line-number="10"><span class="co">#&gt; Loading required package: parallel</span></div>
-<div class="sourceLine" id="cb1-11" data-line-number="11"><span class="co">#&gt; Loading required package: RSQLite</span></div>
-<div class="sourceLine" id="cb1-12" data-line-number="12"><span class="co">#&gt; Loading required package: plyr</span></div>
-<div class="sourceLine" id="cb1-13" data-line-number="13"><span class="co">#&gt; Loading required package: reshape2</span></div>
-<div class="sourceLine" id="cb1-14" data-line-number="14"><span class="co">#&gt; Loading required package: units</span></div>
-<div class="sourceLine" id="cb1-15" data-line-number="15"><span class="co">#&gt; Loading required package: markdown</span></div>
-<div class="sourceLine" id="cb1-16" data-line-number="16"><span class="co">#&gt; Loading required package: rmarkdown</span></div>
-<div class="sourceLine" id="cb1-17" data-line-number="17"><span class="co">#&gt; Loading required package: knitr</span></div>
-<div class="sourceLine" id="cb1-18" data-line-number="18"><span class="co">#&gt; Loading required package: ggrepel</span></div>
-<div class="sourceLine" id="cb1-19" data-line-number="19"><span class="co">#&gt; Loading required package: ggplot2</span></div>
-<div class="sourceLine" id="cb1-20" data-line-number="20"><span class="co">#&gt; Loading required package: ggmap</span></div>
-<div class="sourceLine" id="cb1-21" data-line-number="21"><span class="co">#&gt; Loading required package: scales</span></div>
-<div class="sourceLine" id="cb1-22" data-line-number="22"><span class="co">#&gt; Loading required package: sf</span></div>
-<div class="sourceLine" id="cb1-23" data-line-number="23"><span class="co">#&gt; Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3</span></div>
-<div class="sourceLine" id="cb1-24" data-line-number="24"><span class="co">#&gt; Loading required package: mapview</span></div>
-<div class="sourceLine" id="cb1-25" data-line-number="25"><span class="co">#&gt; Loading required package: leaflet</span></div>
-<div class="sourceLine" id="cb1-26" data-line-number="26"><span class="co">#&gt; Loading required package: devtools</span></div>
-<div class="sourceLine" id="cb1-27" data-line-number="27"><span class="co">#&gt; Loading required package: magrittr</span></div>
-<div class="sourceLine" id="cb1-28" data-line-number="28"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-29" data-line-number="29"><span class="co">#&gt; Attaching package: 'magrittr'</span></div>
-<div class="sourceLine" id="cb1-30" data-line-number="30"><span class="co">#&gt; The following object is masked from 'package:ggmap':</span></div>
-<div class="sourceLine" id="cb1-31" data-line-number="31"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-32" data-line-number="32"><span class="co">#&gt;     inset</span></div>
-<div class="sourceLine" id="cb1-33" data-line-number="33"><span class="co">#&gt; Loading required package: readxl</span></div>
-<div class="sourceLine" id="cb1-34" data-line-number="34"><span class="co">#&gt; Loading required package: tidyverse</span></div>
-<div class="sourceLine" id="cb1-35" data-line-number="35"><span class="co">#&gt; ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</span></div>
-<div class="sourceLine" id="cb1-36" data-line-number="36"><span class="co">#&gt; ✔ tibble  1.3.4     ✔ purrr   0.2.4</span></div>
-<div class="sourceLine" id="cb1-37" data-line-number="37"><span class="co">#&gt; ✔ tidyr   0.7.2     ✔ dplyr   0.7.4</span></div>
-<div class="sourceLine" id="cb1-38" data-line-number="38"><span class="co">#&gt; ✔ readr   1.1.1     ✔ stringr 1.2.0</span></div>
-<div class="sourceLine" id="cb1-39" data-line-number="39"><span class="co">#&gt; ✔ tibble  1.3.4     ✔ forcats 0.2.0</span></div>
-<div class="sourceLine" id="cb1-40" data-line-number="40"><span class="co">#&gt; ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──</span></div>
-<div class="sourceLine" id="cb1-41" data-line-number="41"><span class="co">#&gt; ✖ purrr::accumulate() masks foreach::accumulate()</span></div>
-<div class="sourceLine" id="cb1-42" data-line-number="42"><span class="co">#&gt; ✖ dplyr::arrange()    masks plyr::arrange()</span></div>
-<div class="sourceLine" id="cb1-43" data-line-number="43"><span class="co">#&gt; ✖ readr::col_factor() masks scales::col_factor()</span></div>
-<div class="sourceLine" id="cb1-44" data-line-number="44"><span class="co">#&gt; ✖ purrr::compact()    masks plyr::compact()</span></div>
-<div class="sourceLine" id="cb1-45" data-line-number="45"><span class="co">#&gt; ✖ dplyr::count()      masks plyr::count()</span></div>
-<div class="sourceLine" id="cb1-46" data-line-number="46"><span class="co">#&gt; ✖ purrr::discard()    masks scales::discard()</span></div>
-<div class="sourceLine" id="cb1-47" data-line-number="47"><span class="co">#&gt; ✖ tidyr::extract()    masks magrittr::extract()</span></div>
-<div class="sourceLine" id="cb1-48" data-line-number="48"><span class="co">#&gt; ✖ dplyr::failwith()   masks plyr::failwith()</span></div>
-<div class="sourceLine" id="cb1-49" data-line-number="49"><span class="co">#&gt; ✖ dplyr::filter()     masks stats::filter()</span></div>
-<div class="sourceLine" id="cb1-50" data-line-number="50"><span class="co">#&gt; ✖ dplyr::id()         masks plyr::id()</span></div>
-<div class="sourceLine" id="cb1-51" data-line-number="51"><span class="co">#&gt; ✖ magrittr::inset()   masks ggmap::inset()</span></div>
-<div class="sourceLine" id="cb1-52" data-line-number="52"><span class="co">#&gt; ✖ dplyr::lag()        masks stats::lag()</span></div>
-<div class="sourceLine" id="cb1-53" data-line-number="53"><span class="co">#&gt; ✖ dplyr::mutate()     masks plyr::mutate()</span></div>
-<div class="sourceLine" id="cb1-54" data-line-number="54"><span class="co">#&gt; ✖ dplyr::rename()     masks plyr::rename()</span></div>
-<div class="sourceLine" id="cb1-55" data-line-number="55"><span class="co">#&gt; ✖ purrr::set_names()  masks magrittr::set_names()</span></div>
-<div class="sourceLine" id="cb1-56" data-line-number="56"><span class="co">#&gt; ✖ dplyr::summarise()  masks plyr::summarise()</span></div>
-<div class="sourceLine" id="cb1-57" data-line-number="57"><span class="co">#&gt; ✖ dplyr::summarize()  masks plyr::summarize()</span></div>
-<div class="sourceLine" id="cb1-58" data-line-number="58"><span class="co">#&gt; ✖ purrr::when()       masks foreach::when()</span></div>
-<div class="sourceLine" id="cb1-59" data-line-number="59"><span class="co">#&gt; Loading required package: checkr</span></div>
-<div class="sourceLine" id="cb1-60" data-line-number="60"><span class="co">#&gt; Loading required package: newdata</span></div>
-<div class="sourceLine" id="cb1-61" data-line-number="61"><span class="co">#&gt; Loading required package: poisdata</span></div>
-<div class="sourceLine" id="cb1-62" data-line-number="62"><span class="co">#&gt; Loading required package: poisix</span></div>
-<div class="sourceLine" id="cb1-63" data-line-number="63"><span class="co">#&gt; Loading required package: poisplot</span></div>
-<div class="sourceLine" id="cb1-64" data-line-number="64"><span class="co">#&gt; Loading required package: poisspatial</span></div>
-<div class="sourceLine" id="cb1-65" data-line-number="65"><span class="co">#&gt; Loading required package: poissqlite</span></div>
-<div class="sourceLine" id="cb1-66" data-line-number="66"><span class="co">#&gt; Loading required package: DBI</span></div>
-<div class="sourceLine" id="cb1-67" data-line-number="67"><span class="co">#&gt; Loading required package: poisutils</span></div>
-<div class="sourceLine" id="cb1-68" data-line-number="68"><span class="co">#&gt; Loading required package: subfoldr</span></div>
-<div class="sourceLine" id="cb1-69" data-line-number="69"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-70" data-line-number="70"><span class="co">#&gt; Attaching package: 'subfoldr'</span></div>
-<div class="sourceLine" id="cb1-71" data-line-number="71"><span class="co">#&gt; The following object is masked from 'package:devtools':</span></div>
-<div class="sourceLine" id="cb1-72" data-line-number="72"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-73" data-line-number="73"><span class="co">#&gt;     load_data</span></div>
-<div class="sourceLine" id="cb1-74" data-line-number="74"><span class="co">#&gt; Loading required package: tmbr</span></div>
-<div class="sourceLine" id="cb1-75" data-line-number="75"><span class="co">#&gt; Loading required package: broom</span></div>
-<div class="sourceLine" id="cb1-76" data-line-number="76"><span class="co">#&gt; Loading required package: mbr</span></div>
-<div class="sourceLine" id="cb1-77" data-line-number="77"><span class="co">#&gt; Loading required package: lubridate</span></div>
-<div class="sourceLine" id="cb1-78" data-line-number="78"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-79" data-line-number="79"><span class="co">#&gt; Attaching package: 'lubridate'</span></div>
-<div class="sourceLine" id="cb1-80" data-line-number="80"><span class="co">#&gt; The following object is masked from 'package:plyr':</span></div>
-<div class="sourceLine" id="cb1-81" data-line-number="81"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-82" data-line-number="82"><span class="co">#&gt;     here</span></div>
-<div class="sourceLine" id="cb1-83" data-line-number="83"><span class="co">#&gt; The following object is masked from 'package:base':</span></div>
-<div class="sourceLine" id="cb1-84" data-line-number="84"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-85" data-line-number="85"><span class="co">#&gt;     date</span></div>
-<div class="sourceLine" id="cb1-86" data-line-number="86"><span class="co">#&gt; Loading required package: mcmcr</span></div>
-<div class="sourceLine" id="cb1-87" data-line-number="87"><span class="co">#&gt; Loading required package: coda</span></div>
-<div class="sourceLine" id="cb1-88" data-line-number="88"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-89" data-line-number="89"><span class="co">#&gt; Attaching package: 'mcmcr'</span></div>
-<div class="sourceLine" id="cb1-90" data-line-number="90"><span class="co">#&gt; The following object is masked from 'package:poisutils':</span></div>
-<div class="sourceLine" id="cb1-91" data-line-number="91"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-92" data-line-number="92"><span class="co">#&gt;     error</span></div>
-<div class="sourceLine" id="cb1-93" data-line-number="93"><span class="co">#&gt; The following object is masked from 'package:ggplot2':</span></div>
-<div class="sourceLine" id="cb1-94" data-line-number="94"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-95" data-line-number="95"><span class="co">#&gt;     derive</span></div>
-<div class="sourceLine" id="cb1-96" data-line-number="96"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-97" data-line-number="97"><span class="co">#&gt; Attaching package: 'mbr'</span></div>
-<div class="sourceLine" id="cb1-98" data-line-number="98"><span class="co">#&gt; The following object is masked from 'package:poisutils':</span></div>
-<div class="sourceLine" id="cb1-99" data-line-number="99"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-100" data-line-number="100"><span class="co">#&gt;     is.syntactic</span></div>
-<div class="sourceLine" id="cb1-101" data-line-number="101"><span class="co">#&gt; Loading required package: jmbr</span></div>
-<div class="sourceLine" id="cb1-102" data-line-number="102"><span class="co">#&gt; Loading required package: smbr</span></div>
-<div class="sourceLine" id="cb1-103" data-line-number="103"><span class="co">#&gt; Loading required package: rstan</span></div>
-<div class="sourceLine" id="cb1-104" data-line-number="104"><span class="co">#&gt; Loading required package: StanHeaders</span></div>
-<div class="sourceLine" id="cb1-105" data-line-number="105"><span class="co">#&gt; rstan (Version 2.16.2, packaged: 2017-07-03 09:24:58 UTC, GitRev: 2e1f913d3ca3)</span></div>
-<div class="sourceLine" id="cb1-106" data-line-number="106"><span class="co">#&gt; For execution on a local, multicore CPU with excess RAM we recommend calling</span></div>
-<div class="sourceLine" id="cb1-107" data-line-number="107"><span class="co">#&gt; rstan_options(auto_write = TRUE)</span></div>
-<div class="sourceLine" id="cb1-108" data-line-number="108"><span class="co">#&gt; options(mc.cores = parallel::detectCores())</span></div>
-<div class="sourceLine" id="cb1-109" data-line-number="109"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-110" data-line-number="110"><span class="co">#&gt; Attaching package: 'rstan'</span></div>
-<div class="sourceLine" id="cb1-111" data-line-number="111"><span class="co">#&gt; The following object is masked from 'package:mbr':</span></div>
-<div class="sourceLine" id="cb1-112" data-line-number="112"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-113" data-line-number="113"><span class="co">#&gt;     monitor</span></div>
-<div class="sourceLine" id="cb1-114" data-line-number="114"><span class="co">#&gt; The following object is masked from 'package:coda':</span></div>
-<div class="sourceLine" id="cb1-115" data-line-number="115"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-116" data-line-number="116"><span class="co">#&gt;     traceplot</span></div>
-<div class="sourceLine" id="cb1-117" data-line-number="117"><span class="co">#&gt; The following object is masked from 'package:tidyr':</span></div>
-<div class="sourceLine" id="cb1-118" data-line-number="118"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-119" data-line-number="119"><span class="co">#&gt;     extract</span></div>
-<div class="sourceLine" id="cb1-120" data-line-number="120"><span class="co">#&gt; The following object is masked from 'package:magrittr':</span></div>
-<div class="sourceLine" id="cb1-121" data-line-number="121"><span class="co">#&gt; </span></div>
-<div class="sourceLine" id="cb1-122" data-line-number="122"><span class="co">#&gt;     extract</span></div>
-<div class="sourceLine" id="cb1-123" data-line-number="123">
-<span class="kw">search</span>()</div>
-<div class="sourceLine" id="cb1-124" data-line-number="124"><span class="co">#&gt;  [1] ".GlobalEnv"          "package:poispkgs"    "package:smbr"       </span></div>
-<div class="sourceLine" id="cb1-125" data-line-number="125"><span class="co">#&gt;  [4] "package:rstan"       "package:StanHeaders" "package:jmbr"       </span></div>
-<div class="sourceLine" id="cb1-126" data-line-number="126"><span class="co">#&gt;  [7] "package:tmbr"        "package:mbr"         "package:mcmcr"      </span></div>
-<div class="sourceLine" id="cb1-127" data-line-number="127"><span class="co">#&gt; [10] "package:coda"        "package:lubridate"   "package:broom"      </span></div>
-<div class="sourceLine" id="cb1-128" data-line-number="128"><span class="co">#&gt; [13] "package:subfoldr"    "package:poisutils"   "package:poissqlite" </span></div>
-<div class="sourceLine" id="cb1-129" data-line-number="129"><span class="co">#&gt; [16] "package:DBI"         "package:poisspatial" "package:poisplot"   </span></div>
-<div class="sourceLine" id="cb1-130" data-line-number="130"><span class="co">#&gt; [19] "package:poisix"      "package:poisdata"    "package:newdata"    </span></div>
-<div class="sourceLine" id="cb1-131" data-line-number="131"><span class="co">#&gt; [22] "package:checkr"      "package:forcats"     "package:stringr"    </span></div>
-<div class="sourceLine" id="cb1-132" data-line-number="132"><span class="co">#&gt; [25] "package:dplyr"       "package:purrr"       "package:readr"      </span></div>
-<div class="sourceLine" id="cb1-133" data-line-number="133"><span class="co">#&gt; [28] "package:tidyr"       "package:tibble"      "package:tidyverse"  </span></div>
-<div class="sourceLine" id="cb1-134" data-line-number="134"><span class="co">#&gt; [31] "package:readxl"      "package:magrittr"    "package:devtools"   </span></div>
-<div class="sourceLine" id="cb1-135" data-line-number="135"><span class="co">#&gt; [34] "package:mapview"     "package:leaflet"     "package:sf"         </span></div>
-<div class="sourceLine" id="cb1-136" data-line-number="136"><span class="co">#&gt; [37] "package:scales"      "package:ggmap"       "package:ggrepel"    </span></div>
-<div class="sourceLine" id="cb1-137" data-line-number="137"><span class="co">#&gt; [40] "package:ggplot2"     "package:knitr"       "package:rmarkdown"  </span></div>
-<div class="sourceLine" id="cb1-138" data-line-number="138"><span class="co">#&gt; [43] "package:markdown"    "package:units"       "package:reshape2"   </span></div>
-<div class="sourceLine" id="cb1-139" data-line-number="139"><span class="co">#&gt; [46] "package:plyr"        "package:RSQLite"     "package:doParallel" </span></div>
-<div class="sourceLine" id="cb1-140" data-line-number="140"><span class="co">#&gt; [49] "package:parallel"    "package:iterators"   "package:foreach"    </span></div>
-<div class="sourceLine" id="cb1-141" data-line-number="141"><span class="co">#&gt; [52] "package:assertr"     "package:stats"       "package:graphics"   </span></div>
-<div class="sourceLine" id="cb1-142" data-line-number="142"><span class="co">#&gt; [55] "package:grDevices"   "package:utils"       "package:datasets"   </span></div>
-<div class="sourceLine" id="cb1-143" data-line-number="143"><span class="co">#&gt; [58] "package:methods"     "Autoloads"           "package:base"</span></div></code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">search</span>()</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#&gt; [1] ".GlobalEnv"        "package:stats"     "package:graphics" </span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">#&gt; [4] "package:grDevices" "package:utils"     "package:datasets" </span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co">#&gt; [7] "package:methods"   "Autoloads"         "package:base"</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">library</span>(poispkgs)</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">#&gt; Loading required package: assertr</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="co">#&gt; Loading required package: doParallel</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co">#&gt; Loading required package: foreach</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="co">#&gt; Loading required package: iterators</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="co">#&gt; Loading required package: parallel</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co">#&gt; Loading required package: RSQLite</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="co">#&gt; Loading required package: plyr</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="co">#&gt; Loading required package: reshape2</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co">#&gt; Loading required package: units</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="co">#&gt; Attaching package: 'units'</span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="co">#&gt; The following object is masked from 'package:base':</span></a>
+<a class="sourceLine" id="cb1-18" data-line-number="18"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co">#&gt;     %*%</span></a>
+<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="co">#&gt; Loading required package: markdown</span></a>
+<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="co">#&gt; Loading required package: rmarkdown</span></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="co">#&gt; Loading required package: rlang</span></a>
+<a class="sourceLine" id="cb1-23" data-line-number="23"><span class="co">#&gt; Loading required package: viridis</span></a>
+<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="co">#&gt; Loading required package: viridisLite</span></a>
+<a class="sourceLine" id="cb1-25" data-line-number="25"><span class="co">#&gt; Loading required package: knitr</span></a>
+<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="co">#&gt; Loading required package: ggrepel</span></a>
+<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="co">#&gt; Loading required package: ggplot2</span></a>
+<a class="sourceLine" id="cb1-28" data-line-number="28"><span class="co">#&gt; Loading required package: ggmap</span></a>
+<a class="sourceLine" id="cb1-29" data-line-number="29"><span class="co">#&gt; Loading required package: scales</span></a>
+<a class="sourceLine" id="cb1-30" data-line-number="30"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-31" data-line-number="31"><span class="co">#&gt; Attaching package: 'scales'</span></a>
+<a class="sourceLine" id="cb1-32" data-line-number="32"><span class="co">#&gt; The following object is masked from 'package:viridis':</span></a>
+<a class="sourceLine" id="cb1-33" data-line-number="33"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-34" data-line-number="34"><span class="co">#&gt;     viridis_pal</span></a>
+<a class="sourceLine" id="cb1-35" data-line-number="35"><span class="co">#&gt; Loading required package: sf</span></a>
+<a class="sourceLine" id="cb1-36" data-line-number="36"><span class="co">#&gt; Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3</span></a>
+<a class="sourceLine" id="cb1-37" data-line-number="37"><span class="co">#&gt; Loading required package: mapview</span></a>
+<a class="sourceLine" id="cb1-38" data-line-number="38"><span class="co">#&gt; Loading required package: devtools</span></a>
+<a class="sourceLine" id="cb1-39" data-line-number="39"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-40" data-line-number="40"><span class="co">#&gt; Attaching package: 'devtools'</span></a>
+<a class="sourceLine" id="cb1-41" data-line-number="41"><span class="co">#&gt; The following objects are masked from 'package:rlang':</span></a>
+<a class="sourceLine" id="cb1-42" data-line-number="42"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-43" data-line-number="43"><span class="co">#&gt;     ns_env, pkg_env, with_options</span></a>
+<a class="sourceLine" id="cb1-44" data-line-number="44"><span class="co">#&gt; Loading required package: magrittr</span></a>
+<a class="sourceLine" id="cb1-45" data-line-number="45"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-46" data-line-number="46"><span class="co">#&gt; Attaching package: 'magrittr'</span></a>
+<a class="sourceLine" id="cb1-47" data-line-number="47"><span class="co">#&gt; The following object is masked from 'package:ggmap':</span></a>
+<a class="sourceLine" id="cb1-48" data-line-number="48"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-49" data-line-number="49"><span class="co">#&gt;     inset</span></a>
+<a class="sourceLine" id="cb1-50" data-line-number="50"><span class="co">#&gt; The following object is masked from 'package:rlang':</span></a>
+<a class="sourceLine" id="cb1-51" data-line-number="51"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-52" data-line-number="52"><span class="co">#&gt;     set_names</span></a>
+<a class="sourceLine" id="cb1-53" data-line-number="53"><span class="co">#&gt; Loading required package: readxl</span></a>
+<a class="sourceLine" id="cb1-54" data-line-number="54"><span class="co">#&gt; Loading required package: tidyverse</span></a>
+<a class="sourceLine" id="cb1-55" data-line-number="55"><span class="co">#&gt; ── Attaching packages ─────────────────────────────────────────────── tidyverse 1.2.1 ──</span></a>
+<a class="sourceLine" id="cb1-56" data-line-number="56"><span class="co">#&gt; ✔ tibble  1.4.2     ✔ purrr   0.2.4</span></a>
+<a class="sourceLine" id="cb1-57" data-line-number="57"><span class="co">#&gt; ✔ tidyr   0.8.0     ✔ dplyr   0.7.4</span></a>
+<a class="sourceLine" id="cb1-58" data-line-number="58"><span class="co">#&gt; ✔ readr   1.1.1     ✔ stringr 1.2.0</span></a>
+<a class="sourceLine" id="cb1-59" data-line-number="59"><span class="co">#&gt; ✔ tibble  1.4.2     ✔ forcats 0.2.0</span></a>
+<a class="sourceLine" id="cb1-60" data-line-number="60"><span class="co">#&gt; ── Conflicts ────────────────────────────────────────────────── tidyverse_conflicts() ──</span></a>
+<a class="sourceLine" id="cb1-61" data-line-number="61"><span class="co">#&gt; ✖ purrr::%@%()             masks rlang::%@%()</span></a>
+<a class="sourceLine" id="cb1-62" data-line-number="62"><span class="co">#&gt; ✖ purrr::%||%()            masks rlang::%||%()</span></a>
+<a class="sourceLine" id="cb1-63" data-line-number="63"><span class="co">#&gt; ✖ purrr::accumulate()      masks foreach::accumulate()</span></a>
+<a class="sourceLine" id="cb1-64" data-line-number="64"><span class="co">#&gt; ✖ dplyr::arrange()         masks plyr::arrange()</span></a>
+<a class="sourceLine" id="cb1-65" data-line-number="65"><span class="co">#&gt; ✖ purrr::as_function()     masks rlang::as_function()</span></a>
+<a class="sourceLine" id="cb1-66" data-line-number="66"><span class="co">#&gt; ✖ readr::col_factor()      masks scales::col_factor()</span></a>
+<a class="sourceLine" id="cb1-67" data-line-number="67"><span class="co">#&gt; ✖ purrr::compact()         masks plyr::compact()</span></a>
+<a class="sourceLine" id="cb1-68" data-line-number="68"><span class="co">#&gt; ✖ dplyr::count()           masks plyr::count()</span></a>
+<a class="sourceLine" id="cb1-69" data-line-number="69"><span class="co">#&gt; ✖ purrr::discard()         masks scales::discard()</span></a>
+<a class="sourceLine" id="cb1-70" data-line-number="70"><span class="co">#&gt; ✖ tidyr::extract()         masks magrittr::extract()</span></a>
+<a class="sourceLine" id="cb1-71" data-line-number="71"><span class="co">#&gt; ✖ dplyr::failwith()        masks plyr::failwith()</span></a>
+<a class="sourceLine" id="cb1-72" data-line-number="72"><span class="co">#&gt; ✖ dplyr::filter()          masks stats::filter()</span></a>
+<a class="sourceLine" id="cb1-73" data-line-number="73"><span class="co">#&gt; ✖ purrr::flatten()         masks rlang::flatten()</span></a>
+<a class="sourceLine" id="cb1-74" data-line-number="74"><span class="co">#&gt; ✖ purrr::flatten_chr()     masks rlang::flatten_chr()</span></a>
+<a class="sourceLine" id="cb1-75" data-line-number="75"><span class="co">#&gt; ✖ purrr::flatten_dbl()     masks rlang::flatten_dbl()</span></a>
+<a class="sourceLine" id="cb1-76" data-line-number="76"><span class="co">#&gt; ✖ purrr::flatten_int()     masks rlang::flatten_int()</span></a>
+<a class="sourceLine" id="cb1-77" data-line-number="77"><span class="co">#&gt; ✖ purrr::flatten_lgl()     masks rlang::flatten_lgl()</span></a>
+<a class="sourceLine" id="cb1-78" data-line-number="78"><span class="co">#&gt; ✖ dplyr::id()              masks plyr::id()</span></a>
+<a class="sourceLine" id="cb1-79" data-line-number="79"><span class="co">#&gt; ✖ magrittr::inset()        masks ggmap::inset()</span></a>
+<a class="sourceLine" id="cb1-80" data-line-number="80"><span class="co">#&gt; ✖ purrr::invoke()          masks rlang::invoke()</span></a>
+<a class="sourceLine" id="cb1-81" data-line-number="81"><span class="co">#&gt; ✖ dplyr::lag()             masks stats::lag()</span></a>
+<a class="sourceLine" id="cb1-82" data-line-number="82"><span class="co">#&gt; ✖ purrr::list_along()      masks rlang::list_along()</span></a>
+<a class="sourceLine" id="cb1-83" data-line-number="83"><span class="co">#&gt; ✖ purrr::modify()          masks rlang::modify()</span></a>
+<a class="sourceLine" id="cb1-84" data-line-number="84"><span class="co">#&gt; ✖ dplyr::mutate()          masks plyr::mutate()</span></a>
+<a class="sourceLine" id="cb1-85" data-line-number="85"><span class="co">#&gt; ✖ devtools::ns_env()       masks rlang::ns_env()</span></a>
+<a class="sourceLine" id="cb1-86" data-line-number="86"><span class="co">#&gt; ✖ devtools::pkg_env()      masks rlang::pkg_env()</span></a>
+<a class="sourceLine" id="cb1-87" data-line-number="87"><span class="co">#&gt; ✖ dplyr::rename()          masks plyr::rename()</span></a>
+<a class="sourceLine" id="cb1-88" data-line-number="88"><span class="co">#&gt; ✖ purrr::rep_along()       masks rlang::rep_along()</span></a>
+<a class="sourceLine" id="cb1-89" data-line-number="89"><span class="co">#&gt; ✖ purrr::set_names()       masks magrittr::set_names(), rlang::set_names()</span></a>
+<a class="sourceLine" id="cb1-90" data-line-number="90"><span class="co">#&gt; ✖ purrr::splice()          masks rlang::splice()</span></a>
+<a class="sourceLine" id="cb1-91" data-line-number="91"><span class="co">#&gt; ✖ dplyr::summarise()       masks plyr::summarise()</span></a>
+<a class="sourceLine" id="cb1-92" data-line-number="92"><span class="co">#&gt; ✖ dplyr::summarize()       masks plyr::summarize()</span></a>
+<a class="sourceLine" id="cb1-93" data-line-number="93"><span class="co">#&gt; ✖ purrr::when()            masks foreach::when()</span></a>
+<a class="sourceLine" id="cb1-94" data-line-number="94"><span class="co">#&gt; ✖ devtools::with_options() masks rlang::with_options()</span></a>
+<a class="sourceLine" id="cb1-95" data-line-number="95"><span class="co">#&gt; Loading required package: checkr</span></a>
+<a class="sourceLine" id="cb1-96" data-line-number="96"><span class="co">#&gt; Loading required package: newdata</span></a>
+<a class="sourceLine" id="cb1-97" data-line-number="97"><span class="co">#&gt; Loading required package: poisdata</span></a>
+<a class="sourceLine" id="cb1-98" data-line-number="98"><span class="co">#&gt; Loading required package: poisix</span></a>
+<a class="sourceLine" id="cb1-99" data-line-number="99"><span class="co">#&gt; Loading required package: poisplot</span></a>
+<a class="sourceLine" id="cb1-100" data-line-number="100"><span class="co">#&gt; Loading required package: poisspatial</span></a>
+<a class="sourceLine" id="cb1-101" data-line-number="101"><span class="co">#&gt; Loading required package: poissqlite</span></a>
+<a class="sourceLine" id="cb1-102" data-line-number="102"><span class="co">#&gt; Loading required package: DBI</span></a>
+<a class="sourceLine" id="cb1-103" data-line-number="103"><span class="co">#&gt; Loading required package: poisutils</span></a>
+<a class="sourceLine" id="cb1-104" data-line-number="104"><span class="co">#&gt; Loading required package: subfoldr</span></a>
+<a class="sourceLine" id="cb1-105" data-line-number="105"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-106" data-line-number="106"><span class="co">#&gt; Attaching package: 'subfoldr'</span></a>
+<a class="sourceLine" id="cb1-107" data-line-number="107"><span class="co">#&gt; The following object is masked from 'package:devtools':</span></a>
+<a class="sourceLine" id="cb1-108" data-line-number="108"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-109" data-line-number="109"><span class="co">#&gt;     load_data</span></a>
+<a class="sourceLine" id="cb1-110" data-line-number="110"><span class="co">#&gt; Loading required package: tmbr</span></a>
+<a class="sourceLine" id="cb1-111" data-line-number="111"><span class="co">#&gt; Loading required package: broom</span></a>
+<a class="sourceLine" id="cb1-112" data-line-number="112"><span class="co">#&gt; Loading required package: mbr</span></a>
+<a class="sourceLine" id="cb1-113" data-line-number="113"><span class="co">#&gt; Loading required package: lubridate</span></a>
+<a class="sourceLine" id="cb1-114" data-line-number="114"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-115" data-line-number="115"><span class="co">#&gt; Attaching package: 'lubridate'</span></a>
+<a class="sourceLine" id="cb1-116" data-line-number="116"><span class="co">#&gt; The following object is masked from 'package:plyr':</span></a>
+<a class="sourceLine" id="cb1-117" data-line-number="117"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-118" data-line-number="118"><span class="co">#&gt;     here</span></a>
+<a class="sourceLine" id="cb1-119" data-line-number="119"><span class="co">#&gt; The following object is masked from 'package:base':</span></a>
+<a class="sourceLine" id="cb1-120" data-line-number="120"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-121" data-line-number="121"><span class="co">#&gt;     date</span></a>
+<a class="sourceLine" id="cb1-122" data-line-number="122"><span class="co">#&gt; Loading required package: mcmcr</span></a>
+<a class="sourceLine" id="cb1-123" data-line-number="123"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-124" data-line-number="124"><span class="co">#&gt; Attaching package: 'mcmcr'</span></a>
+<a class="sourceLine" id="cb1-125" data-line-number="125"><span class="co">#&gt; The following object is masked from 'package:ggplot2':</span></a>
+<a class="sourceLine" id="cb1-126" data-line-number="126"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-127" data-line-number="127"><span class="co">#&gt;     derive</span></a>
+<a class="sourceLine" id="cb1-128" data-line-number="128"><span class="co">#&gt; Loading required package: mcmcrdata</span></a>
+<a class="sourceLine" id="cb1-129" data-line-number="129"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-130" data-line-number="130"><span class="co">#&gt; Attaching package: 'mbr'</span></a>
+<a class="sourceLine" id="cb1-131" data-line-number="131"><span class="co">#&gt; The following object is masked from 'package:poisutils':</span></a>
+<a class="sourceLine" id="cb1-132" data-line-number="132"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-133" data-line-number="133"><span class="co">#&gt;     is.syntactic</span></a>
+<a class="sourceLine" id="cb1-134" data-line-number="134"><span class="co">#&gt; Loading required package: jmbr</span></a>
+<a class="sourceLine" id="cb1-135" data-line-number="135"><span class="co">#&gt; Loading required package: smbr</span></a>
+<a class="sourceLine" id="cb1-136" data-line-number="136"><span class="co">#&gt; Loading required package: rstan</span></a>
+<a class="sourceLine" id="cb1-137" data-line-number="137"><span class="co">#&gt; Loading required package: StanHeaders</span></a>
+<a class="sourceLine" id="cb1-138" data-line-number="138"><span class="co">#&gt; rstan (Version 2.17.3, GitRev: 2e1f913d3ca3)</span></a>
+<a class="sourceLine" id="cb1-139" data-line-number="139"><span class="co">#&gt; For execution on a local, multicore CPU with excess RAM we recommend calling</span></a>
+<a class="sourceLine" id="cb1-140" data-line-number="140"><span class="co">#&gt; options(mc.cores = parallel::detectCores()).</span></a>
+<a class="sourceLine" id="cb1-141" data-line-number="141"><span class="co">#&gt; To avoid recompilation of unchanged Stan programs, we recommend calling</span></a>
+<a class="sourceLine" id="cb1-142" data-line-number="142"><span class="co">#&gt; rstan_options(auto_write = TRUE)</span></a>
+<a class="sourceLine" id="cb1-143" data-line-number="143"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-144" data-line-number="144"><span class="co">#&gt; Attaching package: 'rstan'</span></a>
+<a class="sourceLine" id="cb1-145" data-line-number="145"><span class="co">#&gt; The following object is masked from 'package:mbr':</span></a>
+<a class="sourceLine" id="cb1-146" data-line-number="146"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-147" data-line-number="147"><span class="co">#&gt;     monitor</span></a>
+<a class="sourceLine" id="cb1-148" data-line-number="148"><span class="co">#&gt; The following object is masked from 'package:tidyr':</span></a>
+<a class="sourceLine" id="cb1-149" data-line-number="149"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-150" data-line-number="150"><span class="co">#&gt;     extract</span></a>
+<a class="sourceLine" id="cb1-151" data-line-number="151"><span class="co">#&gt; The following object is masked from 'package:magrittr':</span></a>
+<a class="sourceLine" id="cb1-152" data-line-number="152"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb1-153" data-line-number="153"><span class="co">#&gt;     extract</span></a>
+<a class="sourceLine" id="cb1-154" data-line-number="154"><span class="kw">search</span>()</a>
+<a class="sourceLine" id="cb1-155" data-line-number="155"><span class="co">#&gt;  [1] ".GlobalEnv"          "package:poispkgs"    "package:smbr"       </span></a>
+<a class="sourceLine" id="cb1-156" data-line-number="156"><span class="co">#&gt;  [4] "package:rstan"       "package:StanHeaders" "package:jmbr"       </span></a>
+<a class="sourceLine" id="cb1-157" data-line-number="157"><span class="co">#&gt;  [7] "package:tmbr"        "package:mbr"         "package:mcmcrdata"  </span></a>
+<a class="sourceLine" id="cb1-158" data-line-number="158"><span class="co">#&gt; [10] "package:mcmcr"       "package:lubridate"   "package:broom"      </span></a>
+<a class="sourceLine" id="cb1-159" data-line-number="159"><span class="co">#&gt; [13] "package:subfoldr"    "package:poisutils"   "package:poissqlite" </span></a>
+<a class="sourceLine" id="cb1-160" data-line-number="160"><span class="co">#&gt; [16] "package:DBI"         "package:poisspatial" "package:poisplot"   </span></a>
+<a class="sourceLine" id="cb1-161" data-line-number="161"><span class="co">#&gt; [19] "package:poisix"      "package:poisdata"    "package:newdata"    </span></a>
+<a class="sourceLine" id="cb1-162" data-line-number="162"><span class="co">#&gt; [22] "package:checkr"      "package:forcats"     "package:stringr"    </span></a>
+<a class="sourceLine" id="cb1-163" data-line-number="163"><span class="co">#&gt; [25] "package:dplyr"       "package:purrr"       "package:readr"      </span></a>
+<a class="sourceLine" id="cb1-164" data-line-number="164"><span class="co">#&gt; [28] "package:tidyr"       "package:tibble"      "package:tidyverse"  </span></a>
+<a class="sourceLine" id="cb1-165" data-line-number="165"><span class="co">#&gt; [31] "package:readxl"      "package:magrittr"    "package:devtools"   </span></a>
+<a class="sourceLine" id="cb1-166" data-line-number="166"><span class="co">#&gt; [34] "package:mapview"     "package:sf"          "package:scales"     </span></a>
+<a class="sourceLine" id="cb1-167" data-line-number="167"><span class="co">#&gt; [37] "package:ggmap"       "package:ggrepel"     "package:ggplot2"    </span></a>
+<a class="sourceLine" id="cb1-168" data-line-number="168"><span class="co">#&gt; [40] "package:knitr"       "package:viridis"     "package:viridisLite"</span></a>
+<a class="sourceLine" id="cb1-169" data-line-number="169"><span class="co">#&gt; [43] "package:rlang"       "package:rmarkdown"   "package:markdown"   </span></a>
+<a class="sourceLine" id="cb1-170" data-line-number="170"><span class="co">#&gt; [46] "package:units"       "package:reshape2"    "package:plyr"       </span></a>
+<a class="sourceLine" id="cb1-171" data-line-number="171"><span class="co">#&gt; [49] "package:RSQLite"     "package:doParallel"  "package:parallel"   </span></a>
+<a class="sourceLine" id="cb1-172" data-line-number="172"><span class="co">#&gt; [52] "package:iterators"   "package:foreach"     "package:assertr"    </span></a>
+<a class="sourceLine" id="cb1-173" data-line-number="173"><span class="co">#&gt; [55] "package:stats"       "package:graphics"    "package:grDevices"  </span></a>
+<a class="sourceLine" id="cb1-174" data-line-number="174"><span class="co">#&gt; [58] "package:utils"       "package:datasets"    "package:methods"    </span></a>
+<a class="sourceLine" id="cb1-175" data-line-number="175"><span class="co">#&gt; [61] "Autoloads"           "package:base"</span></a></code></pre></div>
 </section><section id="installation" class="level2"><h2>Installation</h2>
 <pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
 devtools::install_github("poissonconsulting/poispkgs")</a></code></pre>
@@ -237,6 +266,7 @@ devtools::install_github("poissonconsulting/poispkgs")</a></code></pre>
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Joe Thorley <br><small class="roles"> Author, maintainer </small> </li>
+<li>Seb Dalgarno <br><small class="roles"> Author </small> </li>
 <li><a href="authors.html">All authors...</a></li>
 </ul>
 <h2>Dev status</h2>
@@ -254,7 +284,7 @@ devtools::install_github("poissonconsulting/poispkgs")</a></code></pre>
 
 
       <footer><div class="copyright">
-  <p>Developed by Joe Thorley.</p>
+  <p>Developed by Joe Thorley, Seb Dalgarno.</p>
 </div>
 
 <div class="pkgdown">

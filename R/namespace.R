@@ -20,6 +20,7 @@
 #' @importFrom poisutils ps_error
 #' @importFrom readxl read_excel
 #' @importFrom reshape2 melt
+#' @importFrom rlang inform
 #' @importFrom rmarkdown pdf_document
 #' @importFrom RSQLite dbGetQuery
 #' @importFrom scales percent
@@ -29,4 +30,5 @@
 #' @importFrom tidyverse tidyverse_packages
 #' @importFrom tmbr is.tmb_model
 #' @importFrom units set_units
+#' @importFrom viridis viridis
 NULL
