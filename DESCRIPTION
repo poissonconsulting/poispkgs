@@ -1,12 +1,13 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.0.9019
-Date: 2018-04-07
+Version: 0.0.0.9020
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
+    person("Evan", "Amies-Galonski", role = "aut"),
     person("Seb", "Dalgarno", role = "aut"),
     person("Chris", "Muir", role = "ctb"))
-Description: Attaches CRAN and PoisRAN R packages commonly used in Poisson Consulting scripts in the preferred order.
+Description: Attaches CRAN and Poisson drat R packages commonly used in Poisson
+    analyses in the preferred order.
 License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
@@ -48,4 +49,6 @@ Depends:
 Suggests: testthat
 Additional_repositories: http://poissonconsulting.github.io/drat
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
+Encoding: UTF-8
+

@@ -1,15 +1,12 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/joethorley/stability-badges#unstable)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
 [![codecov](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/poispkgs)](https://cran.r-project.org/package=poispkgs)
 
 # poispkgs
 
@@ -33,11 +30,10 @@ library(poispkgs)
 #> Loading required package: plyr
 #> Loading required package: reshape2
 #> Loading required package: units
-#> 
-#> Attaching package: 'units'
-#> The following object is masked from 'package:base':
-#> 
-#>     %*%
+#> Warning in .get_ud_xml_dir(TRUE): multiple udunits databases present: /
+#> Library/Frameworks/R.framework/Versions/3.5/Resources/library/udunits2/
+#> share/udunits2.xml /usr/local/share/udunits/udunits2.xml
+#> udunits system database from /Library/Frameworks/R.framework/Versions/3.5/Resources/library/udunits2/share
 #> Loading required package: markdown
 #> Loading required package: rmarkdown
 #> Loading required package: rlang
@@ -54,14 +50,9 @@ library(poispkgs)
 #> 
 #>     viridis_pal
 #> Loading required package: sf
-#> Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3
+#> Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3
 #> Loading required package: mapview
 #> Loading required package: devtools
-#> 
-#> Attaching package: 'devtools'
-#> The following objects are masked from 'package:rlang':
-#> 
-#>     ns_env, pkg_env, with_options
 #> Loading required package: magrittr
 #> 
 #> Attaching package: 'magrittr'
@@ -73,46 +64,43 @@ library(poispkgs)
 #>     set_names
 #> Loading required package: readxl
 #> Loading required package: tidyverse
-#> ── Attaching packages ─────────────────────────────────────────────── tidyverse 1.2.1 ──
-#> ✔ tibble  1.4.2     ✔ purrr   0.2.4
-#> ✔ tidyr   0.8.0     ✔ dplyr   0.7.4
-#> ✔ readr   1.1.1     ✔ stringr 1.2.0
-#> ✔ tibble  1.4.2     ✔ forcats 0.2.0
-#> ── Conflicts ────────────────────────────────────────────────── tidyverse_conflicts() ──
-#> ✖ purrr::%@%()             masks rlang::%@%()
-#> ✖ purrr::%||%()            masks rlang::%||%()
-#> ✖ purrr::accumulate()      masks foreach::accumulate()
-#> ✖ dplyr::arrange()         masks plyr::arrange()
-#> ✖ purrr::as_function()     masks rlang::as_function()
-#> ✖ readr::col_factor()      masks scales::col_factor()
-#> ✖ purrr::compact()         masks plyr::compact()
-#> ✖ dplyr::count()           masks plyr::count()
-#> ✖ purrr::discard()         masks scales::discard()
-#> ✖ tidyr::extract()         masks magrittr::extract()
-#> ✖ dplyr::failwith()        masks plyr::failwith()
-#> ✖ dplyr::filter()          masks stats::filter()
-#> ✖ purrr::flatten()         masks rlang::flatten()
-#> ✖ purrr::flatten_chr()     masks rlang::flatten_chr()
-#> ✖ purrr::flatten_dbl()     masks rlang::flatten_dbl()
-#> ✖ purrr::flatten_int()     masks rlang::flatten_int()
-#> ✖ purrr::flatten_lgl()     masks rlang::flatten_lgl()
-#> ✖ dplyr::id()              masks plyr::id()
-#> ✖ magrittr::inset()        masks ggmap::inset()
-#> ✖ purrr::invoke()          masks rlang::invoke()
-#> ✖ dplyr::lag()             masks stats::lag()
-#> ✖ purrr::list_along()      masks rlang::list_along()
-#> ✖ purrr::modify()          masks rlang::modify()
-#> ✖ dplyr::mutate()          masks plyr::mutate()
-#> ✖ devtools::ns_env()       masks rlang::ns_env()
-#> ✖ devtools::pkg_env()      masks rlang::pkg_env()
-#> ✖ dplyr::rename()          masks plyr::rename()
-#> ✖ purrr::rep_along()       masks rlang::rep_along()
-#> ✖ purrr::set_names()       masks magrittr::set_names(), rlang::set_names()
-#> ✖ purrr::splice()          masks rlang::splice()
-#> ✖ dplyr::summarise()       masks plyr::summarise()
-#> ✖ dplyr::summarize()       masks plyr::summarize()
-#> ✖ purrr::when()            masks foreach::when()
-#> ✖ devtools::with_options() masks rlang::with_options()
+#> ── Attaching packages ────────────────────────── tidyverse 1.2.1 ──
+#> ✔ tibble  1.4.2     ✔ purrr   0.2.5
+#> ✔ tidyr   0.8.2     ✔ dplyr   0.7.7
+#> ✔ readr   1.1.1     ✔ stringr 1.3.1
+#> ✔ tibble  1.4.2     ✔ forcats 0.3.0
+#> ── Conflicts ───────────────────────────── tidyverse_conflicts() ──
+#> ✖ purrr::%@%()         masks rlang::%@%()
+#> ✖ purrr::%||%()        masks rlang::%||%()
+#> ✖ purrr::accumulate()  masks foreach::accumulate()
+#> ✖ dplyr::arrange()     masks plyr::arrange()
+#> ✖ purrr::as_function() masks rlang::as_function()
+#> ✖ readr::col_factor()  masks scales::col_factor()
+#> ✖ purrr::compact()     masks plyr::compact()
+#> ✖ dplyr::count()       masks plyr::count()
+#> ✖ purrr::discard()     masks scales::discard()
+#> ✖ tidyr::extract()     masks magrittr::extract()
+#> ✖ dplyr::failwith()    masks plyr::failwith()
+#> ✖ dplyr::filter()      masks stats::filter()
+#> ✖ purrr::flatten()     masks rlang::flatten()
+#> ✖ purrr::flatten_chr() masks rlang::flatten_chr()
+#> ✖ purrr::flatten_dbl() masks rlang::flatten_dbl()
+#> ✖ purrr::flatten_int() masks rlang::flatten_int()
+#> ✖ purrr::flatten_lgl() masks rlang::flatten_lgl()
+#> ✖ dplyr::id()          masks plyr::id()
+#> ✖ magrittr::inset()    masks ggmap::inset()
+#> ✖ purrr::invoke()      masks rlang::invoke()
+#> ✖ dplyr::lag()         masks stats::lag()
+#> ✖ purrr::list_along()  masks rlang::list_along()
+#> ✖ purrr::modify()      masks rlang::modify()
+#> ✖ dplyr::mutate()      masks plyr::mutate()
+#> ✖ dplyr::rename()      masks plyr::rename()
+#> ✖ purrr::rep_along()   masks rlang::rep_along()
+#> ✖ purrr::set_names()   masks magrittr::set_names(), rlang::set_names()
+#> ✖ purrr::splice()      masks rlang::splice()
+#> ✖ dplyr::summarise()   masks plyr::summarise()
+#> ✖ dplyr::summarize()   masks plyr::summarize()
+#> ✖ purrr::when()        masks foreach::when()
 #> Loading required package: checkr
 #> Loading required package: newdata
 #> Loading required package: poisdata
@@ -123,11 +111,6 @@ library(poispkgs)
 #> Loading required package: DBI
 #> Loading required package: poisutils
 #> Loading required package: subfoldr
-#> 
-#> Attaching package: 'subfoldr'
-#> The following object is masked from 'package:devtools':
-#> 
-#>     load_data
 #> Loading required package: tmbr
 #> Loading required package: broom
 #> Loading required package: mbr
@@ -143,10 +126,11 @@ library(poispkgs)
 #> Loading required package: mcmcr
 #> 
 #> Attaching package: 'mcmcr'
-#> The following object is masked from 'package:ggplot2':
+#> The following object is masked from 'package:scales':
 #> 
-#>     derive
-#> Loading required package: mcmcrdata
+#>     pvalue
+#> Loading required package: mcmcdata
+#> Loading required package: mcmcderive
 #> 
 #> Attaching package: 'mbr'
 #> The following object is masked from 'package:poisutils':
@@ -156,7 +140,7 @@ library(poispkgs)
 #> Loading required package: smbr
 #> Loading required package: rstan
 #> Loading required package: StanHeaders
-#> rstan (Version 2.17.3, GitRev: 2e1f913d3ca3)
+#> rstan (Version 2.18.1, GitRev: 2e1f913d3ca3)
 #> For execution on a local, multicore CPU with excess RAM we recommend calling
 #> options(mc.cores = parallel::detectCores()).
 #> To avoid recompilation of unchanged Stan programs, we recommend calling
@@ -175,31 +159,36 @@ library(poispkgs)
 search()
 #>  [1] ".GlobalEnv"          "package:poispkgs"    "package:smbr"       
 #>  [4] "package:rstan"       "package:StanHeaders" "package:jmbr"       
-#>  [7] "package:tmbr"        "package:mbr"         "package:mcmcrdata"  
-#> [10] "package:mcmcr"       "package:lubridate"   "package:broom"      
-#> [13] "package:subfoldr"    "package:poisutils"   "package:poissqlite" 
-#> [16] "package:DBI"         "package:poisspatial" "package:poisplot"   
-#> [19] "package:poisix"      "package:poisdata"    "package:newdata"    
-#> [22] "package:checkr"      "package:forcats"     "package:stringr"    
-#> [25] "package:dplyr"       "package:purrr"       "package:readr"      
-#> [28] "package:tidyr"       "package:tibble"      "package:tidyverse"  
-#> [31] "package:readxl"      "package:magrittr"    "package:devtools"   
-#> [34] "package:mapview"     "package:sf"          "package:scales"     
-#> [37] "package:ggmap"       "package:ggrepel"     "package:ggplot2"    
-#> [40] "package:knitr"       "package:viridis"     "package:viridisLite"
-#> [43] "package:rlang"       "package:rmarkdown"   "package:markdown"   
-#> [46] "package:units"       "package:reshape2"    "package:plyr"       
-#> [49] "package:RSQLite"     "package:doParallel"  "package:parallel"   
-#> [52] "package:iterators"   "package:foreach"     "package:assertr"    
-#> [55] "package:stats"       "package:graphics"    "package:grDevices"  
-#> [58] "package:utils"       "package:datasets"    "package:methods"    
-#> [61] "Autoloads"           "package:base"
+#>  [7] "package:tmbr"        "package:mbr"         "package:mcmcderive" 
+#> [10] "package:mcmcdata"    "package:mcmcr"       "package:lubridate"  
+#> [13] "package:broom"       "package:subfoldr"    "package:poisutils"  
+#> [16] "package:poissqlite"  "package:DBI"         "package:poisspatial"
+#> [19] "package:poisplot"    "package:poisix"      "package:poisdata"   
+#> [22] "package:newdata"     "package:checkr"      "package:forcats"    
+#> [25] "package:stringr"     "package:dplyr"       "package:purrr"      
+#> [28] "package:readr"       "package:tidyr"       "package:tibble"     
+#> [31] "package:tidyverse"   "package:readxl"      "package:magrittr"   
+#> [34] "package:usethis"     "package:devtools"    "package:mapview"    
+#> [37] "package:sf"          "package:scales"      "package:ggmap"      
+#> [40] "package:ggrepel"     "package:ggplot2"     "package:knitr"      
+#> [43] "package:viridis"     "package:viridisLite" "package:rlang"      
+#> [46] "package:rmarkdown"   "package:markdown"    "package:units"      
+#> [49] "package:reshape2"    "package:plyr"        "package:RSQLite"    
+#> [52] "package:doParallel"  "package:parallel"    "package:iterators"  
+#> [55] "package:foreach"     "package:assertr"     "package:stats"      
+#> [58] "package:graphics"    "package:grDevices"   "package:utils"      
+#> [61] "package:datasets"    "package:methods"     "Autoloads"          
+#> [64] "package:base"
 ```
 
 ## Installation
 
-    # install.packages("devtools")
-    devtools::install_github("poissonconsulting/poispkgs")
+To install the latest development version from the Poisson drat
+[repository](https://github.com/poissonconsulting/drat)
+
+    install.packages("drat")
+    drat::addRepo("poissonconsulting")
+    install.packages("poispkgs")
 
 ## Contribution
 

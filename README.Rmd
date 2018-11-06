@@ -12,12 +12,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/joethorley/stability-badges#unstable)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/poispkgs?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/poispkgs)
 [![codecov](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/poispkgs)](https://cran.r-project.org/package=poispkgs)
 
 # poispkgs
 
@@ -32,9 +30,11 @@ search()
 
 ## Installation
 
+To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
 ```
-# install.packages("devtools")
-devtools::install_github("poissonconsulting/poispkgs")
+install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("poispkgs")
 ```
 
 ## Contribution

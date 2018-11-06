@@ -5,7 +5,6 @@
 \alias{poispkgs}
 \alias{package-poispkgs}
 \alias{poispkgs-package}
-\alias{poispkgs-package}
 \title{poispkgs}
 \description{
 Attaches CRAN and GitHub R packages used in Poison Consulting scripts in the preferred order.
