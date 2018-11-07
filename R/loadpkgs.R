@@ -1,16 +1,20 @@
-load <- c("assertr", "doParallel", "foreach", "RSQLite", "plyr", "reshape2", "units", "markdown",
-          "rmarkdown", "rlang", "viridis", 'knitr', "ggrepel", "ggmap", "scales", "sf", "mapview", "devtools",
-          "magrittr", "readxl", "tidyverse", "checkr", "newdata", "poisdata", "poisix", "poisplot", "poisspatial",
-          "poissqlite", "poisutils", "subfoldr", "tmbr", "jmbr", "smbr")
-
 .onAttach <- function(...) {
-  needed <- load[is_attached(load) == F]
+
+  pkgs <- read.delim("DESCRIPTION", header = F)
+  start <- grep("Imports:", pkgs$V1) + 1
+  end <- grep("Suggests:", pkgs$V1) - 1
+  pkgs <- pkgs[start:end, ]
+  pkgs <- paste(gsub(",", "", pkgs))
+  pkgs <- paste(gsub(" ", "", pkgs))
+
+  needed <- pkgs[is_attached(pkgs) == F]
 
  if (length(needed) == 0)
    return()
 
+
   packageStartupMessage(paste0("Loading poispkgs..."))
-  suppressPackageStartupMessages(lapply(load, library, character.only = TRUE, warn.conflicts = T))
+  suppressPackageStartupMessages(lapply(pkgs, library, character.only = TRUE, warn.conflicts = T))
 }
 
 
