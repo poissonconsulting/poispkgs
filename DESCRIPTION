@@ -12,7 +12,8 @@ License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
-    R (>= 3.3.0),
+    R (>= 3.3.0)
+Imports:
     assertr,
     doParallel,
     foreach,
