@@ -13,8 +13,15 @@
    return()
 
 
-  packageStartupMessage(paste0("Loading poispkgs..."))
+  packageStartupMessage("Loading poispkgs...")
   suppressPackageStartupMessages(lapply(pkgs, library, character.only = TRUE, warn.conflicts = T))
+
+  if (all(is_attached(pkgs)) == T){
+    message("poispkgs Loaded")
+  } else {
+    message("The following packages did not load sucessfully:")
+    sapply(pkgs[which(is_attached(pkgs) == F)], message)
+  }
 }
 
 
