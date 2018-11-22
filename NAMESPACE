@@ -3,6 +3,7 @@
 importFrom(RSQLite,dbGetQuery)
 importFrom(assertr,verify)
 importFrom(checkr,check_flag)
+importFrom(desc,desc_get_field)
 importFrom(devtools,install_github)
 importFrom(doParallel,registerDoParallel)
 importFrom(foreach,foreach)

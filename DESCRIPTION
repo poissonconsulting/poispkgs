@@ -2,8 +2,8 @@ Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
 Version: 0.0.0.9020
 Authors@R: c(
-    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
-    person("Evan", "Amies-Galonski", role = "aut"),
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
     person("Seb", "Dalgarno", role = "aut"),
     person("Chris", "Muir", role = "ctb"))
 Description: Attaches CRAN and Poisson drat R packages commonly used in Poisson
@@ -14,6 +14,7 @@ BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
     R (>= 3.3.0)
 Imports:
+    desc,
     assertr,
     doParallel,
     foreach,
@@ -31,7 +32,6 @@ Imports:
     scales,
     sf,
     mapview,
-    devtools,
     magrittr,
     readxl,
     tidyverse,

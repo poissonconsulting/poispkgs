@@ -1,3 +1,4 @@
+#' @importFrom desc desc_get_field
 #' @importFrom assertr verify
 #' @importFrom checkr check_flag
 #' @importFrom devtools install_github
