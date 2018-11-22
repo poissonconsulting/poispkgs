@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 # poispkgs
 
-An R package to attach CRAN and GitHub Packages used in Poison Consulting analyses.
+An R package to install and attach CRAN and GitHub Packages used in Poisson Consulting analyses.
 
 ## Demonstration
 ```{r}
@@ -30,10 +30,10 @@ search()
 
 ## Installation
 
-To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
+To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat) including all dependencies
 ```
 install.packages("drat")
-drat::addRepo("poissonconsulting")
+drat::addRepo("poissonconsulting", dependencies = TRUE)
 install.packages("poispkgs")
 ```
 

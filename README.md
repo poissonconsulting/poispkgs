@@ -21,87 +21,75 @@ search()
 #> [4] "package:grDevices" "package:utils"     "package:datasets" 
 #> [7] "package:methods"   "Autoloads"         "package:base"
 library(poispkgs)
-#> Loading required package: assertr
 #> Loading required package: doParallel
 #> Loading required package: foreach
 #> Loading required package: iterators
 #> Loading required package: parallel
 #> Loading required package: RSQLite
-#> Loading required package: plyr
-#> Loading required package: reshape2
 #> Loading required package: units
 #> Warning in .get_ud_xml_dir(TRUE): multiple udunits databases present: /
 #> Library/Frameworks/R.framework/Versions/3.5/Resources/library/udunits2/
 #> share/udunits2.xml /usr/local/share/udunits/udunits2.xml
 #> udunits system database from /Library/Frameworks/R.framework/Versions/3.5/Resources/library/udunits2/share
-#> Loading required package: markdown
-#> Loading required package: rmarkdown
-#> Loading required package: rlang
-#> Loading required package: viridis
-#> Loading required package: viridisLite
 #> Loading required package: knitr
-#> Loading required package: ggrepel
+#> Loading required package: mapview
+#> Loading required package: magrittr
+#> Loading required package: readxl
+#> Loading required package: readr
 #> Loading required package: ggplot2
-#> Loading required package: ggmap
 #> Loading required package: scales
 #> 
 #> Attaching package: 'scales'
-#> The following object is masked from 'package:viridis':
+#> The following object is masked from 'package:readr':
 #> 
-#>     viridis_pal
-#> Loading required package: sf
-#> Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3
-#> Loading required package: mapview
-#> Loading required package: devtools
-#> Loading required package: magrittr
+#>     col_factor
+#> Loading required package: ggrepel
+#> Loading required package: ggmap
 #> 
-#> Attaching package: 'magrittr'
-#> The following object is masked from 'package:ggmap':
+#> Attaching package: 'ggmap'
+#> The following object is masked from 'package:magrittr':
 #> 
 #>     inset
-#> The following object is masked from 'package:rlang':
+#> Loading required package: viridis
+#> Loading required package: viridisLite
+#> 
+#> Attaching package: 'viridis'
+#> The following object is masked from 'package:scales':
+#> 
+#>     viridis_pal
+#> Loading required package: tibble
+#> Loading required package: tidyr
+#> 
+#> Attaching package: 'tidyr'
+#> The following object is masked from 'package:magrittr':
+#> 
+#>     extract
+#> Loading required package: purrr
+#> 
+#> Attaching package: 'purrr'
+#> The following object is masked from 'package:scales':
+#> 
+#>     discard
+#> The following object is masked from 'package:magrittr':
 #> 
 #>     set_names
-#> Loading required package: readxl
-#> Loading required package: tidyverse
-#> ── Attaching packages ────────────────────────── tidyverse 1.2.1 ──
-#> ✔ tibble  1.4.2     ✔ purrr   0.2.5
-#> ✔ tidyr   0.8.2     ✔ dplyr   0.7.7
-#> ✔ readr   1.1.1     ✔ stringr 1.3.1
-#> ✔ tibble  1.4.2     ✔ forcats 0.3.0
-#> ── Conflicts ───────────────────────────── tidyverse_conflicts() ──
-#> ✖ purrr::%@%()         masks rlang::%@%()
-#> ✖ purrr::%||%()        masks rlang::%||%()
-#> ✖ purrr::accumulate()  masks foreach::accumulate()
-#> ✖ dplyr::arrange()     masks plyr::arrange()
-#> ✖ purrr::as_function() masks rlang::as_function()
-#> ✖ readr::col_factor()  masks scales::col_factor()
-#> ✖ purrr::compact()     masks plyr::compact()
-#> ✖ dplyr::count()       masks plyr::count()
-#> ✖ purrr::discard()     masks scales::discard()
-#> ✖ tidyr::extract()     masks magrittr::extract()
-#> ✖ dplyr::failwith()    masks plyr::failwith()
-#> ✖ dplyr::filter()      masks stats::filter()
-#> ✖ purrr::flatten()     masks rlang::flatten()
-#> ✖ purrr::flatten_chr() masks rlang::flatten_chr()
-#> ✖ purrr::flatten_dbl() masks rlang::flatten_dbl()
-#> ✖ purrr::flatten_int() masks rlang::flatten_int()
-#> ✖ purrr::flatten_lgl() masks rlang::flatten_lgl()
-#> ✖ dplyr::id()          masks plyr::id()
-#> ✖ magrittr::inset()    masks ggmap::inset()
-#> ✖ purrr::invoke()      masks rlang::invoke()
-#> ✖ dplyr::lag()         masks stats::lag()
-#> ✖ purrr::list_along()  masks rlang::list_along()
-#> ✖ purrr::modify()      masks rlang::modify()
-#> ✖ dplyr::mutate()      masks plyr::mutate()
-#> ✖ dplyr::rename()      masks plyr::rename()
-#> ✖ purrr::rep_along()   masks rlang::rep_along()
-#> ✖ purrr::set_names()   masks magrittr::set_names(), rlang::set_names()
-#> ✖ purrr::splice()      masks rlang::splice()
-#> ✖ dplyr::summarise()   masks plyr::summarise()
-#> ✖ dplyr::summarize()   masks plyr::summarize()
-#> ✖ purrr::when()        masks foreach::when()
+#> The following objects are masked from 'package:foreach':
+#> 
+#>     accumulate, when
+#> Loading required package: dplyr
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+#> Loading required package: stringr
+#> Loading required package: forcats
 #> Loading required package: checkr
+#> Loading required package: sf
+#> Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3
 #> Loading required package: newdata
 #> Loading required package: poisdata
 #> Loading required package: poisix
@@ -117,9 +105,6 @@ library(poispkgs)
 #> Loading required package: lubridate
 #> 
 #> Attaching package: 'lubridate'
-#> The following object is masked from 'package:plyr':
-#> 
-#>     here
 #> The following object is masked from 'package:base':
 #> 
 #>     date
@@ -140,7 +125,7 @@ library(poispkgs)
 #> Loading required package: smbr
 #> Loading required package: rstan
 #> Loading required package: StanHeaders
-#> rstan (Version 2.18.1, GitRev: 2e1f913d3ca3)
+#> rstan (Version 2.18.2, GitRev: 2e1f913d3ca3)
 #> For execution on a local, multicore CPU with excess RAM we recommend calling
 #> options(mc.cores = parallel::detectCores()).
 #> To avoid recompilation of unchanged Stan programs, we recommend calling
@@ -164,21 +149,18 @@ search()
 #> [13] "package:broom"       "package:subfoldr"    "package:poisutils"  
 #> [16] "package:poissqlite"  "package:DBI"         "package:poisspatial"
 #> [19] "package:poisplot"    "package:poisix"      "package:poisdata"   
-#> [22] "package:newdata"     "package:checkr"      "package:forcats"    
-#> [25] "package:stringr"     "package:dplyr"       "package:purrr"      
-#> [28] "package:readr"       "package:tidyr"       "package:tibble"     
-#> [31] "package:tidyverse"   "package:readxl"      "package:magrittr"   
-#> [34] "package:usethis"     "package:devtools"    "package:mapview"    
-#> [37] "package:sf"          "package:scales"      "package:ggmap"      
-#> [40] "package:ggrepel"     "package:ggplot2"     "package:knitr"      
-#> [43] "package:viridis"     "package:viridisLite" "package:rlang"      
-#> [46] "package:rmarkdown"   "package:markdown"    "package:units"      
-#> [49] "package:reshape2"    "package:plyr"        "package:RSQLite"    
-#> [52] "package:doParallel"  "package:parallel"    "package:iterators"  
-#> [55] "package:foreach"     "package:assertr"     "package:stats"      
-#> [58] "package:graphics"    "package:grDevices"   "package:utils"      
-#> [61] "package:datasets"    "package:methods"     "Autoloads"          
-#> [64] "package:base"
+#> [22] "package:newdata"     "package:sf"          "package:checkr"     
+#> [25] "package:forcats"     "package:stringr"     "package:dplyr"      
+#> [28] "package:purrr"       "package:tidyr"       "package:tibble"     
+#> [31] "package:viridis"     "package:viridisLite" "package:ggmap"      
+#> [34] "package:ggrepel"     "package:scales"      "package:ggplot2"    
+#> [37] "package:readr"       "package:readxl"      "package:magrittr"   
+#> [40] "package:mapview"     "package:knitr"       "package:units"      
+#> [43] "package:RSQLite"     "package:doParallel"  "package:parallel"   
+#> [46] "package:iterators"   "package:foreach"     "package:stats"      
+#> [49] "package:graphics"    "package:grDevices"   "package:utils"      
+#> [52] "package:datasets"    "package:methods"     "Autoloads"          
+#> [55] "package:base"
 ```
 
 ## Installation

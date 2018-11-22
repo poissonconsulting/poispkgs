@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.0.9020
+Version: 0.0.0.9021
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
@@ -12,42 +12,63 @@ License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
-    R (>= 3.3.0)
-Imports:
-    desc,
-    assertr,
+    R (>= 3.3.0),
     doParallel,
     foreach,
     RSQLite,
-    plyr,
-    reshape2,
     units,
-    markdown,
-    rmarkdown,
-    rlang,
-    viridis,
     knitr,
-    ggrepel,
-    ggmap,
-    scales,
-    sf,
     mapview,
+    lubridate,
     magrittr,
     readxl,
-    tidyverse,
+    readr,
+    ggplot2,
+    scales,
+    ggrepel,
+    ggmap,
+    viridis,
+    tibble,
+    tidyr,
+    purrr,
+    dplyr,
+    stringr,
+    forcats,
     checkr,
+    sf,
+    sessioninfo,
     newdata,
     poisdata,
-    poisix,
-    poisplot,
     poisspatial,
     poissqlite,
     poisutils,
     subfoldr,
+    dttr,
+    dts,
     tmbr,
     jmbr,
     smbr
-Suggests: testthat
+Imports:
+    devtools,
+    rlang,
+    grid,
+    assertr,
+    plyr,
+    reshape2,
+    tsdbr,
+    tscbh,
+    ggthemes,
+    rgdal,
+    rpdo,
+    poisix,
+    poisplot
+Suggests: 
+    testthat,
+    fishbc,
+    kootlake,
+    rtide,
+    mixdist,
+    pkgdown
 Additional_repositories: http://poissonconsulting.github.io/drat
 LazyData: true
 RoxygenNote: 6.1.1
