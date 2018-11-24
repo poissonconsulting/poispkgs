@@ -20,7 +20,6 @@ Depends:
     knitr,
     mapview,
     lubridate,
-    magrittr,
     readxl,
     readr,
     ggplot2,
@@ -29,9 +28,7 @@ Depends:
     ggmap,
     viridis,
     tibble,
-    tidyr,
     purrr,
-    dplyr,
     stringr,
     forcats,
     checkr,
@@ -39,6 +36,7 @@ Depends:
     sessioninfo,
     newdata,
     poisdata,
+    poisplot,
     poisspatial,
     poissqlite,
     poisutils,
@@ -47,7 +45,10 @@ Depends:
     dts,
     tmbr,
     jmbr,
-    smbr
+    smbr,
+    tidyr,
+    dplyr,
+    magrittr
 Imports:
     devtools,
     rlang,
@@ -60,14 +61,12 @@ Imports:
     ggthemes,
     rgdal,
     rpdo,
-    poisix,
-    poisplot
+    poisix
 Suggests: 
     testthat,
     fishbc,
     kootlake,
     rtide,
-    mixdist,
     pkgdown
 Additional_repositories: http://poissonconsulting.github.io/drat
 LazyData: true
