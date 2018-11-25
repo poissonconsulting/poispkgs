@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.0.9021
+Version: 0.0.0.9022
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
@@ -21,16 +21,10 @@ Depends:
     mapview,
     lubridate,
     readxl,
-    readr,
-    ggplot2,
     scales,
     ggrepel,
     ggmap,
     viridis,
-    tibble,
-    purrr,
-    stringr,
-    forcats,
     checkr,
     sf,
     sessioninfo,
@@ -41,19 +35,16 @@ Depends:
     poissqlite,
     poisutils,
     subfoldr,
+    magrittr,
+    tidyverse,
     dttr,
     dts,
     tmbr,
     jmbr,
-    smbr,
-    tidyr,
-    dplyr,
-    magrittr
+    smbr
 Imports:
     devtools,
-    rlang,
     grid,
-    assertr,
     plyr,
     reshape2,
     tsdbr,
@@ -61,12 +52,13 @@ Imports:
     ggthemes,
     rgdal,
     rpdo,
-    poisix
-Suggests: 
-    testthat,
+    poisix,
     fishbc,
     kootlake,
-    rtide,
+    rtide
+Suggests: 
+    assertr,
+    testthat,
     pkgdown
 Additional_repositories: http://poissonconsulting.github.io/drat
 LazyData: true
