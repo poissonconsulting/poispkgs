@@ -13,8 +13,6 @@ knitr::opts_chunk$set(
 ```
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
-[![codecov](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # poispkgs
@@ -30,7 +28,7 @@ search()
 
 ## Installation
 
-To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat) including all dependencies
+To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat) including *all* dependencies
 ```
 install.packages("drat")
 drat::addRepo("poissonconsulting", dependencies = TRUE)
