@@ -41,6 +41,7 @@ library(poispkgs)
 #> Loading required package: ggrepel
 #> Loading required package: ggplot2
 #> Loading required package: ggmap
+#> Loading required package: ggspatial
 #> Loading required package: viridis
 #> Loading required package: viridisLite
 #> 
@@ -143,14 +144,14 @@ search()
 #> [28] "package:poisspatial" "package:poisplot"    "package:poisdata"   
 #> [31] "package:newdata"     "package:sessioninfo" "package:sf"         
 #> [34] "package:checkr"      "package:viridis"     "package:viridisLite"
-#> [37] "package:ggmap"       "package:ggrepel"     "package:ggplot2"    
-#> [40] "package:scales"      "package:readxl"      "package:lubridate"  
-#> [43] "package:mapview"     "package:knitr"       "package:units"      
-#> [46] "package:RSQLite"     "package:doParallel"  "package:parallel"   
-#> [49] "package:iterators"   "package:foreach"     "package:stats"      
-#> [52] "package:graphics"    "package:grDevices"   "package:utils"      
-#> [55] "package:datasets"    "package:methods"     "Autoloads"          
-#> [58] "package:base"
+#> [37] "package:ggspatial"   "package:ggmap"       "package:ggrepel"    
+#> [40] "package:ggplot2"     "package:scales"      "package:readxl"     
+#> [43] "package:lubridate"   "package:mapview"     "package:knitr"      
+#> [46] "package:units"       "package:RSQLite"     "package:doParallel" 
+#> [49] "package:parallel"    "package:iterators"   "package:foreach"    
+#> [52] "package:stats"       "package:graphics"    "package:grDevices"  
+#> [55] "package:utils"       "package:datasets"    "package:methods"    
+#> [58] "Autoloads"           "package:base"
 ```
 
 ## Installation
@@ -162,15 +163,3 @@ dependencies
     install.packages("drat")
     drat::addRepo("poissonconsulting", dependencies = TRUE)
     install.packages("poispkgs")
-
-## Contribution
-
-Please report any
-[issues](https://github.com/poissonconsulting/poispkgs/issues).
-
-[Pull requests](https://github.com/poissonconsulting/poispkgs/pulls) are
-always welcome.
-
-Please note that this project is released with a [Contributor Code of
-Conduct](https://github.com/poissonconsulting/poispkgs/blob/master/CONDUCT.md).
-By participating in this project you agree to abide by its terms.

@@ -35,11 +35,3 @@ drat::addRepo("poissonconsulting", dependencies = TRUE)
 install.packages("poispkgs")
 ```
 
-## Contribution
-
-Please report any [issues](https://github.com/poissonconsulting/poispkgs/issues).
-
-[Pull requests](https://github.com/poissonconsulting/poispkgs/pulls) are always welcome.
-
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/poissonconsulting/poispkgs/blob/master/CONDUCT.md). 
-By participating in this project you agree to abide by its terms.
