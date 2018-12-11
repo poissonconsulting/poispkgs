@@ -68,12 +68,12 @@ library(poispkgs)
 #> 
 #>     inset
 #> Loading required package: tidyverse
-#> ── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+#> ── Attaching packages ─────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
 #> ✔ tibble  1.4.2     ✔ purrr   0.2.5
 #> ✔ tidyr   0.8.2     ✔ dplyr   0.7.8
 #> ✔ readr   1.2.1     ✔ stringr 1.3.1
 #> ✔ tibble  1.4.2     ✔ forcats 0.3.0
-#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+#> ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ purrr::accumulate()      masks foreach::accumulate()
 #> ✖ lubridate::as.difftime() masks base::as.difftime()
 #> ✖ readr::col_factor()      masks scales::col_factor()

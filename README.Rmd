@@ -34,4 +34,3 @@ install.packages("drat")
 drat::addRepo("poissonconsulting", dependencies = TRUE)
 install.packages("poispkgs")
 ```
-
