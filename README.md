@@ -18,6 +18,7 @@ search()
 #> [4] "package:grDevices" "package:utils"     "package:datasets" 
 #> [7] "package:methods"   "Autoloads"         "package:base"
 library(poispkgs)
+#> Loading required package: plyr
 #> Loading required package: doParallel
 #> Loading required package: foreach
 #> Loading required package: iterators
@@ -33,6 +34,9 @@ library(poispkgs)
 #> Loading required package: lubridate
 #> 
 #> Attaching package: 'lubridate'
+#> The following object is masked from 'package:plyr':
+#> 
+#>     here
 #> The following object is masked from 'package:base':
 #> 
 #>     date
@@ -68,24 +72,34 @@ library(poispkgs)
 #> 
 #>     inset
 #> Loading required package: tidyverse
-#> ── Attaching packages ─────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
-#> ✔ tibble  1.4.2     ✔ purrr   0.2.5
+#> ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+#> ✔ tibble  2.0.0     ✔ purrr   0.2.5
 #> ✔ tidyr   0.8.2     ✔ dplyr   0.7.8
-#> ✔ readr   1.2.1     ✔ stringr 1.3.1
-#> ✔ tibble  1.4.2     ✔ forcats 0.3.0
-#> ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+#> ✔ readr   1.3.1     ✔ stringr 1.3.1
+#> ✔ tibble  2.0.0     ✔ forcats 0.3.0
+#> ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ purrr::accumulate()      masks foreach::accumulate()
+#> ✖ dplyr::arrange()         masks plyr::arrange()
 #> ✖ lubridate::as.difftime() masks base::as.difftime()
 #> ✖ readr::col_factor()      masks scales::col_factor()
+#> ✖ purrr::compact()         masks plyr::compact()
+#> ✖ dplyr::count()           masks plyr::count()
 #> ✖ lubridate::date()        masks base::date()
 #> ✖ purrr::discard()         masks scales::discard()
 #> ✖ tidyr::extract()         masks magrittr::extract()
+#> ✖ dplyr::failwith()        masks plyr::failwith()
 #> ✖ dplyr::filter()          masks stats::filter()
+#> ✖ lubridate::here()        masks plyr::here()
+#> ✖ dplyr::id()              masks plyr::id()
 #> ✖ magrittr::inset()        masks ggmap::inset()
 #> ✖ lubridate::intersect()   masks base::intersect()
 #> ✖ dplyr::lag()             masks stats::lag()
+#> ✖ dplyr::mutate()          masks plyr::mutate()
+#> ✖ dplyr::rename()          masks plyr::rename()
 #> ✖ purrr::set_names()       masks magrittr::set_names()
 #> ✖ lubridate::setdiff()     masks base::setdiff()
+#> ✖ dplyr::summarise()       masks plyr::summarise()
+#> ✖ dplyr::summarize()       masks plyr::summarize()
 #> ✖ lubridate::union()       masks base::union()
 #> ✖ purrr::when()            masks foreach::when()
 #> Loading required package: dttr
@@ -95,6 +109,7 @@ library(poispkgs)
 #> 
 #>     is.Date, is.POSIXct
 #> Loading required package: dts
+#> Loading required package: readwritesqlite
 #> Loading required package: tmbr
 #> Loading required package: broom
 #> Loading required package: mbr
@@ -132,26 +147,37 @@ library(poispkgs)
 #> 
 #>     extract
 search()
-#>  [1] ".GlobalEnv"          "package:poispkgs"    "package:smbr"       
-#>  [4] "package:rstan"       "package:StanHeaders" "package:jmbr"       
-#>  [7] "package:tmbr"        "package:mbr"         "package:mcmcderive" 
-#> [10] "package:mcmcdata"    "package:mcmcr"       "package:broom"      
-#> [13] "package:dts"         "package:dttr"        "package:forcats"    
-#> [16] "package:stringr"     "package:dplyr"       "package:purrr"      
-#> [19] "package:readr"       "package:tidyr"       "package:tibble"     
-#> [22] "package:tidyverse"   "package:magrittr"    "package:subfoldr"   
-#> [25] "package:poisutils"   "package:poissqlite"  "package:DBI"        
-#> [28] "package:poisspatial" "package:poisplot"    "package:poisdata"   
-#> [31] "package:newdata"     "package:sessioninfo" "package:sf"         
-#> [34] "package:checkr"      "package:viridis"     "package:viridisLite"
-#> [37] "package:ggspatial"   "package:ggmap"       "package:ggrepel"    
-#> [40] "package:ggplot2"     "package:scales"      "package:readxl"     
-#> [43] "package:lubridate"   "package:mapview"     "package:knitr"      
-#> [46] "package:units"       "package:RSQLite"     "package:doParallel" 
-#> [49] "package:parallel"    "package:iterators"   "package:foreach"    
-#> [52] "package:stats"       "package:graphics"    "package:grDevices"  
-#> [55] "package:utils"       "package:datasets"    "package:methods"    
-#> [58] "Autoloads"           "package:base"
+#>  [1] ".GlobalEnv"              "package:poispkgs"       
+#>  [3] "package:smbr"            "package:rstan"          
+#>  [5] "package:StanHeaders"     "package:jmbr"           
+#>  [7] "package:tmbr"            "package:mbr"            
+#>  [9] "package:mcmcderive"      "package:mcmcdata"       
+#> [11] "package:mcmcr"           "package:broom"          
+#> [13] "package:readwritesqlite" "package:dts"            
+#> [15] "package:dttr"            "package:forcats"        
+#> [17] "package:stringr"         "package:dplyr"          
+#> [19] "package:purrr"           "package:readr"          
+#> [21] "package:tidyr"           "package:tibble"         
+#> [23] "package:tidyverse"       "package:magrittr"       
+#> [25] "package:subfoldr"        "package:poisutils"      
+#> [27] "package:poissqlite"      "package:DBI"            
+#> [29] "package:poisspatial"     "package:poisplot"       
+#> [31] "package:poisdata"        "package:newdata"        
+#> [33] "package:sessioninfo"     "package:sf"             
+#> [35] "package:checkr"          "package:viridis"        
+#> [37] "package:viridisLite"     "package:ggspatial"      
+#> [39] "package:ggmap"           "package:ggrepel"        
+#> [41] "package:ggplot2"         "package:scales"         
+#> [43] "package:readxl"          "package:lubridate"      
+#> [45] "package:mapview"         "package:knitr"          
+#> [47] "package:units"           "package:RSQLite"        
+#> [49] "package:doParallel"      "package:parallel"       
+#> [51] "package:iterators"       "package:foreach"        
+#> [53] "package:plyr"            "package:stats"          
+#> [55] "package:graphics"        "package:grDevices"      
+#> [57] "package:utils"           "package:datasets"       
+#> [59] "package:methods"         "Autoloads"              
+#> [61] "package:base"
 ```
 
 ## Installation
