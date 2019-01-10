@@ -8,7 +8,7 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 # poispkgs
 
 An R package to install and attach CRAN and GitHub Packages used in
-Poisson Consulting analyses.
+Poisson Consulting analyses
 
 ## Demonstration
 
@@ -72,12 +72,12 @@ library(poispkgs)
 #> 
 #>     inset
 #> Loading required package: tidyverse
-#> ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+#> ── Attaching packages ────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
 #> ✔ tibble  2.0.0     ✔ purrr   0.2.5
 #> ✔ tidyr   0.8.2     ✔ dplyr   0.7.8
 #> ✔ readr   1.3.1     ✔ stringr 1.3.1
 #> ✔ tibble  2.0.0     ✔ forcats 0.3.0
-#> ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+#> ── Conflicts ───────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ purrr::accumulate()      masks foreach::accumulate()
 #> ✖ dplyr::arrange()         masks plyr::arrange()
 #> ✖ lubridate::as.difftime() masks base::as.difftime()
@@ -110,6 +110,7 @@ library(poispkgs)
 #>     is.Date, is.POSIXct
 #> Loading required package: dts
 #> Loading required package: readwritesqlite
+#> Loading required package: subfoldr2
 #> Loading required package: tmbr
 #> Loading required package: broom
 #> Loading required package: mbr
@@ -153,31 +154,31 @@ search()
 #>  [7] "package:tmbr"            "package:mbr"            
 #>  [9] "package:mcmcderive"      "package:mcmcdata"       
 #> [11] "package:mcmcr"           "package:broom"          
-#> [13] "package:readwritesqlite" "package:dts"            
-#> [15] "package:dttr"            "package:forcats"        
-#> [17] "package:stringr"         "package:dplyr"          
-#> [19] "package:purrr"           "package:readr"          
-#> [21] "package:tidyr"           "package:tibble"         
-#> [23] "package:tidyverse"       "package:magrittr"       
-#> [25] "package:subfoldr"        "package:poisutils"      
-#> [27] "package:poissqlite"      "package:DBI"            
-#> [29] "package:poisspatial"     "package:poisplot"       
-#> [31] "package:poisdata"        "package:newdata"        
-#> [33] "package:sessioninfo"     "package:sf"             
-#> [35] "package:checkr"          "package:viridis"        
-#> [37] "package:viridisLite"     "package:ggspatial"      
-#> [39] "package:ggmap"           "package:ggrepel"        
-#> [41] "package:ggplot2"         "package:scales"         
-#> [43] "package:readxl"          "package:lubridate"      
-#> [45] "package:mapview"         "package:knitr"          
-#> [47] "package:units"           "package:RSQLite"        
-#> [49] "package:doParallel"      "package:parallel"       
-#> [51] "package:iterators"       "package:foreach"        
-#> [53] "package:plyr"            "package:stats"          
-#> [55] "package:graphics"        "package:grDevices"      
-#> [57] "package:utils"           "package:datasets"       
-#> [59] "package:methods"         "Autoloads"              
-#> [61] "package:base"
+#> [13] "package:subfoldr2"       "package:readwritesqlite"
+#> [15] "package:dts"             "package:dttr"           
+#> [17] "package:forcats"         "package:stringr"        
+#> [19] "package:dplyr"           "package:purrr"          
+#> [21] "package:readr"           "package:tidyr"          
+#> [23] "package:tibble"          "package:tidyverse"      
+#> [25] "package:magrittr"        "package:subfoldr"       
+#> [27] "package:poisutils"       "package:poissqlite"     
+#> [29] "package:DBI"             "package:poisspatial"    
+#> [31] "package:poisplot"        "package:poisdata"       
+#> [33] "package:newdata"         "package:sessioninfo"    
+#> [35] "package:sf"              "package:checkr"         
+#> [37] "package:viridis"         "package:viridisLite"    
+#> [39] "package:ggspatial"       "package:ggmap"          
+#> [41] "package:ggrepel"         "package:ggplot2"        
+#> [43] "package:scales"          "package:readxl"         
+#> [45] "package:lubridate"       "package:mapview"        
+#> [47] "package:knitr"           "package:units"          
+#> [49] "package:RSQLite"         "package:doParallel"     
+#> [51] "package:parallel"        "package:iterators"      
+#> [53] "package:foreach"         "package:plyr"           
+#> [55] "package:stats"           "package:graphics"       
+#> [57] "package:grDevices"       "package:utils"          
+#> [59] "package:datasets"        "package:methods"        
+#> [61] "Autoloads"               "package:base"
 ```
 
 ## Installation
