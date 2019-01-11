@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.1.9003
+Version: 0.0.1.9004
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
@@ -46,6 +46,7 @@ Depends:
     jmbr,
     smbr
 Imports:
+    assertr,
     devtools,
     grid,
     reshape2,
@@ -61,9 +62,7 @@ Imports:
     rtide,
     data.table
 Suggests: 
-    assertr,
-    testthat,
-    pkgdown
+    testthat
 Additional_repositories: http://poissonconsulting.github.io/drat
 LazyData: true
 RoxygenNote: 6.1.1

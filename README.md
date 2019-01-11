@@ -183,9 +183,8 @@ search()
 ## Installation
 
 To install the latest development version from the Poisson drat
-[repository](https://github.com/poissonconsulting/drat) including *all*
-dependencies
+[repository](https://github.com/poissonconsulting/drat).
 
     install.packages("drat")
-    drat::addRepo("poissonconsulting", dependencies = TRUE)
+    drat::addRepo("poissonconsulting")
     install.packages("poispkgs")
