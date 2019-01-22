@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.1.9004
+Version: 0.0.1.9005
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
