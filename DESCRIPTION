@@ -42,12 +42,14 @@ Depends:
     dts,
     readwritesqlite,
     subfoldr2,
+    subreport,
     tmbr,
     jmbr,
     smbr
 Imports:
     assertr,
     devtools,
+    err,
     grid,
     reshape2,
     tsdbr,
