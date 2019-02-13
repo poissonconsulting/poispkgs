@@ -21,6 +21,8 @@ Depends:
     knitr,
     mapview,
     lubridate,
+    stringr,
+    glue,
     readxl,
     scales,
     ggrepel,
