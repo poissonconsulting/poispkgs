@@ -2,13 +2,15 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Travis build
+status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # poispkgs
 
-An R package to install and attach CRAN and GitHub Packages used in
-Poisson Consulting analyses
+An R package to install and attach CRAN and GitHub Packages commonly
+used in Poisson Consulting analyses in the preferred order.
 
 ## Demonstration
 
@@ -40,11 +42,15 @@ library(poispkgs)
 #> The following object is masked from 'package:base':
 #> 
 #>     date
+#> Loading required package: stringr
+#> Loading required package: glue
 #> Loading required package: readxl
 #> Loading required package: scales
 #> Loading required package: ggrepel
 #> Loading required package: ggplot2
 #> Loading required package: ggmap
+#> Google's Terms of Service: https://cloud.google.com/maps-platform/terms/.
+#> Please cite ggmap if you use it! See citation("ggmap") for details.
 #> Loading required package: ggspatial
 #> Loading required package: viridis
 #> Loading required package: viridisLite
@@ -70,37 +76,54 @@ library(poispkgs)
 #> The following object is masked from 'package:ggmap':
 #> 
 #>     inset
-#> Loading required package: tidyverse
-#> ── Attaching packages ───────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
-#> ✔ tibble  2.0.1     ✔ purrr   0.2.5
-#> ✔ tidyr   0.8.2     ✔ dplyr   0.7.8
-#> ✔ readr   1.3.1     ✔ stringr 1.3.1
-#> ✔ tibble  2.0.1     ✔ forcats 0.3.0
-#> ── Conflicts ──────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-#> ✖ purrr::accumulate()      masks foreach::accumulate()
-#> ✖ dplyr::arrange()         masks plyr::arrange()
-#> ✖ lubridate::as.difftime() masks base::as.difftime()
-#> ✖ readr::col_factor()      masks scales::col_factor()
-#> ✖ purrr::compact()         masks plyr::compact()
-#> ✖ dplyr::count()           masks plyr::count()
-#> ✖ lubridate::date()        masks base::date()
-#> ✖ purrr::discard()         masks scales::discard()
-#> ✖ tidyr::extract()         masks magrittr::extract()
-#> ✖ dplyr::failwith()        masks plyr::failwith()
-#> ✖ dplyr::filter()          masks stats::filter()
-#> ✖ lubridate::here()        masks plyr::here()
-#> ✖ dplyr::id()              masks plyr::id()
-#> ✖ magrittr::inset()        masks ggmap::inset()
-#> ✖ lubridate::intersect()   masks base::intersect()
-#> ✖ dplyr::lag()             masks stats::lag()
-#> ✖ dplyr::mutate()          masks plyr::mutate()
-#> ✖ dplyr::rename()          masks plyr::rename()
-#> ✖ purrr::set_names()       masks magrittr::set_names()
-#> ✖ lubridate::setdiff()     masks base::setdiff()
-#> ✖ dplyr::summarise()       masks plyr::summarise()
-#> ✖ dplyr::summarize()       masks plyr::summarize()
-#> ✖ lubridate::union()       masks base::union()
-#> ✖ purrr::when()            masks foreach::when()
+#> Loading required package: forcats
+#> Loading required package: dplyr
+#> 
+#> Attaching package: 'dplyr'
+#> The following object is masked from 'package:glue':
+#> 
+#>     collapse
+#> The following objects are masked from 'package:lubridate':
+#> 
+#>     intersect, setdiff, union
+#> The following objects are masked from 'package:plyr':
+#> 
+#>     arrange, count, desc, failwith, id, mutate, rename, summarise,
+#>     summarize
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+#> Loading required package: purrr
+#> 
+#> Attaching package: 'purrr'
+#> The following object is masked from 'package:magrittr':
+#> 
+#>     set_names
+#> The following object is masked from 'package:scales':
+#> 
+#>     discard
+#> The following objects are masked from 'package:foreach':
+#> 
+#>     accumulate, when
+#> The following object is masked from 'package:plyr':
+#> 
+#>     compact
+#> Loading required package: readr
+#> 
+#> Attaching package: 'readr'
+#> The following object is masked from 'package:scales':
+#> 
+#>     col_factor
+#> Loading required package: tidyr
+#> 
+#> Attaching package: 'tidyr'
+#> The following object is masked from 'package:magrittr':
+#> 
+#>     extract
+#> Loading required package: tibble
 #> Loading required package: dttr
 #> 
 #> Attaching package: 'dttr'
@@ -110,6 +133,7 @@ library(poispkgs)
 #> Loading required package: dts
 #> Loading required package: readwritesqlite
 #> Loading required package: subfoldr2
+#> Loading required package: subreport
 #> Loading required package: tmbr
 #> Loading required package: broom
 #> Loading required package: mbr
@@ -153,31 +177,31 @@ search()
 #>  [7] "package:tmbr"            "package:mbr"            
 #>  [9] "package:mcmcderive"      "package:mcmcdata"       
 #> [11] "package:mcmcr"           "package:broom"          
-#> [13] "package:subfoldr2"       "package:readwritesqlite"
-#> [15] "package:dts"             "package:dttr"           
-#> [17] "package:forcats"         "package:stringr"        
-#> [19] "package:dplyr"           "package:purrr"          
-#> [21] "package:readr"           "package:tidyr"          
-#> [23] "package:tibble"          "package:tidyverse"      
-#> [25] "package:magrittr"        "package:poisutils"      
-#> [27] "package:poissqlite"      "package:DBI"            
-#> [29] "package:poisspatial"     "package:poisplot"       
-#> [31] "package:poisdata"        "package:newdata"        
-#> [33] "package:sessioninfo"     "package:sf"             
-#> [35] "package:checkr"          "package:viridis"        
-#> [37] "package:viridisLite"     "package:ggspatial"      
-#> [39] "package:ggmap"           "package:ggrepel"        
-#> [41] "package:ggplot2"         "package:scales"         
-#> [43] "package:readxl"          "package:lubridate"      
-#> [45] "package:mapview"         "package:knitr"          
-#> [47] "package:units"           "package:RSQLite"        
-#> [49] "package:doParallel"      "package:parallel"       
-#> [51] "package:iterators"       "package:foreach"        
-#> [53] "package:plyr"            "package:stats"          
-#> [55] "package:graphics"        "package:grDevices"      
-#> [57] "package:utils"           "package:datasets"       
-#> [59] "package:methods"         "Autoloads"              
-#> [61] "package:base"
+#> [13] "package:subreport"       "package:subfoldr2"      
+#> [15] "package:readwritesqlite" "package:dts"            
+#> [17] "package:dttr"            "package:tibble"         
+#> [19] "package:tidyr"           "package:readr"          
+#> [21] "package:purrr"           "package:dplyr"          
+#> [23] "package:forcats"         "package:magrittr"       
+#> [25] "package:poisutils"       "package:poissqlite"     
+#> [27] "package:DBI"             "package:poisspatial"    
+#> [29] "package:poisplot"        "package:poisdata"       
+#> [31] "package:newdata"         "package:sessioninfo"    
+#> [33] "package:sf"              "package:checkr"         
+#> [35] "package:viridis"         "package:viridisLite"    
+#> [37] "package:ggspatial"       "package:ggmap"          
+#> [39] "package:ggrepel"         "package:ggplot2"        
+#> [41] "package:scales"          "package:readxl"         
+#> [43] "package:glue"            "package:stringr"        
+#> [45] "package:lubridate"       "package:mapview"        
+#> [47] "package:knitr"           "package:units"          
+#> [49] "package:RSQLite"         "package:doParallel"     
+#> [51] "package:parallel"        "package:iterators"      
+#> [53] "package:foreach"         "package:plyr"           
+#> [55] "package:stats"           "package:graphics"       
+#> [57] "package:grDevices"       "package:utils"          
+#> [59] "package:datasets"        "package:methods"        
+#> [61] "Autoloads"               "package:base"
 ```
 
 ## Installation
