@@ -1,16 +1,14 @@
 Package: poispkgs
-Title: Attach R Packages used by Poisson Consulting
-Version: 0.0.1.9005
+Title: Attach Poisson Packages
+Version: 0.0.1.9006
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
     person("Seb", "Dalgarno", role = "aut"),
     person("Chris", "Muir", role = "ctb"))
-Description: Attaches CRAN and Poisson drat R packages commonly used in Poisson
+Description: Installs and attaches CRAN and Poisson drat packages commonly used in Poisson
     analyses in the preferred order.
 License: MIT + file LICENSE
-URL: https://github.com/poissonconsulting/poispkgs
-BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
     R (>= 3.5.0),
     plyr,
@@ -21,16 +19,9 @@ Depends:
     knitr,
     mapview,
     lubridate,
-    stringr,
     glue,
     readxl,
     scales,
-    ggrepel,
-    ggmap,
-    ggspatial,
-    viridis,
-    checkr,
-    sf,
     sessioninfo,
     newdata,
     poisdata,
@@ -39,7 +30,20 @@ Depends:
     poissqlite,
     poisutils,
     magrittr,
-    tidyverse,
+    forcats,
+    stringr,
+    dplyr,
+    purrr,
+    readr,
+    tidyr,
+    tibble,
+    ggplot2,
+    ggrepel,
+    ggmap,
+    ggspatial,
+    viridis,
+    sf,
+    checkr,
     dttr,
     dts,
     readwritesqlite,
@@ -68,6 +72,8 @@ Imports:
 Suggests: 
     testthat
 Additional_repositories: http://poissonconsulting.github.io/drat
+URL: https://github.com/poissonconsulting/poispkgs
+BugReports: https://github.com/poissonconsulting/poispkgs
 LazyData: true
 RoxygenNote: 6.1.1
 Encoding: UTF-8

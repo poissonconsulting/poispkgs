@@ -12,12 +12,13 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis build status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # poispkgs
 
-An R package to install and attach CRAN and GitHub Packages used in Poisson Consulting analyses
+An R package to install and attach CRAN and GitHub Packages commonly used in Poisson Consulting analyses in the preferred order.
 
 ## Demonstration
 ```{r}
@@ -34,4 +35,3 @@ install.packages("drat")
 drat::addRepo("poissonconsulting")
 install.packages("poispkgs")
 ```
-
