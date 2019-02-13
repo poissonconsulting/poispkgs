@@ -10,3 +10,4 @@
 ^build\.R$
 ^LICENSE\.md$
 ^codemeta\.json$
+^\.RProfile\.R$

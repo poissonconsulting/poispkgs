@@ -43,19 +43,24 @@ Depends:
     ggspatial,
     viridis,
     sf,
+    err,
     checkr,
+    yesno,
+    flobr,
     dttr,
     dts,
     readwritesqlite,
     subfoldr2,
     subreport,
+    mcmcr,
+    mbr,
     tmbr,
     jmbr,
-    smbr
+    smbr,
+    tinter
 Imports:
     assertr,
     devtools,
-    err,
     grid,
     reshape2,
     tsdbr,
@@ -68,9 +73,23 @@ Imports:
     fishbc,
     kootlake,
     rtide,
-    data.table
+    data.table,
+    rescale,
+    ypr
 Suggests: 
-    testthat
+    testthat,
+    creelr,
+    bauw,
+    dbflobr,
+    dtq,
+    eggdewater,
+    filer,
+    fwabc,
+    hsi,
+    klexdatr,
+    poisskel,
+    rsoi,
+    timer
 Additional_repositories: http://poissonconsulting.github.io/drat
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
