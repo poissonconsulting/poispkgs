@@ -50,6 +50,8 @@ Depends:
     flobr,
     dttr,
     dts,
+    dttr2,
+    hmstimer,
     readwritesqlite,
     subfoldr2,
     subreport,
