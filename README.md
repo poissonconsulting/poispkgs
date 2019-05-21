@@ -1,11 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+<!-- badges: start -->
+
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
 status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+<!-- badges: end -->
 
 # poispkgs
 
@@ -145,6 +149,37 @@ library(poispkgs)
 #> 
 #>     is.Date, is.POSIXct
 #> Loading required package: dts
+#> Loading required package: dttr2
+#> 
+#> Attaching package: 'dttr2'
+#> The following objects are masked from 'package:dttr':
+#> 
+#>     check_tz, dtt_add_days, dtt_add_hours, dtt_add_minutes,
+#>     dtt_add_months, dtt_add_seconds, dtt_add_units, dtt_add_years,
+#>     dtt_adjust_tz, dtt_adjust_units, dtt_aggregate, dtt_complete,
+#>     dtt_completed, dtt_date, dtt_date_time, dtt_day, dtt_day<-,
+#>     dtt_days, dtt_days<-, dtt_dayte, dtt_daytt, dtt_doy,
+#>     dtt_doy_to_date, dtt_feb29_to_28, dtt_floor, dtt_floored,
+#>     dtt_hour, dtt_hour<-, dtt_hours, dtt_hours<-, dtt_is_date,
+#>     dtt_is_date_time, dtt_is_dtt, dtt_minute, dtt_minute<-,
+#>     dtt_minutes, dtt_minutes<-, dtt_month, dtt_month<-,
+#>     dtt_months, dtt_months<-, dtt_reset_sys_tz, dtt_season,
+#>     dtt_second, dtt_second<-, dtt_seconds, dtt_seconds<-, dtt_seq,
+#>     dtt_set_day, dtt_set_hour, dtt_set_minute, dtt_set_month,
+#>     dtt_set_second, dtt_set_sys_tz, dtt_set_tz, dtt_set_year,
+#>     dtt_study_year, dtt_subtract_days, dtt_subtract_hours,
+#>     dtt_subtract_minutes, dtt_subtract_months,
+#>     dtt_subtract_seconds, dtt_subtract_units, dtt_subtract_years,
+#>     dtt_sys_tz, dtt_time, dtt_tz, dtt_units, dtt_units_per_unit,
+#>     dtt_year, dtt_year<-, dtt_years, dtt_years<-, is.Date,
+#>     is.POSIXct
+#> The following object is masked from 'package:hms':
+#> 
+#>     is.hms
+#> The following objects are masked from 'package:lubridate':
+#> 
+#>     is.Date, is.POSIXct
+#> Loading required package: hmstimer
 #> Loading required package: readwritesqlite
 #> Loading required package: subfoldr2
 #> Loading required package: subreport
@@ -199,32 +234,33 @@ search()
 #> [11] "package:mcmcdata"        "package:broom"          
 #> [13] "package:mcmcr"           "package:subreport"      
 #> [15] "package:subfoldr2"       "package:readwritesqlite"
-#> [17] "package:dts"             "package:dttr"           
-#> [19] "package:flobr"           "package:yesno"          
-#> [21] "package:checkr"          "package:err"            
-#> [23] "package:sf"              "package:viridis"        
-#> [25] "package:viridisLite"     "package:ggspatial"      
-#> [27] "package:ggmap"           "package:ggrepel"        
-#> [29] "package:ggplot2"         "package:tibble"         
-#> [31] "package:tidyr"           "package:readr"          
-#> [33] "package:purrr"           "package:dplyr"          
-#> [35] "package:stringr"         "package:forcats"        
-#> [37] "package:magrittr"        "package:poisutils"      
-#> [39] "package:poissqlite"      "package:DBI"            
-#> [41] "package:poisspatial"     "package:poisplot"       
-#> [43] "package:poisdata"        "package:newdata"        
-#> [45] "package:sessioninfo"     "package:scales"         
-#> [47] "package:readxl"          "package:glue"           
-#> [49] "package:hms"             "package:lubridate"      
-#> [51] "package:mapview"         "package:knitr"          
-#> [53] "package:units"           "package:RSQLite"        
-#> [55] "package:doParallel"      "package:parallel"       
-#> [57] "package:iterators"       "package:foreach"        
-#> [59] "package:plyr"            "package:stats"          
-#> [61] "package:graphics"        "package:grDevices"      
-#> [63] "package:utils"           "package:datasets"       
-#> [65] "package:methods"         "Autoloads"              
-#> [67] "package:base"
+#> [17] "package:hmstimer"        "package:dttr2"          
+#> [19] "package:dts"             "package:dttr"           
+#> [21] "package:flobr"           "package:yesno"          
+#> [23] "package:checkr"          "package:err"            
+#> [25] "package:sf"              "package:viridis"        
+#> [27] "package:viridisLite"     "package:ggspatial"      
+#> [29] "package:ggmap"           "package:ggrepel"        
+#> [31] "package:ggplot2"         "package:tibble"         
+#> [33] "package:tidyr"           "package:readr"          
+#> [35] "package:purrr"           "package:dplyr"          
+#> [37] "package:stringr"         "package:forcats"        
+#> [39] "package:magrittr"        "package:poisutils"      
+#> [41] "package:poissqlite"      "package:DBI"            
+#> [43] "package:poisspatial"     "package:poisplot"       
+#> [45] "package:poisdata"        "package:newdata"        
+#> [47] "package:sessioninfo"     "package:scales"         
+#> [49] "package:readxl"          "package:glue"           
+#> [51] "package:hms"             "package:lubridate"      
+#> [53] "package:mapview"         "package:knitr"          
+#> [55] "package:units"           "package:RSQLite"        
+#> [57] "package:doParallel"      "package:parallel"       
+#> [59] "package:iterators"       "package:foreach"        
+#> [61] "package:plyr"            "package:stats"          
+#> [63] "package:graphics"        "package:grDevices"      
+#> [65] "package:utils"           "package:datasets"       
+#> [67] "package:methods"         "Autoloads"              
+#> [69] "package:base"
 ```
 
 ## Installation
