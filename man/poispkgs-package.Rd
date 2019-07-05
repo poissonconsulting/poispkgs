@@ -18,17 +18,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Evan Amies-Galonski \email{evan@poissonconsulting.ca}
+\strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (0000-0002-7683-4592)
 
 Authors:
 \itemize{
-  \item Joe Thorley \email{joe@poissonconsulting.ca} (0000-0002-7683-4592)
-  \item Seb Dalgarno
-}
-
-Other contributors:
-\itemize{
-  \item Chris Muir [contributor]
+  \item Evan Amies-Galonski \email{evan@poissonconsulting.ca} (-3188)
+  \item Sebastian Dalgarno \email{seb@poissonconsulting.ca} (0000-0002-3658-4517)
 }
 
 }
