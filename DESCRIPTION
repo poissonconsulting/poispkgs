@@ -2,10 +2,9 @@ Package: poispkgs
 Title: Attach Poisson Packages
 Version: 0.0.1.9008
 Authors@R: c(
-    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "aut", comment = c(ORCID = "0000-0002-7683-4592")),
-    person("Evan", "Amies-Galonski", email = "evan@poissonconsulting.ca", role = c("aut", "cre")),
-    person("Seb", "Dalgarno", role = "aut"),
-    person("Chris", "Muir", role = "ctb"))
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c"aut", comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Evan", "Amies-Galonski", role = "aut", email = "evan@poissonconsulting.ca", comment = c(ORCID = 0000-0003-1096-2089)),
+    person("Sebastian", "Dalgarno", role = "aut", email = "seb@poissonconsulting.ca", comment = c(ORCID = "0000-0002-3658-4517")))
 Description: Installs and attaches CRAN and Poisson drat packages commonly used in Poisson
     analyses in the preferred order.
 License: MIT + file LICENSE
@@ -55,6 +54,9 @@ Depends:
     readwritesqlite,
     subfoldr2,
     subreport,
+    term,
+    nlist,
+    sims,
     mcmcr,
     mbr,
     tmbr,
@@ -64,6 +66,7 @@ Depends:
 Imports:
     assertr,
     devtools,
+    remotes,
     grid,
     reshape2,
     tsdbr,
@@ -90,10 +93,54 @@ Suggests:
     fwabc,
     hsi,
     klexdatr,
-    poisskel,
     rsoi,
     timer
-Additional_repositories: http://poissonconsulting.github.io/drat
+Remotes: 
+    poissonconsulting/newdata,
+    poissonconsulting/poisdata,
+    poissonconsulting/poisplot,
+    poissonconsulting/poisspatial,
+    poissonconsulting/poissqlite,
+    poissonconsulting/poisutils,
+    poissonconsulting/err,
+    poissonconsulting/checkr,
+    poissonconsulting/yesno,
+    poissonconsulting/flobr,
+    poissonconsulting/dttr,
+    poissonconsulting/dts,
+    poissonconsulting/dttr2,
+    poissonconsulting/hmstimer,
+    poissonconsulting/readwritesqlite,
+    poissonconsulting/subfoldr2,
+    poissonconsulting/subreport,
+    poissonconsulting/mcmcr,
+    poissonconsulting/mbr,
+    poissonconsulting/tmbr,
+    poissonconsulting/jmbr,
+    poissonconsulting/smbr,
+    poissonconsulting/tinter,
+    poissonconsulting/nlist,
+    poissonconsulting/term,
+    poissonconsulting/tsdbr,
+    poissonconsulting/tsdbr,
+    poissonconsulting/tscbh,
+    poissonconsulting/rpdo,
+    poissonconsulting/poisix,
+    poissonconsulting/subfoldr,
+    poissonconsulting/fishbc,
+    poissonconsulting/kootlake,
+    poissonconsulting/ypr,
+    poissonconsulting/rescale,
+    poissonconsulting/creelr,
+    poissonconsulting/bauw,
+    poissonconsulting/dbflobr,
+    poissonconsulting/dtq,
+    poissonconsulting/eggdewater,
+    poissonconsulting/filer,
+    poissonconsulting/fwabc,
+    poissonconsulting/hsi,
+    poissonconsulting/klexdatr,
+    poissonconsulting/timer,
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 LazyData: true
