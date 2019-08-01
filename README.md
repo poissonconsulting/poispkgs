@@ -31,9 +31,6 @@ library(poispkgs)
 #> Loading required package: parallel
 #> Loading required package: RSQLite
 #> Loading required package: units
-#> Warning in .get_ud_xml_dir(TRUE): multiple udunits databases present: /
-#> Library/Frameworks/R.framework/Versions/3.6/Resources/library/udunits2/
-#> share/udunits2.xml /usr/local/share/udunits/udunits2.xml
 #> udunits system database from /Library/Frameworks/R.framework/Versions/3.6/Resources/library/udunits2/share
 #> Loading required package: knitr
 #> Loading required package: mapview
@@ -59,11 +56,6 @@ library(poispkgs)
 #> Loading required package: newdata
 #> Loading required package: poisdata
 #> Loading required package: poisplot
-#> Registered S3 methods overwritten by 'ggplot2':
-#>   method         from 
-#>   [.quosures     rlang
-#>   c.quosures     rlang
-#>   print.quosures rlang
 #> Loading required package: poisspatial
 #> Loading required package: poissqlite
 #> Loading required package: DBI
@@ -140,6 +132,12 @@ library(poispkgs)
 #> Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3
 #> Loading required package: err
 #> Loading required package: checkr
+#> Loading required package: chk
+#> 
+#> Attaching package: 'chk'
+#> The following objects are masked from 'package:err':
+#> 
+#>     cc, err, msg, p, p0, wrn
 #> Loading required package: yesno
 #> Loading required package: flobr
 #> Loading required package: dttr
@@ -183,12 +181,10 @@ library(poispkgs)
 #> Loading required package: readwritesqlite
 #> Loading required package: subfoldr2
 #> Loading required package: subreport
+#> Loading required package: term
+#> Loading required package: nlist
+#> Loading required package: sims
 #> Loading required package: mcmcr
-#> Registered S3 methods overwritten by 'mcmcr':
-#>   method            from
-#>   as.mcmc.mcmc.list coda
-#>   thin.mcmc         coda
-#>   thin.mcmc.list    coda
 #> 
 #> Attaching package: 'mcmcr'
 #> The following object is masked from 'package:scales':
@@ -208,7 +204,7 @@ library(poispkgs)
 #> Loading required package: smbr
 #> Loading required package: rstan
 #> Loading required package: StanHeaders
-#> rstan (Version 2.18.2, GitRev: 2e1f913d3ca3)
+#> rstan (Version 2.19.2, GitRev: 2e1f913d3ca3)
 #> For execution on a local, multicore CPU with excess RAM we recommend calling
 #> options(mc.cores = parallel::detectCores()).
 #> To avoid recompilation of unchanged Stan programs, we recommend calling
@@ -232,40 +228,50 @@ search()
 #>  [7] "package:jmbr"            "package:tmbr"           
 #>  [9] "package:mbr"             "package:mcmcderive"     
 #> [11] "package:mcmcdata"        "package:broom"          
-#> [13] "package:mcmcr"           "package:subreport"      
-#> [15] "package:subfoldr2"       "package:readwritesqlite"
-#> [17] "package:hmstimer"        "package:dttr2"          
-#> [19] "package:dts"             "package:dttr"           
-#> [21] "package:flobr"           "package:yesno"          
-#> [23] "package:checkr"          "package:err"            
-#> [25] "package:sf"              "package:viridis"        
-#> [27] "package:viridisLite"     "package:ggspatial"      
-#> [29] "package:ggmap"           "package:ggrepel"        
-#> [31] "package:ggplot2"         "package:tibble"         
-#> [33] "package:tidyr"           "package:readr"          
-#> [35] "package:purrr"           "package:dplyr"          
-#> [37] "package:stringr"         "package:forcats"        
-#> [39] "package:magrittr"        "package:poisutils"      
-#> [41] "package:poissqlite"      "package:DBI"            
-#> [43] "package:poisspatial"     "package:poisplot"       
-#> [45] "package:poisdata"        "package:newdata"        
-#> [47] "package:sessioninfo"     "package:scales"         
-#> [49] "package:readxl"          "package:glue"           
-#> [51] "package:hms"             "package:lubridate"      
-#> [53] "package:mapview"         "package:knitr"          
-#> [55] "package:units"           "package:RSQLite"        
-#> [57] "package:doParallel"      "package:parallel"       
-#> [59] "package:iterators"       "package:foreach"        
-#> [61] "package:plyr"            "package:stats"          
-#> [63] "package:graphics"        "package:grDevices"      
-#> [65] "package:utils"           "package:datasets"       
-#> [67] "package:methods"         "Autoloads"              
-#> [69] "package:base"
+#> [13] "package:mcmcr"           "package:sims"           
+#> [15] "package:nlist"           "package:term"           
+#> [17] "package:subreport"       "package:subfoldr2"      
+#> [19] "package:readwritesqlite" "package:hmstimer"       
+#> [21] "package:dttr2"           "package:dts"            
+#> [23] "package:dttr"            "package:flobr"          
+#> [25] "package:yesno"           "package:chk"            
+#> [27] "package:checkr"          "package:err"            
+#> [29] "package:sf"              "package:viridis"        
+#> [31] "package:viridisLite"     "package:ggspatial"      
+#> [33] "package:ggmap"           "package:ggrepel"        
+#> [35] "package:ggplot2"         "package:tibble"         
+#> [37] "package:tidyr"           "package:readr"          
+#> [39] "package:purrr"           "package:dplyr"          
+#> [41] "package:stringr"         "package:forcats"        
+#> [43] "package:magrittr"        "package:poisutils"      
+#> [45] "package:poissqlite"      "package:DBI"            
+#> [47] "package:poisspatial"     "package:poisplot"       
+#> [49] "package:poisdata"        "package:newdata"        
+#> [51] "package:sessioninfo"     "package:scales"         
+#> [53] "package:readxl"          "package:glue"           
+#> [55] "package:hms"             "package:lubridate"      
+#> [57] "package:mapview"         "package:knitr"          
+#> [59] "package:units"           "package:RSQLite"        
+#> [61] "package:doParallel"      "package:parallel"       
+#> [63] "package:iterators"       "package:foreach"        
+#> [65] "package:plyr"            "package:stats"          
+#> [67] "package:graphics"        "package:grDevices"      
+#> [69] "package:utils"           "package:datasets"       
+#> [71] "package:methods"         "Autoloads"              
+#> [73] "package:base"
 ```
 
 ## Installation
 
-To install the latest development version from the Poisson drat
+To install the latest development version from
+[GitHub](https://github.com/poissonconsulting/pkgtemplate)
+
+``` r
+# install.packages("remotes")
+remotes::install_github("poissonconsulting/poispkgs")
+```
+
+Or to install from the Poisson drat
 [repository](https://github.com/poissonconsulting/drat)
 
     install.packages("drat")

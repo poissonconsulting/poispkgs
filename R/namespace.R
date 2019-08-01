@@ -1,5 +1,6 @@
 #' @importFrom yesno yesno
 #' @importFrom RSQLite dbSendQuery
+#' @importFrom chk chk_flag
 #' @importFrom checkr check_flag
 #' @importFrom doParallel registerDoParallel
 #' @importFrom dplyr select
@@ -38,7 +39,7 @@
 #' @importFrom scales percent
 #' @importFrom sessioninfo session_info
 #' @importFrom sf st_as_sf
-#' @importFrom sims sims_generate
+#' @importFrom sims sims_simulate
 #' @importFrom stringr str_detect
 #' @importFrom subfoldr2 sbf_save_data
 #' @importFrom subreport sbr_figures
@@ -51,6 +52,4 @@
 #' @importFrom magrittr %<>%
 #' @importFrom knitr knit
 #' @importFrom lubridate as_date
-#'
-#'
 NULL
