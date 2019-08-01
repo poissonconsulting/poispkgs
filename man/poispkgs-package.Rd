@@ -26,5 +26,10 @@ Authors:
   \item Sebastian Dalgarno \email{seb@poissonconsulting.ca} (0000-0002-3658-4517)
 }
 
+Other contributors:
+\itemize{
+  \item Poisson Consulting [copyright holder, funder]
+}
+
 }
 \keyword{internal}
