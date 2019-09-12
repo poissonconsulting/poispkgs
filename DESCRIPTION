@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.0.1.9010
+Version: 0.0.1.9011
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("cre", "aut"), comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", role = "aut", email = "evan@poissonconsulting.ca", comment = c(ORCID = 0000-0003-1096-2089)),
@@ -65,7 +65,8 @@ Depends:
     tmbr,
     jmbr,
     smbr,
-    tinter
+    tinter,
+    rlang
 Imports:
     assertr,
     devtools,
@@ -84,7 +85,7 @@ Imports:
     rtide,
     data.table,
     rescale,
-    ypr
+    ypr,
 Suggests: 
     testthat,
     creelr,
@@ -97,7 +98,10 @@ Suggests:
     hsi,
     klexdatr,
     rsoi,
-    timer
+    shinyutils,
+    styler,
+    timer,
+    travis
 Remotes: 
     poissonconsulting/newdata,
     poissonconsulting/poisdata,
@@ -144,7 +148,7 @@ Remotes:
     poissonconsulting/fwabc,
     poissonconsulting/hsi,
     poissonconsulting/klexdatr,
-    poissonconsulting/timer,
+    poissonconsulting/timer
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 LazyData: true
