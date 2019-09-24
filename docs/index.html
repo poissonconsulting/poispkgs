@@ -20,7 +20,7 @@
 <![endif]-->
 </head>
 <body>
-    <div class="container template-article">
+    <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -32,7 +32,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">poispkgs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.9010</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.9012</span>
       </span>
     </div>
 
@@ -66,13 +66,8 @@
       
 
       </header><div class="row">
-  <div class="col-md-9 contents">
-    
+  <div class="contents col-md-9">
 
-    
-    
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-<!-- badges: start -->
 
 <div id="poispkgs" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
@@ -82,49 +77,49 @@
 <h2 class="hasAnchor">
 <a href="#demonstration" class="anchor"></a>Demonstration</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw"><a href="https://rdrr.io/r/base/search.html">search</a></span>()</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#&gt;  [1] ".GlobalEnv"        "package:stats"     "package:graphics" </span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co">#&gt;  [4] "package:grDevices" "package:utils"     "package:datasets" </span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#&gt;  [7] "package:methods"   "Autoloads"         "tools:callr"      </span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="co">#&gt; [10] "package:base"</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(poispkgs)</span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; Loading required package: plyr</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt; Loading required package: doParallel</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt; Loading required package: foreach</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; Loading required package: iterators</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt; Loading required package: parallel</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co">#&gt; Loading required package: RSQLite</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="co">#&gt; Loading required package: units</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co">#&gt; udunits system database from /Library/Frameworks/R.framework/Versions/3.6/Resources/library/udunits2/share</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a><span class="co">#&gt; Loading required package: knitr</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="co">#&gt; Loading required package: mapview</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#&gt; Loading required package: lubridate</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a><span class="co">#&gt; </span></span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="co">#&gt; Attaching package: 'lubridate'</span></span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="co">#&gt; The following object is masked from 'package:plyr':</span></span>
-<span id="cb1-21"><a href="#cb1-21"></a><span class="co">#&gt; </span></span>
-<span id="cb1-22"><a href="#cb1-22"></a><span class="co">#&gt;     here</span></span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="co">#&gt; The following object is masked from 'package:base':</span></span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="co">#&gt; </span></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="co">#&gt;     date</span></span>
-<span id="cb1-26"><a href="#cb1-26"></a><span class="co">#&gt; Loading required package: hms</span></span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="co">#&gt; </span></span>
-<span id="cb1-28"><a href="#cb1-28"></a><span class="co">#&gt; Attaching package: 'hms'</span></span>
-<span id="cb1-29"><a href="#cb1-29"></a><span class="co">#&gt; The following object is masked from 'package:lubridate':</span></span>
-<span id="cb1-30"><a href="#cb1-30"></a><span class="co">#&gt; </span></span>
-<span id="cb1-31"><a href="#cb1-31"></a><span class="co">#&gt;     hms</span></span>
-<span id="cb1-32"><a href="#cb1-32"></a><span class="co">#&gt; Loading required package: glue</span></span>
-<span id="cb1-33"><a href="#cb1-33"></a><span class="co">#&gt; Loading required package: readxl</span></span>
-<span id="cb1-34"><a href="#cb1-34"></a><span class="co">#&gt; Loading required package: scales</span></span>
-<span id="cb1-35"><a href="#cb1-35"></a><span class="co">#&gt; Loading required package: sessioninfo</span></span>
-<span id="cb1-36"><a href="#cb1-36"></a><span class="co">#&gt; Loading required package: newdata</span></span>
-<span id="cb1-37"><a href="#cb1-37"></a><span class="co">#&gt; Loading required package: poisdata</span></span>
-<span id="cb1-38"><a href="#cb1-38"></a><span class="co">#&gt; Loading required package: poisplot</span></span>
-<span id="cb1-39"><a href="#cb1-39"></a><span class="co">#&gt; Loading required package: poisspatial</span></span>
-<span id="cb1-40"><a href="#cb1-40"></a><span class="co">#&gt; Loading required package: poissqlite</span></span>
-<span id="cb1-41"><a href="#cb1-41"></a><span class="co">#&gt; Loading required package: DBI</span></span>
-<span id="cb1-42"><a href="#cb1-42"></a><span class="co">#&gt; Loading required package: poisutils</span></span>
-<span id="cb1-43"><a href="#cb1-43"></a><span class="co">#&gt; Loading required package: magrittr</span></span>
-<span id="cb1-44"><a href="#cb1-44"></a><span class="co">#&gt; Loading required package: forcats</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#&gt; [1] ".GlobalEnv"        "package:stats"     "package:graphics" </span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co">#&gt; [4] "package:grDevices" "package:utils"     "package:datasets" </span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#&gt; [7] "package:methods"   "Autoloads"         "package:base"</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(poispkgs)</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#&gt; Loading required package: plyr</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; Loading required package: doParallel</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt; Loading required package: foreach</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt; Loading required package: iterators</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; Loading required package: parallel</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt; Loading required package: RSQLite</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co">#&gt; Loading required package: units</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co">#&gt; udunits system database from /Library/Frameworks/R.framework/Versions/3.6/Resources/library/udunits2/share</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co">#&gt; Loading required package: knitr</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="co">#&gt; Loading required package: mapview</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co">#&gt; Loading required package: lubridate</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#&gt; </span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="co">#&gt; Attaching package: 'lubridate'</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co">#&gt; The following object is masked from 'package:plyr':</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="co">#&gt; </span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="co">#&gt;     here</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="co">#&gt; The following object is masked from 'package:base':</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="co">#&gt; </span></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="co">#&gt;     date</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="co">#&gt; Loading required package: hms</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="co">#&gt; </span></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="co">#&gt; Attaching package: 'hms'</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="co">#&gt; The following object is masked from 'package:lubridate':</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="co">#&gt; </span></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="co">#&gt;     hms</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="co">#&gt; Loading required package: glue</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="co">#&gt; Loading required package: readxl</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="co">#&gt; Loading required package: scales</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="co">#&gt; Loading required package: sessioninfo</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="co">#&gt; Loading required package: newdata</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="co">#&gt; Loading required package: poisdata</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="co">#&gt; Loading required package: poisplot</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="co">#&gt; Loading required package: poisspatial</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="co">#&gt; Loading required package: poissqlite</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="co">#&gt; Loading required package: DBI</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a><span class="co">#&gt; Loading required package: poisutils</span></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="co">#&gt; Loading required package: magrittr</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="co">#&gt; Loading required package: forcats</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="co">#&gt; Loading required package: assertr</span></span>
 <span id="cb1-45"><a href="#cb1-45"></a><span class="co">#&gt; Loading required package: stringr</span></span>
 <span id="cb1-46"><a href="#cb1-46"></a><span class="co">#&gt; Loading required package: dplyr</span></span>
 <span id="cb1-47"><a href="#cb1-47"></a><span class="co">#&gt; </span></span>
@@ -284,44 +279,56 @@
 <span id="cb1-201"><a href="#cb1-201"></a><span class="co">#&gt; </span></span>
 <span id="cb1-202"><a href="#cb1-202"></a><span class="co">#&gt;     extract</span></span>
 <span id="cb1-203"><a href="#cb1-203"></a><span class="co">#&gt; Loading required package: tinter</span></span>
-<span id="cb1-204"><a href="#cb1-204"></a><span class="kw"><a href="https://rdrr.io/r/base/search.html">search</a></span>()</span>
-<span id="cb1-205"><a href="#cb1-205"></a><span class="co">#&gt;  [1] ".GlobalEnv"              "package:poispkgs"       </span></span>
-<span id="cb1-206"><a href="#cb1-206"></a><span class="co">#&gt;  [3] "package:tinter"          "package:smbr"           </span></span>
-<span id="cb1-207"><a href="#cb1-207"></a><span class="co">#&gt;  [5] "package:rstan"           "package:StanHeaders"    </span></span>
-<span id="cb1-208"><a href="#cb1-208"></a><span class="co">#&gt;  [7] "package:jmbr"            "package:tmbr"           </span></span>
-<span id="cb1-209"><a href="#cb1-209"></a><span class="co">#&gt;  [9] "package:mbr"             "package:mcmcderive"     </span></span>
-<span id="cb1-210"><a href="#cb1-210"></a><span class="co">#&gt; [11] "package:mcmcdata"        "package:broom"          </span></span>
-<span id="cb1-211"><a href="#cb1-211"></a><span class="co">#&gt; [13] "package:mcmcr"           "package:sims"           </span></span>
-<span id="cb1-212"><a href="#cb1-212"></a><span class="co">#&gt; [15] "package:nlist"           "package:term"           </span></span>
-<span id="cb1-213"><a href="#cb1-213"></a><span class="co">#&gt; [17] "package:subreport"       "package:subfoldr2"      </span></span>
-<span id="cb1-214"><a href="#cb1-214"></a><span class="co">#&gt; [19] "package:readwritesqlite" "package:hmstimer"       </span></span>
-<span id="cb1-215"><a href="#cb1-215"></a><span class="co">#&gt; [21] "package:dttr2"           "package:dts"            </span></span>
-<span id="cb1-216"><a href="#cb1-216"></a><span class="co">#&gt; [23] "package:dttr"            "package:flobr"          </span></span>
-<span id="cb1-217"><a href="#cb1-217"></a><span class="co">#&gt; [25] "package:yesno"           "package:chk"            </span></span>
-<span id="cb1-218"><a href="#cb1-218"></a><span class="co">#&gt; [27] "package:checkr"          "package:err"            </span></span>
-<span id="cb1-219"><a href="#cb1-219"></a><span class="co">#&gt; [29] "package:sf"              "package:viridis"        </span></span>
-<span id="cb1-220"><a href="#cb1-220"></a><span class="co">#&gt; [31] "package:viridisLite"     "package:ggspatial"      </span></span>
-<span id="cb1-221"><a href="#cb1-221"></a><span class="co">#&gt; [33] "package:ggmap"           "package:ggrepel"        </span></span>
-<span id="cb1-222"><a href="#cb1-222"></a><span class="co">#&gt; [35] "package:ggplot2"         "package:tibble"         </span></span>
-<span id="cb1-223"><a href="#cb1-223"></a><span class="co">#&gt; [37] "package:tidyr"           "package:readr"          </span></span>
-<span id="cb1-224"><a href="#cb1-224"></a><span class="co">#&gt; [39] "package:purrr"           "package:dplyr"          </span></span>
-<span id="cb1-225"><a href="#cb1-225"></a><span class="co">#&gt; [41] "package:stringr"         "package:forcats"        </span></span>
-<span id="cb1-226"><a href="#cb1-226"></a><span class="co">#&gt; [43] "package:magrittr"        "package:poisutils"      </span></span>
-<span id="cb1-227"><a href="#cb1-227"></a><span class="co">#&gt; [45] "package:poissqlite"      "package:DBI"            </span></span>
-<span id="cb1-228"><a href="#cb1-228"></a><span class="co">#&gt; [47] "package:poisspatial"     "package:poisplot"       </span></span>
-<span id="cb1-229"><a href="#cb1-229"></a><span class="co">#&gt; [49] "package:poisdata"        "package:newdata"        </span></span>
-<span id="cb1-230"><a href="#cb1-230"></a><span class="co">#&gt; [51] "package:sessioninfo"     "package:scales"         </span></span>
-<span id="cb1-231"><a href="#cb1-231"></a><span class="co">#&gt; [53] "package:readxl"          "package:glue"           </span></span>
-<span id="cb1-232"><a href="#cb1-232"></a><span class="co">#&gt; [55] "package:hms"             "package:lubridate"      </span></span>
-<span id="cb1-233"><a href="#cb1-233"></a><span class="co">#&gt; [57] "package:mapview"         "package:knitr"          </span></span>
-<span id="cb1-234"><a href="#cb1-234"></a><span class="co">#&gt; [59] "package:units"           "package:RSQLite"        </span></span>
-<span id="cb1-235"><a href="#cb1-235"></a><span class="co">#&gt; [61] "package:doParallel"      "package:parallel"       </span></span>
-<span id="cb1-236"><a href="#cb1-236"></a><span class="co">#&gt; [63] "package:iterators"       "package:foreach"        </span></span>
-<span id="cb1-237"><a href="#cb1-237"></a><span class="co">#&gt; [65] "package:plyr"            "package:stats"          </span></span>
-<span id="cb1-238"><a href="#cb1-238"></a><span class="co">#&gt; [67] "package:graphics"        "package:grDevices"      </span></span>
-<span id="cb1-239"><a href="#cb1-239"></a><span class="co">#&gt; [69] "package:utils"           "package:datasets"       </span></span>
-<span id="cb1-240"><a href="#cb1-240"></a><span class="co">#&gt; [71] "package:methods"         "Autoloads"              </span></span>
-<span id="cb1-241"><a href="#cb1-241"></a><span class="co">#&gt; [73] "tools:callr"             "package:base"</span></span></code></pre></div>
+<span id="cb1-204"><a href="#cb1-204"></a><span class="co">#&gt; Loading required package: rlang</span></span>
+<span id="cb1-205"><a href="#cb1-205"></a><span class="co">#&gt; </span></span>
+<span id="cb1-206"><a href="#cb1-206"></a><span class="co">#&gt; Attaching package: 'rlang'</span></span>
+<span id="cb1-207"><a href="#cb1-207"></a><span class="co">#&gt; The following objects are masked from 'package:purrr':</span></span>
+<span id="cb1-208"><a href="#cb1-208"></a><span class="co">#&gt; </span></span>
+<span id="cb1-209"><a href="#cb1-209"></a><span class="co">#&gt;     %@%, as_function, flatten, flatten_chr, flatten_dbl,</span></span>
+<span id="cb1-210"><a href="#cb1-210"></a><span class="co">#&gt;     flatten_int, flatten_lgl, flatten_raw, invoke, list_along,</span></span>
+<span id="cb1-211"><a href="#cb1-211"></a><span class="co">#&gt;     modify, prepend, splice</span></span>
+<span id="cb1-212"><a href="#cb1-212"></a><span class="co">#&gt; The following object is masked from 'package:magrittr':</span></span>
+<span id="cb1-213"><a href="#cb1-213"></a><span class="co">#&gt; </span></span>
+<span id="cb1-214"><a href="#cb1-214"></a><span class="co">#&gt;     set_names</span></span>
+<span id="cb1-215"><a href="#cb1-215"></a><span class="kw"><a href="https://rdrr.io/r/base/search.html">search</a></span>()</span>
+<span id="cb1-216"><a href="#cb1-216"></a><span class="co">#&gt;  [1] ".GlobalEnv"              "package:poispkgs"       </span></span>
+<span id="cb1-217"><a href="#cb1-217"></a><span class="co">#&gt;  [3] "package:rlang"           "package:tinter"         </span></span>
+<span id="cb1-218"><a href="#cb1-218"></a><span class="co">#&gt;  [5] "package:smbr"            "package:rstan"          </span></span>
+<span id="cb1-219"><a href="#cb1-219"></a><span class="co">#&gt;  [7] "package:StanHeaders"     "package:jmbr"           </span></span>
+<span id="cb1-220"><a href="#cb1-220"></a><span class="co">#&gt;  [9] "package:tmbr"            "package:mbr"            </span></span>
+<span id="cb1-221"><a href="#cb1-221"></a><span class="co">#&gt; [11] "package:mcmcderive"      "package:mcmcdata"       </span></span>
+<span id="cb1-222"><a href="#cb1-222"></a><span class="co">#&gt; [13] "package:broom"           "package:mcmcr"          </span></span>
+<span id="cb1-223"><a href="#cb1-223"></a><span class="co">#&gt; [15] "package:sims"            "package:nlist"          </span></span>
+<span id="cb1-224"><a href="#cb1-224"></a><span class="co">#&gt; [17] "package:term"            "package:subreport"      </span></span>
+<span id="cb1-225"><a href="#cb1-225"></a><span class="co">#&gt; [19] "package:subfoldr2"       "package:readwritesqlite"</span></span>
+<span id="cb1-226"><a href="#cb1-226"></a><span class="co">#&gt; [21] "package:hmstimer"        "package:dttr2"          </span></span>
+<span id="cb1-227"><a href="#cb1-227"></a><span class="co">#&gt; [23] "package:dts"             "package:dttr"           </span></span>
+<span id="cb1-228"><a href="#cb1-228"></a><span class="co">#&gt; [25] "package:flobr"           "package:yesno"          </span></span>
+<span id="cb1-229"><a href="#cb1-229"></a><span class="co">#&gt; [27] "package:chk"             "package:checkr"         </span></span>
+<span id="cb1-230"><a href="#cb1-230"></a><span class="co">#&gt; [29] "package:err"             "package:sf"             </span></span>
+<span id="cb1-231"><a href="#cb1-231"></a><span class="co">#&gt; [31] "package:viridis"         "package:viridisLite"    </span></span>
+<span id="cb1-232"><a href="#cb1-232"></a><span class="co">#&gt; [33] "package:ggspatial"       "package:ggmap"          </span></span>
+<span id="cb1-233"><a href="#cb1-233"></a><span class="co">#&gt; [35] "package:ggrepel"         "package:ggplot2"        </span></span>
+<span id="cb1-234"><a href="#cb1-234"></a><span class="co">#&gt; [37] "package:tibble"          "package:tidyr"          </span></span>
+<span id="cb1-235"><a href="#cb1-235"></a><span class="co">#&gt; [39] "package:readr"           "package:purrr"          </span></span>
+<span id="cb1-236"><a href="#cb1-236"></a><span class="co">#&gt; [41] "package:dplyr"           "package:stringr"        </span></span>
+<span id="cb1-237"><a href="#cb1-237"></a><span class="co">#&gt; [43] "package:assertr"         "package:forcats"        </span></span>
+<span id="cb1-238"><a href="#cb1-238"></a><span class="co">#&gt; [45] "package:magrittr"        "package:poisutils"      </span></span>
+<span id="cb1-239"><a href="#cb1-239"></a><span class="co">#&gt; [47] "package:poissqlite"      "package:DBI"            </span></span>
+<span id="cb1-240"><a href="#cb1-240"></a><span class="co">#&gt; [49] "package:poisspatial"     "package:poisplot"       </span></span>
+<span id="cb1-241"><a href="#cb1-241"></a><span class="co">#&gt; [51] "package:poisdata"        "package:newdata"        </span></span>
+<span id="cb1-242"><a href="#cb1-242"></a><span class="co">#&gt; [53] "package:sessioninfo"     "package:scales"         </span></span>
+<span id="cb1-243"><a href="#cb1-243"></a><span class="co">#&gt; [55] "package:readxl"          "package:glue"           </span></span>
+<span id="cb1-244"><a href="#cb1-244"></a><span class="co">#&gt; [57] "package:hms"             "package:lubridate"      </span></span>
+<span id="cb1-245"><a href="#cb1-245"></a><span class="co">#&gt; [59] "package:mapview"         "package:knitr"          </span></span>
+<span id="cb1-246"><a href="#cb1-246"></a><span class="co">#&gt; [61] "package:units"           "package:RSQLite"        </span></span>
+<span id="cb1-247"><a href="#cb1-247"></a><span class="co">#&gt; [63] "package:doParallel"      "package:parallel"       </span></span>
+<span id="cb1-248"><a href="#cb1-248"></a><span class="co">#&gt; [65] "package:iterators"       "package:foreach"        </span></span>
+<span id="cb1-249"><a href="#cb1-249"></a><span class="co">#&gt; [67] "package:plyr"            "package:stats"          </span></span>
+<span id="cb1-250"><a href="#cb1-250"></a><span class="co">#&gt; [69] "package:graphics"        "package:grDevices"      </span></span>
+<span id="cb1-251"><a href="#cb1-251"></a><span class="co">#&gt; [71] "package:utils"           "package:datasets"       </span></span>
+<span id="cb1-252"><a href="#cb1-252"></a><span class="co">#&gt; [73] "package:methods"         "Autoloads"              </span></span>
+<span id="cb1-253"><a href="#cb1-253"></a><span class="co">#&gt; [75] "package:base"</span></span></code></pre></div>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -330,11 +337,12 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># install.packages("remotes")</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"poissonconsulting/poispkgs"</span>)</span></code></pre></div>
 <p>Or to install from the Poisson drat <a href="https://github.com/poissonconsulting/drat">repository</a></p>
-<pre><code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("drat")
-drat::addRepo("poissonconsulting")
-install.packages("poispkgs")</a></code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># install.packages("drat")</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>drat<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/drat/man/addRepo.html">addRepo</a></span>(<span class="st">"poissonconsulting"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"poispkgs"</span>)</span></code></pre></div>
 </div>
 </div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -364,7 +372,7 @@ install.packages("poispkgs")</a></code></pre>
 </ul>
 </div>
 
-      <div class="dev-status">
+  <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
@@ -373,9 +381,7 @@ install.packages("poispkgs")</a></code></pre>
 </ul>
 </div>
 </div>
-
 </div>
-
 
 
       <footer><div class="copyright">
@@ -383,7 +389,7 @@ install.packages("poispkgs")</a></code></pre>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
 </div>
 
       </footer>
