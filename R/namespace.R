@@ -1,3 +1,4 @@
+#' @importFrom assertr assert
 #' @importFrom yesno yesno
 #' @importFrom RSQLite dbSendQuery
 #' @importFrom chk chk_flag

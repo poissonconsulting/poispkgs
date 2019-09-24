@@ -33,6 +33,7 @@ Depends:
     poisutils,
     magrittr,
     forcats,
+    assertr,
     stringr,
     dplyr,
     purrr,
@@ -68,7 +69,6 @@ Depends:
     tinter,
     rlang
 Imports:
-    assertr,
     devtools,
     remotes,
     grid,
@@ -85,6 +85,7 @@ Imports:
     rtide,
     data.table,
     rescale,
+    styler,
     ypr,
 Suggests: 
     testthat,
@@ -97,10 +98,8 @@ Suggests:
     fwabc,
     hsi,
     klexdatr,
-    lifecycle,
     rsoi,
     shinyutils,
-    styler,
     timer,
     travis,
     usethis,
