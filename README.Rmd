@@ -43,3 +43,4 @@ Or to install from the Poisson drat [repository](https://github.com/poissonconsu
 drat::addRepo("poissonconsulting")
 install.packages("poispkgs")
 ```
+

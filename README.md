@@ -62,6 +62,7 @@ library(poispkgs)
 #> Loading required package: poisutils
 #> Loading required package: magrittr
 #> Loading required package: forcats
+#> Loading required package: assertr
 #> Loading required package: stringr
 #> Loading required package: dplyr
 #> 
@@ -221,44 +222,56 @@ library(poispkgs)
 #> 
 #>     extract
 #> Loading required package: tinter
+#> Loading required package: rlang
+#> 
+#> Attaching package: 'rlang'
+#> The following objects are masked from 'package:purrr':
+#> 
+#>     %@%, as_function, flatten, flatten_chr, flatten_dbl,
+#>     flatten_int, flatten_lgl, flatten_raw, invoke, list_along,
+#>     modify, prepend, splice
+#> The following object is masked from 'package:magrittr':
+#> 
+#>     set_names
 search()
 #>  [1] ".GlobalEnv"              "package:poispkgs"       
-#>  [3] "package:tinter"          "package:smbr"           
-#>  [5] "package:rstan"           "package:StanHeaders"    
-#>  [7] "package:jmbr"            "package:tmbr"           
-#>  [9] "package:mbr"             "package:mcmcderive"     
-#> [11] "package:mcmcdata"        "package:broom"          
-#> [13] "package:mcmcr"           "package:sims"           
-#> [15] "package:nlist"           "package:term"           
-#> [17] "package:subreport"       "package:subfoldr2"      
-#> [19] "package:readwritesqlite" "package:hmstimer"       
-#> [21] "package:dttr2"           "package:dts"            
-#> [23] "package:dttr"            "package:flobr"          
-#> [25] "package:yesno"           "package:chk"            
-#> [27] "package:checkr"          "package:err"            
-#> [29] "package:sf"              "package:viridis"        
-#> [31] "package:viridisLite"     "package:ggspatial"      
-#> [33] "package:ggmap"           "package:ggrepel"        
-#> [35] "package:ggplot2"         "package:tibble"         
-#> [37] "package:tidyr"           "package:readr"          
-#> [39] "package:purrr"           "package:dplyr"          
-#> [41] "package:stringr"         "package:forcats"        
-#> [43] "package:magrittr"        "package:poisutils"      
-#> [45] "package:poissqlite"      "package:DBI"            
-#> [47] "package:poisspatial"     "package:poisplot"       
-#> [49] "package:poisdata"        "package:newdata"        
-#> [51] "package:sessioninfo"     "package:scales"         
-#> [53] "package:readxl"          "package:glue"           
-#> [55] "package:hms"             "package:lubridate"      
-#> [57] "package:mapview"         "package:knitr"          
-#> [59] "package:units"           "package:RSQLite"        
-#> [61] "package:doParallel"      "package:parallel"       
-#> [63] "package:iterators"       "package:foreach"        
-#> [65] "package:plyr"            "package:stats"          
-#> [67] "package:graphics"        "package:grDevices"      
-#> [69] "package:utils"           "package:datasets"       
-#> [71] "package:methods"         "Autoloads"              
-#> [73] "package:base"
+#>  [3] "package:rlang"           "package:tinter"         
+#>  [5] "package:smbr"            "package:rstan"          
+#>  [7] "package:StanHeaders"     "package:jmbr"           
+#>  [9] "package:tmbr"            "package:mbr"            
+#> [11] "package:mcmcderive"      "package:mcmcdata"       
+#> [13] "package:broom"           "package:mcmcr"          
+#> [15] "package:sims"            "package:nlist"          
+#> [17] "package:term"            "package:subreport"      
+#> [19] "package:subfoldr2"       "package:readwritesqlite"
+#> [21] "package:hmstimer"        "package:dttr2"          
+#> [23] "package:dts"             "package:dttr"           
+#> [25] "package:flobr"           "package:yesno"          
+#> [27] "package:chk"             "package:checkr"         
+#> [29] "package:err"             "package:sf"             
+#> [31] "package:viridis"         "package:viridisLite"    
+#> [33] "package:ggspatial"       "package:ggmap"          
+#> [35] "package:ggrepel"         "package:ggplot2"        
+#> [37] "package:tibble"          "package:tidyr"          
+#> [39] "package:readr"           "package:purrr"          
+#> [41] "package:dplyr"           "package:stringr"        
+#> [43] "package:assertr"         "package:forcats"        
+#> [45] "package:magrittr"        "package:poisutils"      
+#> [47] "package:poissqlite"      "package:DBI"            
+#> [49] "package:poisspatial"     "package:poisplot"       
+#> [51] "package:poisdata"        "package:newdata"        
+#> [53] "package:sessioninfo"     "package:scales"         
+#> [55] "package:readxl"          "package:glue"           
+#> [57] "package:hms"             "package:lubridate"      
+#> [59] "package:mapview"         "package:knitr"          
+#> [61] "package:units"           "package:RSQLite"        
+#> [63] "package:doParallel"      "package:parallel"       
+#> [65] "package:iterators"       "package:foreach"        
+#> [67] "package:plyr"            "package:stats"          
+#> [69] "package:graphics"        "package:grDevices"      
+#> [71] "package:utils"           "package:datasets"       
+#> [73] "package:methods"         "Autoloads"              
+#> [75] "package:base"
 ```
 
 ## Installation
@@ -274,6 +287,8 @@ remotes::install_github("poissonconsulting/poispkgs")
 Or to install from the Poisson drat
 [repository](https://github.com/poissonconsulting/drat)
 
-    install.packages("drat")
-    drat::addRepo("poissonconsulting")
-    install.packages("poispkgs")
+``` r
+# install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("poispkgs")
+```
