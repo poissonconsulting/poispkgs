@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.0.1.9012
+Version: 0.0.1.9014
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("cre", "aut"), comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", role = "aut", email = "evan@poissonconsulting.ca", comment = c(ORCID = 0000-0003-1096-2089)),
@@ -50,6 +50,7 @@ Depends:
     checkr,
     chk,
     yesno,
+    blob,
     flobr,
     dttr,
     dts,
@@ -67,7 +68,8 @@ Depends:
     jmbr,
     smbr,
     tinter,
-    rlang
+    rlang,
+    conflicted
 Imports:
     devtools,
     remotes,

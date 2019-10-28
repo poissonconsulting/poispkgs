@@ -2,8 +2,10 @@
 
 importFrom(RSQLite,dbSendQuery)
 importFrom(assertr,assert)
+importFrom(blob,as_blob)
 importFrom(checkr,check_flag)
 importFrom(chk,chk_flag)
+importFrom(conflicted,conflict_prefer)
 importFrom(doParallel,registerDoParallel)
 importFrom(dplyr,select)
 importFrom(dts,dts_interpolate)

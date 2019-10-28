@@ -34,13 +34,12 @@ search()
 To install the latest development version from [GitHub](https://github.com/poissonconsulting/pkgtemplate)
 ```{r, eval = FALSE}
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/poispkgs")
+remotes::install_github("poissonconsulting/poispkgs", dependencies = TRUE)
 ```
 
 Or to install from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
 ```{r, eval = FALSE}
 # install.packages("drat")
 drat::addRepo("poissonconsulting")
-install.packages("poispkgs")
+install.packages("poispkgs", dependencies = TRUE)
 ```
-
