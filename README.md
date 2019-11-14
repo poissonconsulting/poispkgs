@@ -6,7 +6,7 @@
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
-status](https://travis-ci.org/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.org/poissonconsulting/poispkgs)
+status](https://travis-ci.com/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.com/poissonconsulting/poispkgs)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
@@ -24,6 +24,7 @@ search()
 #> [4] "package:grDevices" "package:utils"     "package:datasets" 
 #> [7] "package:methods"   "Autoloads"         "package:base"
 library(poispkgs)
+#> Loading required package: drat
 #> Loading required package: plyr
 #> Loading required package: doParallel
 #> Loading required package: foreach
@@ -159,20 +160,18 @@ library(poispkgs)
 #>     dtt_adjust_tz, dtt_adjust_units, dtt_aggregate, dtt_complete,
 #>     dtt_completed, dtt_date, dtt_date_time, dtt_day, dtt_day<-,
 #>     dtt_days, dtt_days<-, dtt_dayte, dtt_daytt, dtt_doy,
-#>     dtt_doy_to_date, dtt_feb29_to_28, dtt_floor, dtt_floored,
-#>     dtt_hour, dtt_hour<-, dtt_hours, dtt_hours<-, dtt_is_date,
-#>     dtt_is_date_time, dtt_is_dtt, dtt_minute, dtt_minute<-,
-#>     dtt_minutes, dtt_minutes<-, dtt_month, dtt_month<-,
-#>     dtt_months, dtt_months<-, dtt_reset_sys_tz, dtt_season,
-#>     dtt_second, dtt_second<-, dtt_seconds, dtt_seconds<-, dtt_seq,
-#>     dtt_set_day, dtt_set_hour, dtt_set_minute, dtt_set_month,
+#>     dtt_doy_to_date, dtt_feb29_to_28, dtt_floor, dtt_floored, dtt_hour,
+#>     dtt_hour<-, dtt_hours, dtt_hours<-, dtt_is_date, dtt_is_date_time,
+#>     dtt_is_dtt, dtt_minute, dtt_minute<-, dtt_minutes, dtt_minutes<-,
+#>     dtt_month, dtt_month<-, dtt_months, dtt_months<-, dtt_reset_sys_tz,
+#>     dtt_season, dtt_second, dtt_second<-, dtt_seconds, dtt_seconds<-,
+#>     dtt_seq, dtt_set_day, dtt_set_hour, dtt_set_minute, dtt_set_month,
 #>     dtt_set_second, dtt_set_sys_tz, dtt_set_tz, dtt_set_year,
 #>     dtt_study_year, dtt_subtract_days, dtt_subtract_hours,
-#>     dtt_subtract_minutes, dtt_subtract_months,
-#>     dtt_subtract_seconds, dtt_subtract_units, dtt_subtract_years,
-#>     dtt_sys_tz, dtt_time, dtt_tz, dtt_units, dtt_units_per_unit,
-#>     dtt_year, dtt_year<-, dtt_years, dtt_years<-, is.Date,
-#>     is.POSIXct
+#>     dtt_subtract_minutes, dtt_subtract_months, dtt_subtract_seconds,
+#>     dtt_subtract_units, dtt_subtract_years, dtt_sys_tz, dtt_time,
+#>     dtt_tz, dtt_units, dtt_units_per_unit, dtt_year, dtt_year<-,
+#>     dtt_years, dtt_years<-, is.Date, is.POSIXct
 #> The following object is masked from 'package:hms':
 #> 
 #>     is.hms
@@ -228,9 +227,9 @@ library(poispkgs)
 #> Attaching package: 'rlang'
 #> The following objects are masked from 'package:purrr':
 #> 
-#>     %@%, as_function, flatten, flatten_chr, flatten_dbl,
-#>     flatten_int, flatten_lgl, flatten_raw, invoke, list_along,
-#>     modify, prepend, splice
+#>     %@%, as_function, flatten, flatten_chr, flatten_dbl, flatten_int,
+#>     flatten_lgl, flatten_raw, invoke, list_along, modify, prepend,
+#>     splice
 #> The following object is masked from 'package:magrittr':
 #> 
 #>     set_names
@@ -271,10 +270,11 @@ search()
 #> [65] "package:RSQLite"         "package:doParallel"     
 #> [67] "package:parallel"        "package:iterators"      
 #> [69] "package:foreach"         "package:plyr"           
-#> [71] "package:stats"           "package:graphics"       
-#> [73] "package:grDevices"       "package:utils"          
-#> [75] "package:datasets"        "package:methods"        
-#> [77] "Autoloads"               "package:base"
+#> [71] "package:drat"            "package:stats"          
+#> [73] "package:graphics"        "package:grDevices"      
+#> [75] "package:utils"           "package:datasets"       
+#> [77] "package:methods"         "Autoloads"              
+#> [79] "package:base"
 ```
 
 ## Installation
