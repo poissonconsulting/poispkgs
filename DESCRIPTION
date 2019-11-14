@@ -110,6 +110,7 @@ Suggests:
     timer,
     travis,
     usethis
+Additional_repositories: https://github.com/poissonconsulting/drat
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 LazyData: true
