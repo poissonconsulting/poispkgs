@@ -10,6 +10,7 @@
 #' @importFrom dts dts_interpolate
 #' @importFrom dttr dtt_timer
 #' @importFrom dttr2 dtt_time
+#' @importFrom drat addRepo
 #' @importFrom err co
 #' @importFrom flobr flob
 #' @importFrom forcats fct_relevel

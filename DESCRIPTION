@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.0.1.9014
+Version: 0.0.1.9015
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("cre", "aut"), comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", role = "aut", email = "evan@poissonconsulting.ca", comment = c(ORCID = 0000-0003-1096-2089)),
@@ -12,6 +12,7 @@ Description: Installs and attaches CRAN and Poisson drat packages commonly used 
 License: MIT + file LICENSE
 Depends:
     R (>= 3.5.0),
+    drat,
     plyr,
     doParallel,
     foreach,
@@ -71,6 +72,7 @@ Depends:
     rlang,
     conflicted
 Imports:
+    naniar,
     devtools,
     remotes,
     grid,
@@ -90,9 +92,8 @@ Imports:
     styler,
     ypr,
 Suggests: 
-    testthat,
-    creelr,
     bauw,
+    creelr,
     dbflobr,
     dtq,
     eggdewater,
@@ -100,12 +101,15 @@ Suggests:
     fwabc,
     hsi,
     klexdatr,
+    lifecycle,
+    pkgdown,
+    roxygen2md,
     rsoi,
     shinyutils,
+    testthat,
     timer,
     travis,
-    usethis,
-    lifecycle
+    usethis
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 LazyData: true
