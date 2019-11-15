@@ -18,16 +18,17 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (0000-0002-7683-4592)
+\strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID})
 
 Authors:
 \itemize{
-  \item Evan Amies-Galonski \email{evan@poissonconsulting.ca} (-3188)
-  \item Sebastian Dalgarno \email{seb@poissonconsulting.ca} (0000-0002-3658-4517)
+  \item Evan Amies-Galonski \email{evan@poissonconsulting.ca} (\href{https://orcid.org/-3188}{ORCID})
+  \item Sebastian Dalgarno \email{seb@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
 }
 
 Other contributors:
 \itemize{
+  \item Chris Muir [contributor]
   \item Poisson Consulting [copyright holder, funder]
 }
 
