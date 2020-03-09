@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.0.1.9017
+Version: 0.0.1.9018
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("cre", "aut"), comment = c(ORCID = "0000-0002-7683-4592")),
     person("Evan", "Amies-Galonski", role = "aut", email = "evan@poissonconsulting.ca", comment = c(ORCID = 0000-0003-1096-2089)),
@@ -14,6 +14,7 @@ License: MIT + file LICENSE
 Depends:
     R (>= 3.5.0),
     drat,
+    daff,
     plyr,
     doParallel,
     foreach,
@@ -54,7 +55,6 @@ Depends:
     yesno,
     blob,
     flobr,
-    dttr,
     dts,
     dttr2,
     hmstimer,
