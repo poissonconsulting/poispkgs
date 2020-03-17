@@ -42,6 +42,7 @@
 #' @importFrom sessioninfo session_info
 #' @importFrom sf st_as_sf
 #' @importFrom sims sims_simulate
+#' @importFrom snakecase to_snake_case
 #' @importFrom stringr str_detect
 #' @importFrom styler style_dir
 #' @importFrom subfoldr2 sbf_save_data
