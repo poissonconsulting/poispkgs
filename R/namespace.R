@@ -59,4 +59,5 @@
 #' @importFrom magrittr %<>%
 #' @importFrom knitr knit
 #' @importFrom lubridate as_date
+#' @importFrom tidyhydat hy_stations
 NULL

@@ -93,6 +93,7 @@ Imports:
     rescale,
     styler,
     ypr,
+    tidyhydat
 Suggests: 
     bauw,
     bcdata,
@@ -122,6 +123,6 @@ Additional_repositories: https://github.com/poissonconsulting/drat
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
