@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Travis build status](https://travis-ci.com/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.com/poissonconsulting/poispkgs)
+[![R build status](https://github.com/poissonconsulting/poispkgs/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/poispkgs/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
@@ -35,11 +35,4 @@ To install the latest development version from [GitHub](https://github.com/poiss
 ```{r, eval = FALSE}
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/poispkgs", dependencies = TRUE)
-```
-
-Or to install from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
-```{r, eval = FALSE}
-# install.packages("drat")
-drat::addRepo("poissonconsulting")
-install.packages("poispkgs", dependencies = TRUE)
 ```

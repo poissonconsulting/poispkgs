@@ -12,3 +12,4 @@
 ^codemeta\.json$
 ^\.RProfile\.R$
 ^pkgdown$
+^\.github$

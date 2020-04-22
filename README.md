@@ -5,8 +5,8 @@
 
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Travis build
-status](https://travis-ci.com/poissonconsulting/poispkgs.svg?branch=master)](https://travis-ci.com/poissonconsulting/poispkgs)
+[![R build
+status](https://github.com/poissonconsulting/poispkgs/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/poispkgs/actions)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
@@ -25,7 +25,9 @@ search()
 #> [7] "package:methods"   "Autoloads"         "package:base"
 library(poispkgs)
 #> Loading required package: drat
+#> Loading required package: daff
 #> Loading required package: plyr
+#> Loading required package: snakecase
 #> Loading required package: doParallel
 #> Loading required package: foreach
 #> Loading required package: iterators
@@ -38,12 +40,9 @@ library(poispkgs)
 #> Loading required package: lubridate
 #> 
 #> Attaching package: 'lubridate'
-#> The following object is masked from 'package:plyr':
+#> The following objects are masked from 'package:base':
 #> 
-#>     here
-#> The following object is masked from 'package:base':
-#> 
-#>     date
+#>     date, intersect, setdiff, union
 #> Loading required package: hms
 #> 
 #> Attaching package: 'hms'
@@ -137,41 +136,19 @@ library(poispkgs)
 #> Loading required package: chk
 #> 
 #> Attaching package: 'chk'
+#> The following objects are masked from 'package:checkr':
+#> 
+#>     check_data, check_key, check_names
 #> The following objects are masked from 'package:err':
 #> 
 #>     cc, err, msg, p, p0, wrn
 #> Loading required package: yesno
 #> Loading required package: blob
 #> Loading required package: flobr
-#> Loading required package: dttr
-#> 
-#> Attaching package: 'dttr'
-#> The following objects are masked from 'package:lubridate':
-#> 
-#>     is.Date, is.POSIXct
 #> Loading required package: dts
 #> Loading required package: dttr2
 #> 
 #> Attaching package: 'dttr2'
-#> The following objects are masked from 'package:dttr':
-#> 
-#>     check_tz, dtt_add_days, dtt_add_hours, dtt_add_minutes,
-#>     dtt_add_months, dtt_add_seconds, dtt_add_units, dtt_add_years,
-#>     dtt_adjust_tz, dtt_adjust_units, dtt_aggregate, dtt_complete,
-#>     dtt_completed, dtt_date, dtt_date_time, dtt_day, dtt_day<-,
-#>     dtt_days, dtt_days<-, dtt_dayte, dtt_daytt, dtt_doy,
-#>     dtt_doy_to_date, dtt_feb29_to_28, dtt_floor, dtt_floored, dtt_hour,
-#>     dtt_hour<-, dtt_hours, dtt_hours<-, dtt_is_date, dtt_is_date_time,
-#>     dtt_is_dtt, dtt_minute, dtt_minute<-, dtt_minutes, dtt_minutes<-,
-#>     dtt_month, dtt_month<-, dtt_months, dtt_months<-, dtt_reset_sys_tz,
-#>     dtt_season, dtt_second, dtt_second<-, dtt_seconds, dtt_seconds<-,
-#>     dtt_seq, dtt_set_day, dtt_set_hour, dtt_set_minute, dtt_set_month,
-#>     dtt_set_second, dtt_set_sys_tz, dtt_set_tz, dtt_set_year,
-#>     dtt_study_year, dtt_subtract_days, dtt_subtract_hours,
-#>     dtt_subtract_minutes, dtt_subtract_months, dtt_subtract_seconds,
-#>     dtt_subtract_units, dtt_subtract_years, dtt_sys_tz, dtt_time,
-#>     dtt_tz, dtt_units, dtt_units_per_unit, dtt_year, dtt_year<-,
-#>     dtt_years, dtt_years<-, is.Date, is.POSIXct
 #> The following object is masked from 'package:hms':
 #> 
 #>     is.hms
@@ -184,6 +161,11 @@ library(poispkgs)
 #> Loading required package: subreport
 #> Loading required package: term
 #> Loading required package: nlist
+#> 
+#> Attaching package: 'nlist'
+#> The following object is masked from 'package:scales':
+#> 
+#>     pvalue
 #> Loading required package: sims
 #> Loading required package: mcmcr
 #> 
@@ -192,20 +174,23 @@ library(poispkgs)
 #> 
 #>     pvalue
 #> Loading required package: mbr
-#> Loading required package: broom
 #> Loading required package: mcmcdata
 #> Loading required package: mcmcderive
+#> Registered S3 method overwritten by 'mbr':
+#>   method         from
+#>   pars.character term
 #> 
 #> Attaching package: 'mbr'
 #> The following object is masked from 'package:poisutils':
 #> 
 #>     is.syntactic
 #> Loading required package: tmbr
+#> Loading required package: broom
 #> Loading required package: jmbr
 #> Loading required package: smbr
 #> Loading required package: rstan
 #> Loading required package: StanHeaders
-#> rstan (Version 2.19.2, GitRev: 2e1f913d3ca3)
+#> rstan (Version 2.19.3, GitRev: 2e1f913d3ca3)
 #> For execution on a local, multicore CPU with excess RAM we recommend calling
 #> options(mc.cores = parallel::detectCores()).
 #> To avoid recompilation of unchanged Stan programs, we recommend calling
@@ -233,48 +218,46 @@ library(poispkgs)
 #> The following object is masked from 'package:magrittr':
 #> 
 #>     set_names
-#> Loading required package: conflicted
 search()
 #>  [1] ".GlobalEnv"              "package:poispkgs"       
-#>  [3] ".conflicts"              "package:conflicted"     
-#>  [5] "package:rlang"           "package:tinter"         
-#>  [7] "package:smbr"            "package:rstan"          
-#>  [9] "package:StanHeaders"     "package:jmbr"           
-#> [11] "package:tmbr"            "package:mbr"            
-#> [13] "package:mcmcderive"      "package:mcmcdata"       
-#> [15] "package:broom"           "package:mcmcr"          
-#> [17] "package:sims"            "package:nlist"          
-#> [19] "package:term"            "package:subreport"      
-#> [21] "package:subfoldr2"       "package:readwritesqlite"
-#> [23] "package:hmstimer"        "package:dttr2"          
-#> [25] "package:dts"             "package:dttr"           
-#> [27] "package:flobr"           "package:blob"           
-#> [29] "package:yesno"           "package:chk"            
-#> [31] "package:checkr"          "package:err"            
-#> [33] "package:sf"              "package:viridis"        
-#> [35] "package:viridisLite"     "package:ggspatial"      
-#> [37] "package:ggmap"           "package:ggrepel"        
-#> [39] "package:ggplot2"         "package:tibble"         
-#> [41] "package:tidyr"           "package:readr"          
-#> [43] "package:purrr"           "package:dplyr"          
-#> [45] "package:stringr"         "package:assertr"        
-#> [47] "package:forcats"         "package:magrittr"       
-#> [49] "package:poisutils"       "package:poissqlite"     
-#> [51] "package:DBI"             "package:poisspatial"    
-#> [53] "package:poisplot"        "package:poisdata"       
-#> [55] "package:newdata"         "package:sessioninfo"    
-#> [57] "package:scales"          "package:readxl"         
-#> [59] "package:glue"            "package:hms"            
-#> [61] "package:lubridate"       "package:mapview"        
-#> [63] "package:knitr"           "package:units"          
-#> [65] "package:RSQLite"         "package:doParallel"     
-#> [67] "package:parallel"        "package:iterators"      
-#> [69] "package:foreach"         "package:plyr"           
-#> [71] "package:drat"            "package:stats"          
-#> [73] "package:graphics"        "package:grDevices"      
-#> [75] "package:utils"           "package:datasets"       
-#> [77] "package:methods"         "Autoloads"              
-#> [79] "package:base"
+#>  [3] "package:rlang"           "package:tinter"         
+#>  [5] "package:smbr"            "package:rstan"          
+#>  [7] "package:StanHeaders"     "package:jmbr"           
+#>  [9] "package:tmbr"            "package:broom"          
+#> [11] "package:mbr"             "package:mcmcderive"     
+#> [13] "package:mcmcdata"        "package:mcmcr"          
+#> [15] "package:sims"            "package:nlist"          
+#> [17] "package:term"            "package:subreport"      
+#> [19] "package:subfoldr2"       "package:readwritesqlite"
+#> [21] "package:hmstimer"        "package:dttr2"          
+#> [23] "package:dts"             "package:flobr"          
+#> [25] "package:blob"            "package:yesno"          
+#> [27] "package:chk"             "package:checkr"         
+#> [29] "package:err"             "package:sf"             
+#> [31] "package:viridis"         "package:viridisLite"    
+#> [33] "package:ggspatial"       "package:ggmap"          
+#> [35] "package:ggrepel"         "package:ggplot2"        
+#> [37] "package:tibble"          "package:tidyr"          
+#> [39] "package:readr"           "package:purrr"          
+#> [41] "package:dplyr"           "package:stringr"        
+#> [43] "package:assertr"         "package:forcats"        
+#> [45] "package:magrittr"        "package:poisutils"      
+#> [47] "package:poissqlite"      "package:DBI"            
+#> [49] "package:poisspatial"     "package:poisplot"       
+#> [51] "package:poisdata"        "package:newdata"        
+#> [53] "package:sessioninfo"     "package:scales"         
+#> [55] "package:readxl"          "package:glue"           
+#> [57] "package:hms"             "package:lubridate"      
+#> [59] "package:mapview"         "package:knitr"          
+#> [61] "package:units"           "package:RSQLite"        
+#> [63] "package:doParallel"      "package:parallel"       
+#> [65] "package:iterators"       "package:foreach"        
+#> [67] "package:snakecase"       "package:plyr"           
+#> [69] "package:daff"            "package:drat"           
+#> [71] "package:stats"           "package:graphics"       
+#> [73] "package:grDevices"       "package:utils"          
+#> [75] "package:datasets"        "package:methods"        
+#> [77] "Autoloads"               "package:base"
 ```
 
 ## Installation
@@ -285,13 +268,4 @@ To install the latest development version from
 ``` r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/poispkgs", dependencies = TRUE)
-```
-
-Or to install from the Poisson drat
-[repository](https://github.com/poissonconsulting/drat)
-
-``` r
-# install.packages("drat")
-drat::addRepo("poissonconsulting")
-install.packages("poispkgs", dependencies = TRUE)
 ```
