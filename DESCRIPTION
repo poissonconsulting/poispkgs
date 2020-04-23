@@ -166,6 +166,7 @@ Remotes:
     poissonconsulting/hsi,
     poissonconsulting/klexdatr,
     poissonconsulting/timer,
+    poissonconsulting/rescale,
     bcgov/ssdtools,
     bcgov/wqbc,
     bcgov/wqindex,
