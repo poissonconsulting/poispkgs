@@ -111,7 +111,6 @@ Suggests:
     roxygen2md,
     rsoi,
     rems,
-    shinyutils,
     ssdtools,
     testthat,
     timer,
@@ -124,6 +123,14 @@ Suggests:
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Remotes:
+    bcgov/ssdtools,
+    bcgov/wqbc,
+    bcgov/wqindex,
+    bcgov/rems,
+    bcgov/bcdata,
+    bcgov/canwqdata,
+    krlmlr/fledge,
+    krlmlr/dm,
     poissonconsulting/filer,
     poissonconsulting/newdata,
     poissonconsulting/poisdata,
@@ -169,16 +176,7 @@ Remotes:
     poissonconsulting/hsi,
     poissonconsulting/klexdatr,
     poissonconsulting/timer,
-    poissonconsulting/rescale,
-    bcgov/ssdtools,
-    bcgov/wqbc,
-    bcgov/wqindex,
-    bcgov/rems,
-    bcgov/bcdata,
-    bcgov/canwqdata,
-    ropenscilabs/travis,
-    krlmlr/fledge,
-    krlmlr/dm
+    poissonconsulting/rescale
 LazyData: true
 RoxygenNote: 7.1.0
 Encoding: UTF-8
