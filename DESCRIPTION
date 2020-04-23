@@ -118,8 +118,7 @@ Suggests:
     wqbc,
     wqindex,
     fledge,
-    dm,
-    travis
+    dm
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Remotes:
