@@ -175,7 +175,7 @@ Remotes:
     bcgov/ssdtools,
     bcgov/wqbc,
     bcgov/wqindex,
-    bcgov/rems
+    bcgov/rems,
     bcgov/bcdata,
     bcgov/canwqdata,
     ropenscilabs/travis,
