@@ -122,6 +122,8 @@ Suggests:
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Remotes:
+    poissonconsulting/tscbh,
+    poissonconsulting/tsdbr,
     poissonconsulting/newdata,
     poissonconsulting/poisdata,
     poissonconsulting/poisplot,
