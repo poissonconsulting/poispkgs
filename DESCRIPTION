@@ -125,8 +125,6 @@ URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Remotes:
     poissonconsulting/filer,
-    poissonconsulting/tscbh,
-    poissonconsulting/tsdbr,
     poissonconsulting/newdata,
     poissonconsulting/poisdata,
     poissonconsulting/poisplot,
