@@ -115,13 +115,16 @@ Suggests:
     ssdtools,
     testthat,
     timer,
-    travis,
     usethis,
     wqbc,
-    wqindex
+    wqindex,
+    fledge,
+    dm,
+    travis
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Remotes:
+    poissonconsulting/filer,
     poissonconsulting/tscbh,
     poissonconsulting/tsdbr,
     poissonconsulting/newdata,
@@ -173,6 +176,11 @@ Remotes:
     bcgov/wqbc,
     bcgov/wqindex,
     bcgov/rems
+    bcgov/bcdata,
+    bcgov/canwqdata,
+    ropenscilabs/travis,
+    krlmlr/fledge,
+    krlmlr/dm
 LazyData: true
 RoxygenNote: 7.1.0
 Encoding: UTF-8
