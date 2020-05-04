@@ -4,11 +4,12 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "man/figures/README-",
+  out.width = "100%"
 )
 ```
 
@@ -19,7 +20,7 @@ knitr::opts_chunk$set(
 
 # poispkgs
 
-An R package to attach CRAN and GitHub Packages commonly used in Poisson Consulting analyses in the preferred order.
+An R package to attach CRAN and GitHub Packages commonly used in Poisson Consulting analyses in the preferred order
 
 ## Demonstration
 ```{r}

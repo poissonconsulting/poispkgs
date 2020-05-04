@@ -12,7 +12,7 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 # poispkgs
 
 An R package to attach CRAN and GitHub Packages commonly used in Poisson
-Consulting analyses in the preferred order.
+Consulting analyses in the preferred order
 
 ## Demonstration
 
