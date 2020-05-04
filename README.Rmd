@@ -23,9 +23,7 @@ An R package to attach CRAN and GitHub Packages commonly used in Poisson Consult
 
 ## Demonstration
 ```{r}
-search()
 library(poispkgs)
-search()
 ```
 
 ## Installation
@@ -35,3 +33,4 @@ To install the latest development version from [GitHub](https://github.com/poiss
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/poispkgs", dependencies = TRUE)
 ```
+
