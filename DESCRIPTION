@@ -124,7 +124,6 @@ Imports:
     units,
     universals,
     usethis,
-    usepois,
     viridis,
     yesno,
     ypr,
@@ -174,7 +173,6 @@ Remotes:
     poissonconsulting/tscbh,
     poissonconsulting/tsdbr,
     poissonconsulting/universals,
-    poissonconsulting/usepois,
     poissonconsulting/yesno,
     poissonconsulting/ypr
 Encoding: UTF-8
