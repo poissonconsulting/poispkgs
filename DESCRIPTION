@@ -172,6 +172,8 @@ Remotes:
     poissonconsulting/tmbr,
     poissonconsulting/tscbh,
     poissonconsulting/tsdbr,
+    poissonconsulting/universals,
+    poissonconsulting/usepois,
     poissonconsulting/yesno,
     poissonconsulting/ypr
 Encoding: UTF-8
