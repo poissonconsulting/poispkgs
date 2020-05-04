@@ -13,3 +13,4 @@
 ^\.RProfile\.R$
 ^pkgdown$
 ^\.github$
+^scripts$

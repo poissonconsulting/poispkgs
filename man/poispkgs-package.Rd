@@ -6,8 +6,8 @@
 \alias{poispkgs-package}
 \title{poispkgs: Attach Poisson Packages}
 \description{
-Installs and attaches CRAN and Poisson drat packages commonly used in Poisson
-    analyses in the preferred order.
+Attaches CRAN and GitHub packages commonly used in
+    Poisson analyses in the preferred order.
 }
 \seealso{
 Useful links:
@@ -28,7 +28,6 @@ Authors:
 
 Other contributors:
 \itemize{
-  \item Chris Muir [contributor]
   \item Poisson Consulting [copyright holder, funder]
 }
 

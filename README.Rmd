@@ -13,14 +13,13 @@ knitr::opts_chunk$set(
 ```
 
 <!-- badges: start -->
-[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![R build status](https://github.com/poissonconsulting/poispkgs/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/poispkgs/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
 # poispkgs
 
-An R package to install and attach CRAN and GitHub Packages commonly used in Poisson Consulting analyses in the preferred order.
+An R package to attach CRAN and GitHub Packages commonly used in Poisson Consulting analyses in the preferred order.
 
 ## Demonstration
 ```{r}
@@ -31,7 +30,7 @@ search()
 
 ## Installation
 
-To install the latest development version from [GitHub](https://github.com/poissonconsulting/pkgtemplate)
+To install the latest development version from [GitHub](https://github.com/poissonconsulting/poispkgs)
 ```{r, eval = FALSE}
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/poispkgs", dependencies = TRUE)
