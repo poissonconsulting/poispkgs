@@ -1,8 +1,4 @@
-pkgs_to_load <- function() {
-  pkgs[!is_attached(pkgs)]
-}
-
-same_library <- function(pkg) {
+pkg_attach <- function(pkg) {
   loc <- if (pkg %in% loadedNamespaces()) dirname(getNamespaceInfo(pkg, "path"))
   do.call(
     "library",
@@ -10,16 +6,17 @@ same_library <- function(pkg) {
   )
 }
 
-pkgs_attach <- function() {
-  to_load <- pkgs_to_load()
-  if (!length(to_load)) return(invisible())
-
-  msg("Attaching poispkgs")
-
-  msg(paste(to_load, collapse = " "))
+pkgs_attach <- function(pkgs, name) {
+  msg(name, ": ", paste(pkgs, collapse = " "))
 
   suppressPackageStartupMessages(
-    lapply(to_load, same_library)
+    lapply(pkgs, pkg_attach)
   )
   invisible()
+}
+
+pkg_list_attach <- function(pkg_list) {
+  msg("Attaching poispkgs")
+
+  mapply(pkgs_attach, pkg_list, names(pkg_list))
 }

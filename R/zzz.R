@@ -1,9 +1,6 @@
 .onAttach <- function(libname, pkgname) {
-  if (all(is_attached(pkgs)))
+  pkg_list <- pkg_list_to_attach()
+  if (!length(pkg_list))
     return()
-  pkgs_attach()
-}
-
-is_attached <- function(x) {
-  paste0("package:", x) %in% search()
+  pkg_list_attach(pkg_list)
 }
