@@ -25,8 +25,7 @@ License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
-    R (>= 3.2.0),
-    conflicted
+    R (>= 3.2.0)
 Imports:
     bcdata,
     blob,
@@ -35,6 +34,7 @@ Imports:
     checkr,
     chk,
     cli,
+    conflicted,
     crayon,
     daff,
     data.table,

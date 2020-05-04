@@ -1,6 +1,4 @@
-context("load")
-
-test_that("load", {
+test_that("attach", {
   library(poispkgs)
   expect_true(TRUE)
 })
