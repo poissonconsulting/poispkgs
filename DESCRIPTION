@@ -41,6 +41,7 @@ Imports:
     dbflobr,
     devtools,
     dm,
+    DiagrammeR,
     doParallel,
     dplyr,
     dts,

@@ -44,5 +44,5 @@ To install the latest development version from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/poispkgs", dependencies = TRUE)
+remotes::install_github("poissonconsulting/poispkgs")
 ```
