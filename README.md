@@ -21,7 +21,7 @@ Consulting analyses in the preferred order
 ``` r
 library(poispkgs)
 #> Attaching poispkgs
-#> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis usepois
+#> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
 #> conflicted: conflicted
 #> legacy: err checkr rpdo plyr reshape2 poissqlite
 #> poisutils: poisspatial poisdata poisix poisplot poisutils
@@ -47,4 +47,12 @@ To install the latest development version from
 ``` r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/poispkgs")
+```
+
+## Quiet
+
+To suppress the start up messages use
+
+``` r
+options(poispkgs.quiet = TRUE)
 ```

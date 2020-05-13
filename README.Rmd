@@ -36,3 +36,9 @@ To install the latest development version from [GitHub](https://github.com/poiss
 remotes::install_github("poissonconsulting/poispkgs")
 ```
 
+## Quiet
+
+To suppress the start up messages use
+```{r}
+options(poispkgs.quiet = TRUE)
+```

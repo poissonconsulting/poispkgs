@@ -1,5 +1,7 @@
 msg <- function(...) {
-  packageStartupMessage(...)
+  if (!isTRUE(getOption("poispkgs.quiet"))) {
+    packageStartupMessage(...)
+  }
 }
 
 is_attached <- function(pkg) {
