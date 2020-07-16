@@ -2,7 +2,6 @@ pkg_list <- list(
   rprofile = c(
     "devtools", "fledge", "lintr", "pkgdown", "remotes", "reprex", "rmarkdown",
     "roxygen2md", "styler", "testthat", "usethis"),
-  conflicted = c("conflicted"),
   legacy = c("err", "checkr", "rpdo", "plyr", "reshape2", "poissqlite"),
   poisutils = c("poisspatial", "poisdata", "poisix", "poisplot", "poisutils", "poispalette"),
   bc = c("bcdata", "rems", "wqbc", "wqindex", "fishbc", "fwabc"),
