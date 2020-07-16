@@ -83,6 +83,7 @@ Imports:
     poisplot,
     poisspatial,
     poissqlite,
+    poispalette,
     poisutils,
     purrr,
     readr,
@@ -155,6 +156,7 @@ Remotes:
     poissonconsulting/nlist,
     poissonconsulting/poisdata,
     poissonconsulting/poisix,
+    poissonconsulting/poispalette,
     poissonconsulting/poisplot,
     poissonconsulting/poisspatial,
     poissonconsulting/poissqlite,
@@ -178,6 +180,6 @@ Remotes:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1.9000
 Suggests: 
     covr
