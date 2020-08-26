@@ -1,3 +1,8 @@
+# poispkgs 0.1.0.9002
+
+- Replaced fwabc with fwapgr.
+
+
 # poispkgs 0.1.0.9001
 
 - Removed conflicted.
