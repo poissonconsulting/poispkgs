@@ -1,3 +1,8 @@
+# poispkgs 0.1.0.9003
+
+- Removed tidyhydat as errors when no internet connection.
+
+
 # poispkgs 0.1.0.9002
 
 - Replaced fwabc with fwapgr.
