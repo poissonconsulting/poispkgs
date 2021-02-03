@@ -24,10 +24,9 @@ Consulting analyses in the preferred order
 library(poispkgs)
 #> Attaching poispkgs
 #> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
-#> conflicted: conflicted
 #> legacy: err checkr rpdo plyr reshape2 poissqlite
-#> poisutils: poisspatial poisdata poisix poisplot poisutils
-#> bc: bcdata rems wqbc wqindex fishbc fwabc
+#> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
+#> bc: bcdata rems wqbc wqindex fishbc fwapgr
 #> canada: tidyhydat canwqdata ssdtools
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar snakecase sessioninfo units yesno
@@ -38,6 +37,8 @@ library(poispkgs)
 #> utils: chk dttr2 hmstimer
 #> databasing: flobr dbflobr RSQLite readwritesqlite
 #> analysis: universals extras term nlist newdata rescale mcmcr mbr tmbr smbr jmbr
+#> Warning: replacing previous import 'extras::as_list' by 'rlang::as_list' when
+#> loading 'tmbr'
 #> reporting: subfoldr2 subreport
 ```
 
@@ -58,3 +59,10 @@ To suppress the start up messages use
 ``` r
 options(poispkgs.quiet = TRUE)
 ```
+
+## Code of Conduct
+
+Please note that the poispkgs project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

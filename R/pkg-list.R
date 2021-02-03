@@ -5,7 +5,7 @@ pkg_list <- list(
   legacy = c("err", "checkr", "rpdo", "plyr", "reshape2", "poissqlite"),
   poisutils = c("poisspatial", "poisdata", "poisix", "poisplot", "poisutils", "poispalette"),
   bc = c("bcdata", "rems", "wqbc", "wqindex", "fishbc", "fwapgr"),
-  canada = c("tidyhydat", "canwqdata", "ssdtools"),
+  canada = c("canwqdata", "ssdtools"),
   parallel = c("doParallel", "foreach"),
   misc = c(
     "data.table", "daff", "naniar", "snakecase", "sessioninfo", "units",

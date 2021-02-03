@@ -115,7 +115,6 @@ Imports:
     term,
     testthat,
     tibble,
-    tidyhydat,
     tidyr,
     timer,
     tinter,
