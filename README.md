@@ -4,10 +4,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R build
-status](https://github.com/poissonconsulting/poispkgs/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/poispkgs/actions)
-[![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/poispkgs/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/poispkgs?branch=master)
+[![R-CMD-check](https://github.com/poissonconsulting/poispkgs/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/poispkgs/actions)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
@@ -26,13 +23,13 @@ library(poispkgs)
 #> legacy: err checkr rpdo plyr reshape2 poissqlite
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
 #> bc: bcdata rems wqbc wqindex fishbc fwapgr
-#> canada: tidyhydat canwqdata ssdtools
+#> canada: canwqdata ssdtools
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar snakecase sessioninfo units yesno
 #> spatial: rgdal mapview sf
 #> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats
-#> plot: grid ggplot2 ggthemes ggmap ggrepel ggspatial scales viridis tinter
+#> plot: grid ggplot2 ggthemes ggmap ggrepel ggspatial latex2exp scales viridis tinter
 #> utils: chk dttr2 hmstimer
 #> databasing: flobr dbflobr RSQLite readwritesqlite
 #> analysis: universals extras term nlist newdata rescale mcmcr mbr tmbr smbr jmbr
