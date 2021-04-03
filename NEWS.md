@@ -1,3 +1,8 @@
+# poispkgs 0.1.0.9004
+
+- Added latex2exp.
+
+
 # poispkgs 0.1.0.9003
 
 - Removed tidyhydat as errors when no internet connection.
