@@ -25,7 +25,7 @@ License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
 Depends:
-    R (>= 3.2.0)
+    R (>= 3.2)
 Imports:
     bcdata,
     blob,
@@ -162,6 +162,7 @@ Remotes:
     poissonconsulting/poisutils,
     poissonconsulting/readwritesqlite,
     poissonconsulting/rescale,
+    poissonconsulting/rpdo,
     poissonconsulting/rtide,
     poissonconsulting/sims,
     poissonconsulting/smbr,
