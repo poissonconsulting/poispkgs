@@ -4,7 +4,7 @@ pkg_list <- list(
     "roxygen2md", "styler", "testthat", "usethis"),
   legacy = c("err", "checkr", "rpdo", "plyr", "reshape2", "poissqlite"),
   poisutils = c("poisspatial", "poisdata", "poisix", "poisplot", "poisutils", "poispalette"),
-  bc = c("bcdata", "rems", "wqbc", "wqindex", "fishbc", "fwapgr"),
+  bc = c("bcdata", "rems", "wqbc", "wqindex", "fishbc", "fwapgr", "fwatlasbc"),
   canada = c("canwqdata", "ssdtools"),
   parallel = c("doParallel", "foreach"),
   misc = c(
