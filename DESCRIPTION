@@ -117,6 +117,7 @@ Imports:
     testthat,
     tibble,
     tidyr,
+    tidyhydat,
     timer,
     tinter,
     tmbr,
