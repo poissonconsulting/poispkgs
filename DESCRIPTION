@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.1.0.9004
+Version: 0.1.0.9005
 Authors@R: 
     c(person(given = "Joe",
              family = "Thorley",

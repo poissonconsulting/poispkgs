@@ -1,3 +1,10 @@
+<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+
+# poispkgs 0.1.0.9005
+
+- Added fwatlasbc.
+
+
 # poispkgs 0.1.0.9004
 
 - Added latex2exp.
