@@ -22,8 +22,8 @@ library(poispkgs)
 #> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
 #> legacy: err checkr rpdo plyr reshape2 poissqlite
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
-#> bc: bcdata rems wqbc wqindex fishbc fwapgr
-#> canada: canwqdata ssdtools
+#> bc: bcdata rems wqbc wqindex fishbc fwapgr fwatlasbc
+#> canada: canwqdata ssdtools tidyhydat
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar snakecase sessioninfo units yesno
 #> spatial: rgdal mapview sf
@@ -32,9 +32,7 @@ library(poispkgs)
 #> plot: grid ggplot2 ggthemes ggmap ggrepel ggspatial latex2exp scales viridis tinter
 #> utils: chk dttr2 hmstimer
 #> databasing: flobr dbflobr RSQLite readwritesqlite
-#> analysis: universals extras term nlist newdata rescale mcmcr mbr tmbr smbr jmbr
-#> Warning: replacing previous import 'extras::as_list' by 'rlang::as_list' when
-#> loading 'tmbr'
+#> analysis: universals extras term nlist newdata rescale mcmcr mcmcderive mcmcdata mbr tmbr smbr jmbr
 #> reporting: subfoldr2 subreport
 ```
 
@@ -55,6 +53,13 @@ To suppress the start up messages use
 ``` r
 options(poispkgs.quiet = TRUE)
 ```
+
+## Usage
+
+To add package to poispkgs, add it to imports in DESCRIPTION, make sure
+you have the GitHub address in remotes for Poisson packages to ensure we
+have the developmental version. And add it to one or more categories in
+pkg-list.R.
 
 ## Code of Conduct
 

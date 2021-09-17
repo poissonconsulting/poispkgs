@@ -43,6 +43,11 @@ To suppress the start up messages use
 options(poispkgs.quiet = TRUE)
 ```
 
+## Usage
+
+To add package to poispkgs, add it to imports in DESCRIPTION, make sure you have the GitHub address in remotes for Poisson packages to ensure we have the developmental version.
+And add it to one or more categories in pkg-list.R.
+
 ## Code of Conduct
 
 Please note that the poispkgs project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
