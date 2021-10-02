@@ -6,8 +6,7 @@
 \alias{poispkgs-package}
 \title{poispkgs: Attach Poisson Packages}
 \description{
-Attaches CRAN and GitHub packages commonly used in
-    Poisson analyses in the preferred order.
+Attaches CRAN and GitHub packages commonly used in Poisson analyses in the preferred order.
 }
 \seealso{
 Useful links:
