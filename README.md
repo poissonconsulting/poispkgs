@@ -19,12 +19,12 @@ Consulting analyses in the preferred order
 library(poispkgs)
 #> Attaching poispkgs
 #> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
-#> legacy: err checkr rpdo plyr reshape2 poissqlite
+#> legacy: err rpdo plyr reshape2 poissqlite
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
 #> bc: bcdata rems wqbc wqindex fishbc fwapgr fwatlasbc
 #> canada: canwqdata ssdtools tidyhydat
 #> parallel: doParallel foreach
-#> misc: data.table daff naniar snakecase sessioninfo units yesno
+#> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
 #> spatial: rgdal mapview sf
 #> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats

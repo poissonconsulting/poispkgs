@@ -3,7 +3,7 @@ pkg_list <- list(
     "devtools", "fledge", "lintr", "pkgdown", "remotes", "reprex", "rmarkdown",
     "roxygen2md", "styler", "testthat", "usethis"
   ),
-  legacy = c("err", "checkr", "rpdo", "plyr", "reshape2", "poissqlite"),
+  legacy = c("err", "rpdo", "plyr", "reshape2", "poissqlite"),
   poisutils = c(
     "poisspatial", "poisdata", "poisix", "poisplot", "poisutils", "poispalette"
   ),
