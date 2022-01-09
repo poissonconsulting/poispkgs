@@ -17,7 +17,7 @@ pkg_list <- list(
   spatial = c("rgdal", "mapview", "sf"),
   tidyverse_extras = c(
     "blob", "cli", "crayon", "hms", "glue", "lubridate", "magrittr", "pillar",
-    "readxl", "rlang", "dm"
+    "readxl", "rlang", "dm", "tidyplus"
   ),
   tidyverse_core = c(
     "ggplot2", "tibble", "tidyr", "readr", "purrr", "dplyr", "stringr",

@@ -26,7 +26,7 @@ library(poispkgs)
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
 #> spatial: rgdal mapview sf
-#> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm
+#> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm tidyplus
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats
 #> plot: grid ggplot2 ggthemes ggmap ggrepel ggspatial latex2exp scales viridis tinter
 #> utils: chk dttr2 hmstimer
@@ -65,4 +65,4 @@ pkg-list.R.
 Please note that the poispkgs project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its terms.
+By contributing to this project, you agree to abide by its terms
