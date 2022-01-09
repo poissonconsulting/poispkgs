@@ -19,7 +19,7 @@ Consulting analyses in the preferred order
 library(poispkgs)
 #> Attaching poispkgs
 #> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
-#> legacy: err rpdo plyr reshape2 poissqlite
+#> legacy: err rpdo plyr reshape2
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
 #> bc: bcdata rems wqbc wqindex fishbc fwapgr fwatlasbc
 #> canada: canwqdata ssdtools tidyhydat
