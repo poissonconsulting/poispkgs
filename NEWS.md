@@ -3,7 +3,7 @@
 # poispkgs 0.1.0.9007
 
 - Added ggdag.
-- Added tidyplus as dependency.
+- Added tidyplus as dependencyi.
 
 
 # poispkgs 0.1.0.9006
