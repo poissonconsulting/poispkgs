@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# poispkgs 0.1.0.9007
+
+- Added ggdag.
+- Added tidyplus as dependency.
+
+
 # poispkgs 0.1.0.9006
 
 - Readded tidyhydat as no longer requires internet connection.
