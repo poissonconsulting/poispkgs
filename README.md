@@ -25,13 +25,16 @@ library(poispkgs)
 #> canada: canwqdata ssdtools tidyhydat
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
+#> Warning: multiple udunits databases present:
+#>  - /Library/Frameworks/R.framework/Versions/4.2/Resources/library/udunits2/share/udunits2.xml
+#>  - /usr/local/share/udunits/udunits2.xml
 #> spatial: rgdal mapview sf
 #> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm tidyplus
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats
-#> plot: grid ggplot2 ggthemes ggmap ggrepel ggspatial latex2exp scales viridis tinter
+#> plot: grid ggplot2 ggdag ggmap ggrepel ggspatial ggthemes latex2exp scales viridis tinter
 #> utils: chk dttr2 hmstimer
 #> databasing: flobr dbflobr RSQLite readwritesqlite
-#> analysis: universals extras term nlist newdata rescale mcmcr mcmcderive mcmcdata mbr tmbr smbr jmbr
+#> analysis: universals extras ggdag term nlist newdata rescale mcmcr mcmcderive mcmcdata mbr tmbr smbr jmbr
 #> reporting: subfoldr2 subreport
 ```
 
@@ -65,4 +68,4 @@ pkg-list.R.
 Please note that the poispkgs project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its terms
+By contributing to this project, you agree to abide by its terms.

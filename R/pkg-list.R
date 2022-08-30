@@ -24,13 +24,13 @@ pkg_list <- list(
     "forcats"
   ),
   plot = c(
-    "grid", "ggplot2", "ggthemes", "ggmap", "ggrepel", "ggspatial",
+    "grid", "ggplot2", "ggdag", "ggmap", "ggrepel", "ggspatial", "ggthemes",
     "latex2exp", "scales", "viridis", "tinter"
   ),
   utils = c("chk", "dttr2", "hmstimer"),
   databasing = c("flobr", "dbflobr", "RSQLite", "readwritesqlite"),
   analysis = c(
-    "universals", "extras", "term", "nlist", "newdata", "rescale",
+    "universals", "extras", "ggdag", "term", "nlist", "newdata", "rescale",
     "mcmcr", "mcmcderive", "mcmcdata", "mbr", "tmbr", "smbr", "jmbr"
   ),
   reporting = c("subfoldr2", "subreport")

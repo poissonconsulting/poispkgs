@@ -53,6 +53,7 @@ Imports:
     foreach,
     fwatlasbc,
     fwapgr,
+    ggdag,
     ggmap,
     ggplot2,
     ggrepel,
@@ -182,6 +183,6 @@ Remotes:
     poissonconsulting/ypr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Suggests: 
     covr
