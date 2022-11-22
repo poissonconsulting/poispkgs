@@ -11,7 +11,7 @@ Authors@R:
              family = "Amies-Galonski",
              role = "aut",
              email = "evan@poissonconsulting.ca",
-             comment = c(ORCID = -3188)),
+             comment = c(ORCID = "0000-0003-1096-2089")),
       person(given = "Sebastian",
              family = "Dalgarno",
              role = "aut",
