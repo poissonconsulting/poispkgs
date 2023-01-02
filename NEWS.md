@@ -1,5 +1,18 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# poispkgs 0.1.0.9008
+
+- Enforce mcmcr >= 0.6.1.9001.
+
+- Update NEWS.
+
+Merge branch 'main' of github.com:poissonconsulting/poispkgs
+
+# Conflicts:
+#	NEWS.md
+
+
+
 # poispkgs 0.1.0.9007
 
 - Added ggdag.
