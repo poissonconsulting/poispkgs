@@ -21,7 +21,7 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Evan Amies-Galonski \email{evan@poissonconsulting.ca} (\href{https://orcid.org/-3188}{ORCID})
+  \item Evan Amies-Galonski \email{evan@poissonconsulting.ca} (\href{https://orcid.org/0000-0003-1096-2089}{ORCID})
   \item Sebastian Dalgarno \email{seb@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
 }
 
