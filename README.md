@@ -25,9 +25,6 @@ library(poispkgs)
 #> canada: canwqdata ssdtools tidyhydat
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
-#> Warning: multiple udunits databases present:
-#>  - /Library/Frameworks/R.framework/Versions/4.2/Resources/library/udunits2/share/udunits2.xml
-#>  - /usr/local/share/udunits/udunits2.xml
 #> spatial: rgdal mapview sf
 #> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm tidyplus
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats
@@ -45,7 +42,7 @@ To install the latest development version from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/poispkgs")
+remotes::install_github("poissonconsulting/poispkgs", upgrade = "always")
 ```
 
 ## Quiet

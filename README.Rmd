@@ -32,7 +32,7 @@ library(poispkgs)
 To install the latest development version from [GitHub](https://github.com/poissonconsulting/poispkgs)
 ```{r, eval = FALSE}
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/poispkgs")
+remotes::install_github("poissonconsulting/poispkgs", upgrade = "always")
 ```
 
 ## Quiet
