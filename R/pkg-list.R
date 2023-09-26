@@ -1,4 +1,5 @@
 pkg_list <- list(
+  conflicted = c("conflicted"),
   rprofile = c(
     "devtools", "fledge", "lintr", "pkgdown", "remotes", "reprex", "rmarkdown",
     "roxygen2md", "styler", "testthat", "usethis"

@@ -9,6 +9,5 @@ is_attached <- function(pkg) {
 }
 
 pkg_list_to_attach <- function() {
-  pkg_list <- lapply(pkg_list, function(x) x[!is_attached(x)])
-  pkg_list <- pkg_list[vapply(pkg_list, length, integer(1)) != 0L]
+  pkg_list
 }

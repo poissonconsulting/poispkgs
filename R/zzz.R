@@ -4,4 +4,8 @@
     return()
   }
   pkg_list_attach(pkg_list)
+  conflicts_fix()
+
+  message("conflicted::conflict_scout()")
+  print(conflict_scout())
 }
