@@ -33,6 +33,7 @@ Imports:
     canwqdata,
     chk,
     cli,
+    conflicted,
     crayon,
     daff,
     data.table,
