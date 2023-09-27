@@ -13,5 +13,9 @@
 }
 
 conflict_scout_format <- function() {
-  utils::capture.output(conflicted::conflict_scout(), type = "message")
+  out <- conflicted::conflict_scout()
+  if (length(out) == 0) {
+    return("All well")
+  }
+  utils::capture.output(out, type = "message")
 }
