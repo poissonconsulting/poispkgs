@@ -4,6 +4,8 @@
     return()
   }
   pkg_list_attach(pkg_list)
+
+  packageStartupMessage("conflicts_fix()")
   conflicts_fix()
 
   packageStartupMessage("conflicted::conflict_scout()")
