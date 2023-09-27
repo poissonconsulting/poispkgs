@@ -12,9 +12,10 @@ update_conflicted_code <- function() {
 }
 
 auto_update_conflicted_code <- function() {
+  installed <- utils::installed.packages()
   pkg_list_flat <- setdiff(
     c(
-      rownames(installed.packages())[which(!is.na(installed.packages()[, "Priority"]))],
+      rownames(installed)[which(!is.na(installed[, "Priority"]))],
       unname(unlist(pkg_list))
     ),
     "tcltk"
