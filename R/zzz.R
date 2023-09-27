@@ -7,5 +7,5 @@
   conflicts_fix()
 
   message("conflicted::conflict_scout()")
-  print(conflict_scout())
+  print(conflicted::conflict_scout())
 }
