@@ -1,5 +1,5 @@
 update_conflicted_code <- function() {
-  prefs <- as.list(conflicted:::prefs, sorted = TRUE)
+  prefs <- as.list(asNamespace("conflicted")$prefs, sorted = TRUE)
 
   name <- names(prefs)
   winner <- purrr::map_chr(prefs, 1)
