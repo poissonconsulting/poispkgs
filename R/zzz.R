@@ -6,6 +6,10 @@
   pkg_list_attach(pkg_list)
   conflicts_fix()
 
-  message("conflicted::conflict_scout()")
-  print(conflicted::conflict_scout())
+  packageStartupMessage("conflicted::conflict_scout()")
+  packageStartupMessage(conflict_scout_format())
+}
+
+conflict_scout_format <- function() {
+  utils::capture.output(conflicted::conflict_scout(), type = "message")
 }
