@@ -33,6 +33,7 @@ Imports:
     canwqdata,
     chk,
     cli,
+    conflicted,
     crayon,
     daff,
     data.table,
@@ -99,6 +100,7 @@ Imports:
     rlang,
     rmarkdown,
     roxygen2md,
+    rpdo,
     rsoi,
     RSQLite,
     rtide,
@@ -132,6 +134,12 @@ Imports:
     ypr,
     wqbc,
     wqindex
+Suggests: 
+    boot,
+    covr,
+    lattice,
+    nnet,
+    tidyselect
 Remotes:
     bcgov/bcdata,
     bcgov/canwqdata,
@@ -181,9 +189,8 @@ Remotes:
     poissonconsulting/tsdbr,
     poissonconsulting/universals,
     poissonconsulting/yesno,
-    poissonconsulting/ypr
+    poissonconsulting/ypr,
+    r-lib/conflicted@b-93-canonical
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Suggests: 
-    covr

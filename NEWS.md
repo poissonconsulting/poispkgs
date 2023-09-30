@@ -6,12 +6,6 @@
 
 - Update NEWS.
 
-Merge branch 'main' of github.com:poissonconsulting/poispkgs
-
-# Conflicts:
-#	NEWS.md
-
-
 
 # poispkgs 0.1.0.9007
 
