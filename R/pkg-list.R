@@ -32,7 +32,7 @@ pkg_list <- list(
   databasing = c("flobr", "dbflobr", "RSQLite", "readwritesqlite"),
   analysis = c(
     "universals", "extras", "ggdag", "term", "nlist", "newdata", "rescale",
-    "mcmcr", "mcmcderive", "mcmcdata", "mbr", "tmbr", "smbr", "jmbr"
+    "mcmcr", "mcmcderive", "mcmcdata", "nmbr", "tmbr", "smbr", "pmbr"
   ),
   reporting = c("subfoldr2", "subreport")
 )
