@@ -22,6 +22,7 @@ auto_update_conflicted_code <- function() {
   installed <- utils::installed.packages()
   pkg_list_flat <- setdiff(
     c(
+      "usepois",
       rownames(installed)[which(!is.na(installed[, "Priority"]))],
       unname(unlist(pkg_list))
     ),

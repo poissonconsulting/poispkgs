@@ -101,6 +101,22 @@ conflicts_fix <- function() {
     purrr::transpose(),
     tidyr::unpack(),
     remotes::update_packages(),
+    # Updating this with auto_update_conflicted_code() might change or delete the code below.
+    # Restore by hand.
+    usepois::use_code_of_conduct(),
+    usepois::use_cran_comments(),
+    usepois::use_github(),
+    usepois::use_github_action_check_full(),
+    usepois::use_github_action_check_release(),
+    usepois::use_github_action_check_standard(),
+    usepois::use_github_labels(),
+    usepois::use_namespace(),
+    usepois::use_news_md(),
+    usepois::use_package_doc(),
+    usepois::use_proprietary_license(),
+    usepois::use_readme_rmd(),
+    # Updating this with auto_update_conflicted_code() might change or delete the code above.
+    # Restore by hand.
     viridis::viridis_pal(),
     lubridate::wday(),
     lubridate::week(),
