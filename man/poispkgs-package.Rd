@@ -21,12 +21,15 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Kirill Müller \email{kirill@cynkra.com} (\href{https://orcid.org/0000-0002-1416-3412}{ORCID})
   \item Evan Amies-Galonski \email{evan@poissonconsulting.ca} (\href{https://orcid.org/0000-0003-1096-2089}{ORCID})
   \item Sebastian Dalgarno \email{seb@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
 }
 
 Other contributors:
 \itemize{
+  \item Ayla Pearson \email{ayla@poissonconsulting.ca} (\href{https://orcid.org/0000-0001-7388-1222}{ORCID}) [contributor]
+  \item Nadine Hussein \email{nadine@poissonconsulting.ca} (\href{https://orcid.org/0000-0003-4470-8361}{ORCID}) [contributor]
   \item Poisson Consulting [copyright holder, funder]
 }
 

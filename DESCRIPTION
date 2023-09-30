@@ -1,24 +1,21 @@
 Package: poispkgs
 Title: Attach Poisson Packages
 Version: 0.1.0.9008
-Authors@R: 
-    c(person(given = "Joe",
-             family = "Thorley",
-             role = c("cre", "aut"),
-             email = "joe@poissonconsulting.ca",
-             comment = c(ORCID = "0000-0002-7683-4592")),
-      person(given = "Evan",
-             family = "Amies-Galonski",
-             role = "aut",
-             email = "evan@poissonconsulting.ca",
-             comment = c(ORCID = "0000-0003-1096-2089")),
-      person(given = "Sebastian",
-             family = "Dalgarno",
-             role = "aut",
-             email = "seb@poissonconsulting.ca",
-             comment = c(ORCID = "0000-0002-3658-4517")),
-      person(given = "Poisson Consulting",
-             role = c("cph", "fnd")))
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = "aut",
+           comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Evan", "Amies-Galonski", , "evan@poissonconsulting.ca", role = "aut",
+           comment = c(ORCID = "0000-0003-1096-2089")),
+    person("Sebastian", "Dalgarno", , "seb@poissonconsulting.ca", role = "aut",
+           comment = c(ORCID = "0000-0002-3658-4517")),
+    person("Ayla", "Pearson", , "ayla@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0001-7388-1222")),
+    person("Nadine", "Hussein", , "nadine@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0003-4470-8361")),
+    person("Poisson Consulting", role = c("cph", "fnd"))
+  )
 Description: Attaches CRAN and GitHub packages commonly used in
     Poisson analyses in the preferred order.
 License: MIT + file LICENSE
