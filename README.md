@@ -18,11 +18,16 @@ Consulting analyses in the preferred order
 ``` r
 library(poispkgs)
 #> Attaching poispkgs
+#> conflicted: conflicted
 #> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
 #> legacy: err rpdo plyr reshape2
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
 #> bc: bcdata rems wqbc wqindex fishbc fwapgr fwatlasbc
 #> canada: canwqdata ssdtools tidyhydat
+#> Warning in checkMatrixPackageVersion(): Package version inconsistency detected.
+#> TMB was built with Matrix version 1.6.0
+#> Current Matrix version is 1.6.1.1
+#> Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
 #> spatial: rgdal mapview sf
@@ -33,6 +38,9 @@ library(poispkgs)
 #> databasing: flobr dbflobr RSQLite readwritesqlite
 #> analysis: universals extras ggdag term nlist newdata rescale mcmcr mcmcderive mcmcdata mbr tmbr smbr jmbr
 #> reporting: subfoldr2 subreport
+#> conflicts_fix()
+#> conflicted::conflict_scout()
+#> All well
 ```
 
 ## Installation
@@ -41,8 +49,8 @@ To install the latest development version from
 [GitHub](https://github.com/poissonconsulting/poispkgs)
 
 ``` r
-# install.packages("remotes")
-remotes::install_github("poissonconsulting/poispkgs", upgrade = "always")
+# install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))
+pak::pak("poissonconsulting/poispkgs")
 ```
 
 ## Quiet
