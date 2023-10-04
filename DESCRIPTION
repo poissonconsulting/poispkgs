@@ -72,7 +72,7 @@ Imports:
     mbr,
     mcmcr (>= 0.6.1.9001),
     naniar,
-    newdata,
+    newdata (>= 0.0.0.9020),
     nlist,
     pillar,
     pkgdown,
