@@ -187,7 +187,7 @@ Remotes:
     poissonconsulting/universals,
     poissonconsulting/yesno,
     poissonconsulting/ypr,
-    r-lib/conflicted@b-93-canonical
+    r-lib/conflicted
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
