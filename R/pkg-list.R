@@ -15,7 +15,7 @@ pkg_list <- list(
     "data.table", "daff", "naniar", "readwriteaws", "snakecase", "sessioninfo",
     "units", "yesno"
   ),
-  spatial = c("rgdal", "mapview", "sf"),
+  spatial = c("mapview", "sf"),
   tidyverse_extras = c(
     "blob", "cli", "crayon", "hms", "glue", "lubridate", "magrittr", "pillar",
     "readxl", "rlang", "dm", "tidyplus"

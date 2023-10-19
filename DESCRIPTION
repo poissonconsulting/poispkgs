@@ -93,7 +93,6 @@ Imports:
     reprex,
     rescale,
     reshape2,
-    rgdal,
     rlang,
     rmarkdown,
     roxygen2md,
