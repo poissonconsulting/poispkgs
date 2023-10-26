@@ -1,4 +1,13 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# poispkgs 0.1.0.9009
+
+- Merge pull request #18 from poissonconsulting/remove-rgdal.
+
+  remove rgdal
+
+- Merge pull request #17 from poissonconsulting/f-conflicted.
+
 
 # poispkgs 0.1.0.9008
 
