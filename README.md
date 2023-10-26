@@ -26,11 +26,11 @@ library(poispkgs)
 #> canada: canwqdata ssdtools tidyhydat
 #> Warning in checkMatrixPackageVersion(): Package version inconsistency detected.
 #> TMB was built with Matrix version 1.6.0
-#> Current Matrix version is 1.6.1.1
+#> Current Matrix version is 1.5.4.1
 #> Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
-#> spatial: rgdal mapview sf
+#> spatial: mapview sf
 #> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm tidyplus
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats
 #> plot: grid ggplot2 ggdag ggmap ggrepel ggspatial ggthemes latex2exp scales viridis tinter
