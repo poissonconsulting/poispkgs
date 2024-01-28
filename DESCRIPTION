@@ -28,7 +28,7 @@ Imports:
     blob,
     broom,
     canwqdata,
-    chk,
+    chk (>= 0.9.1.9001),
     cli,
     conflicted,
     crayon,
@@ -190,4 +190,4 @@ Remotes:
     r-lib/conflicted@b-93-canonical
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
