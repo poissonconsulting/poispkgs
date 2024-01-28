@@ -1,6 +1,6 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.1.0.9008
+Version: 0.1.0.9009
 Authors@R: c(
     person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("cre", "aut"),
            comment = c(ORCID = "0000-0002-7683-4592")),
@@ -93,7 +93,6 @@ Imports:
     reprex,
     rescale,
     reshape2,
-    rgdal,
     rlang,
     rmarkdown,
     roxygen2md,
@@ -187,7 +186,7 @@ Remotes:
     poissonconsulting/universals,
     poissonconsulting/yesno,
     poissonconsulting/ypr,
-    r-lib/conflicted@b-93-canonical
+    r-lib/conflicted
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
