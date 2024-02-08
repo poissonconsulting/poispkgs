@@ -1,12 +1,13 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# poispkgs 0.1.0.9010
+
+- Removed tidyhydat as unstable.
+
+
 # poispkgs 0.1.0.9009
 
-- Merge pull request #18 from poissonconsulting/remove-rgdal.
-
-  remove rgdal
-
-- Merge pull request #17 from poissonconsulting/f-conflicted.
+- Remove rgdal
 
 
 # poispkgs 0.1.0.9008
