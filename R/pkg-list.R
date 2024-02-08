@@ -9,7 +9,7 @@ pkg_list <- list(
     "poisspatial", "poisdata", "poisix", "poisplot", "poisutils", "poispalette"
   ),
   bc = c("bcdata", "rems", "wqbc", "wqindex", "fishbc", "fwapgr", "fwatlasbc"),
-  canada = c("canwqdata", "ssdtools", "tidyhydat"),
+  canada = c("canwqdata", "ssdtools"),
   parallel = c("doParallel", "foreach"),
   misc = c(
     "data.table", "daff", "naniar", "readwriteaws", "snakecase", "sessioninfo",
