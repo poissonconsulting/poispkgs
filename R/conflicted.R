@@ -79,6 +79,7 @@ conflicts_fix <- function() {
     nnet::multinom(),
     dplyr::mutate(),
     testthat::not(),
+    crayon::num_ansi_colors(),
     chk::p(),
     chk::p0(),
     tidyr::pack(),
@@ -101,8 +102,6 @@ conflicts_fix <- function() {
     purrr::transpose(),
     tidyr::unpack(),
     remotes::update_packages(),
-    # Updating this with auto_update_conflicted_code() might change or delete the code below.
-    # Restore by hand.
     usepois::use_code_of_conduct(),
     usepois::use_cran_comments(),
     usepois::use_github(),
@@ -115,8 +114,6 @@ conflicts_fix <- function() {
     usepois::use_package_doc(),
     usepois::use_proprietary_license(),
     usepois::use_readme_rmd(),
-    # Updating this with auto_update_conflicted_code() might change or delete the code above.
-    # Restore by hand.
     viridis::viridis_pal(),
     lubridate::wday(),
     lubridate::week(),
