@@ -65,6 +65,7 @@ Imports:
     latex2exp,
     lifecycle,
     lintr,
+    loo,
     lubridate,
     magrittr,
     mapview,
