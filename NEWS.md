@@ -2,10 +2,7 @@
 
 # poispkgs 0.2.0
 
-- Same as previous version.
-
-
-<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+- Added loo package.
 
 # poispkgs 0.1.1
 
