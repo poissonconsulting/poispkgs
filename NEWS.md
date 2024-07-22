@@ -3,6 +3,7 @@
 # poispkgs 0.2.0
 
 - Added loo package.
+- Prefer `loo::compare` over `testthat::compare` and `nlist::nlist` over `loo::nlist`.
 
 # poispkgs 0.1.1
 
