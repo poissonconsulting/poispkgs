@@ -31,7 +31,7 @@ pkg_list <- list(
   utils = c("chk", "dttr2", "hmstimer"),
   databasing = c("flobr", "dbflobr", "RSQLite", "readwritesqlite"),
   analysis = c(
-    "universals", "extras", "ggdag", "term", "nlist", "newdata", "rescale",
+    "universals", "extras", "ggdag", "term", "loo", "nlist", "newdata", "rescale",
     "mcmcr", "mcmcderive", "mcmcdata", "mbr", "tmbr", "smbr", "jmbr"
   ),
   reporting = c("subfoldr2", "subreport")
