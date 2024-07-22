@@ -1,3 +1,10 @@
+<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+
+# poispkgs 0.2.0
+
+- Same as previous version.
+
+
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
 # poispkgs 0.1.1
