@@ -1,5 +1,5 @@
 template:
-  bootstrap: 5
+  package: poissontemplate
 authors:
   Joe Thorley:
     href: "https://github.com/joethorley"
@@ -15,3 +15,4 @@ authors:
     href: "https://github.com/sebdalgarno"
   Poisson Consulting:
     href: "http://poissonconsulting.ca"
+url: https://poissonconsulting.github.io/poispkgs/
