@@ -34,5 +34,5 @@ pkg_list <- list(
     "universals", "extras", "ggdag", "term", "loo", "nlist", "newdata", "rescale",
     "mcmcr", "mcmcderive", "mcmcdata", "embr", "tmbr", "smbr", "jmbr"
   ),
-  reporting = c("subfoldr2", "subreport")
+  reporting = c("subfoldr2", "subfoldr2ext", "subreport")
 )
