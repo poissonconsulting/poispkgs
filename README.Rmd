@@ -44,8 +44,7 @@ options(poispkgs.quiet = TRUE)
 
 ## Usage
 
-To add package to poispkgs, add it to imports in DESCRIPTION, make sure you have the GitHub address in remotes for Poisson packages to ensure we have the developmental version.
-And add it to one or more categories in pkg-list.R.
+To add a package to poispkgs, add the package to the Imports section of the DESCRIPTION. For Poisson packages, add the GitHub address of the package to the remotes section of the DESCRIPTION. This will ensure that we're using the developmental version. Also, add packages to one or more categories in `pkg-list.R`.
 
 ## Code of Conduct
 

@@ -16,8 +16,8 @@ Authors@R: c(
            comment = c(ORCID = "0000-0003-4470-8361")),
     person("Poisson Consulting", role = c("cph", "fnd"))
   )
-Description: Attaches CRAN and GitHub packages commonly used in
-    Poisson analyses in the preferred order.
+Description: Attaches CRAN and GitHub packages commonly used in Poisson
+    analyses in the preferred order.
 License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
 BugReports: https://github.com/poissonconsulting/poispkgs
@@ -41,6 +41,7 @@ Imports:
     doParallel,
     dplyr,
     dttr2,
+    embr,
     err,
     extras,
     fishbc,
@@ -69,7 +70,6 @@ Imports:
     lubridate,
     magrittr,
     mapview,
-    embr,
     mcmcr (>= 0.6.1.9001),
     naniar,
     newdata (>= 0.0.0.9020),
@@ -102,14 +102,15 @@ Imports:
     rtide,
     scales,
     sessioninfo,
-    sims,
     sf,
+    sims,
     smbr,
     snakecase,
     ssdtools,
     stringr,
     styler,
     subfoldr2,
+    subfoldr2ext,
     subreport,
     term,
     testthat,
@@ -125,10 +126,10 @@ Imports:
     universals,
     usethis,
     viridis,
-    yesno,
-    ypr,
     wqbc,
-    wqindex
+    wqindex,
+    yesno,
+    ypr
 Suggests: 
     boot,
     covr,
@@ -146,15 +147,15 @@ Remotes:
     poissonconsulting/chk,
     poissonconsulting/dbflobr,
     poissonconsulting/dttr2,
+    poissonconsulting/embr,
     poissonconsulting/err,
     poissonconsulting/extras,
     poissonconsulting/fishbc,
     poissonconsulting/flobr,
-    poissonconsulting/fwatlasbc,
     poissonconsulting/fwapgr,
-    poissonconsulting/jmbr,
+    poissonconsulting/fwatlasbc,
     poissonconsulting/hmstimer,
-    poissonconsulting/embr,
+    poissonconsulting/jmbr,
     poissonconsulting/mcmcr,
     poissonconsulting/newdata,
     poissonconsulting/nlist,
@@ -172,6 +173,7 @@ Remotes:
     poissonconsulting/sims,
     poissonconsulting/smbr,
     poissonconsulting/subfoldr2,
+    poissonconsulting/subfoldr2ext,
     poissonconsulting/subreport,
     poissonconsulting/term,
     poissonconsulting/tidyplus,
@@ -184,7 +186,7 @@ Remotes:
     poissonconsulting/yesno,
     poissonconsulting/ypr,
     r-lib/conflicted
+Config/Needs/website: poissonconsulting/poissontemplate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-Config/Needs/website: poissonconsulting/poissontemplate
+RoxygenNote: 7.3.2.9000
