@@ -5,7 +5,7 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)
 <!-- badges: end -->
 
 # poispkgs
@@ -23,11 +23,7 @@ library(poispkgs)
 #> legacy: err rpdo plyr reshape2
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
 #> bc: bcdata rems wqbc wqindex fishbc fwapgr fwatlasbc
-#> canada: canwqdata ssdtools tidyhydat
-#> Warning in checkMatrixPackageVersion(): Package version inconsistency detected.
-#> TMB was built with Matrix version 1.6.0
-#> Current Matrix version is 1.5.4.1
-#> Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+#> canada: canwqdata ssdtools
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
 #> spatial: mapview sf
@@ -36,7 +32,7 @@ library(poispkgs)
 #> plot: grid ggplot2 ggdag ggmap ggrepel ggspatial ggthemes latex2exp scales viridis tinter
 #> utils: chk dttr2 hmstimer
 #> databasing: flobr dbflobr RSQLite readwritesqlite
-#> analysis: universals extras ggdag term nlist newdata rescale mcmcr mcmcderive mcmcdata mbr tmbr smbr jmbr
+#> analysis: universals extras ggdag term loo nlist newdata rescale mcmcr mcmcderive mcmcdata embr tmbr smbr jmbr
 #> reporting: subfoldr2 subreport
 #> conflicts_fix()
 #> conflicted::conflict_scout()
@@ -63,10 +59,11 @@ options(poispkgs.quiet = TRUE)
 
 ## Usage
 
-To add package to poispkgs, add it to imports in DESCRIPTION, make sure
-you have the GitHub address in remotes for Poisson packages to ensure we
-have the developmental version. And add it to one or more categories in
-pkg-list.R.
+To add a package to poispkgs, add the package to the Imports section of
+the DESCRIPTION. For Poisson packages, add the GitHub address of the
+package to the remotes section of the DESCRIPTION. This will ensure that
+we’re using the developmental version. Also, add packages to one or more
+categories in `pkg-list.R`.
 
 ## Code of Conduct
 
