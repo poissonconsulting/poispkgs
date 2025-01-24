@@ -1,4 +1,10 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# poispkgs 0.2.1
+
+- Added `subfoldr2ext`.
+- Switched `mbr` to `embr`.
+- Use `daff` from CRAN.
 
 # poispkgs 0.2.0
 
