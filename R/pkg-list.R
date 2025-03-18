@@ -26,7 +26,7 @@ pkg_list <- list(
   ),
   plot = c(
     "grid", "ggplot2", "ggdag", "ggmap", "ggrepel", "ggspatial", "ggthemes",
-    "latex2exp", "scales", "viridis", "tinter"
+    "ggh4x", "latex2exp", "scales", "viridis", "tinter"
   ),
   utils = c("chk", "dttr2", "hmstimer"),
   databasing = c("flobr", "dbflobr", "RSQLite", "readwritesqlite"),

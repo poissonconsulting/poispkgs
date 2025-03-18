@@ -52,6 +52,7 @@ Imports:
     fwapgr,
     fwatlasbc,
     ggdag,
+    ggh4x,
     ggmap,
     ggplot2,
     ggrepel,
