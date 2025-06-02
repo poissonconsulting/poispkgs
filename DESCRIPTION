@@ -2,7 +2,7 @@ Package: poispkgs
 Title: Attach Poisson Packages
 Version: 0.2.2
 Authors@R: c(
-    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("cre", "aut"),
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7683-4592")),
     person("Kirill", "Müller", , "kirill@cynkra.com", role = "aut",
            comment = c(ORCID = "0000-0002-1416-3412")),
