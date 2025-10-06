@@ -26,13 +26,13 @@ pkg_list <- list(
   ),
   plot = c(
     "grid", "ggplot2", "ggdag", "ggmap", "ggrepel", "ggspatial", "ggthemes",
-    "latex2exp", "scales", "viridis", "tinter"
+    "ggh4x", "latex2exp", "scales", "viridis", "tinter"
   ),
   utils = c("chk", "dttr2", "hmstimer"),
   databasing = c("flobr", "dbflobr", "RSQLite", "readwritesqlite"),
   analysis = c(
     "universals", "extras", "ggdag", "term", "loo", "nlist", "newdata", "rescale",
-    "mcmcr", "mcmcderive", "mcmcdata", "embr", "tmbr", "smbr", "jmbr"
+    "mcmcr", "mcmcderive", "mcmcdata", "embr", "tmbr", "smbr2", "smbr", "jmbr", "priorsense"
   ),
   reporting = c("subfoldr2", "subfoldr2ext", "subreport")
 )

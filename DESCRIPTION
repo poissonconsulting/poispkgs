@@ -1,8 +1,8 @@
 Package: poispkgs
 Title: Attach Poisson Packages
-Version: 0.2.1.9000
+Version: 0.2.3
 Authors@R: c(
-    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("cre", "aut"),
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7683-4592")),
     person("Kirill", "Müller", , "kirill@cynkra.com", role = "aut",
            comment = c(ORCID = "0000-0002-1416-3412")),
@@ -52,6 +52,7 @@ Imports:
     fwapgr,
     fwatlasbc,
     ggdag,
+    ggh4x,
     ggmap,
     ggplot2,
     ggrepel,
@@ -83,6 +84,7 @@ Imports:
     poisplot,
     poisspatial,
     poisutils,
+    priorsense,
     purrr,
     readr,
     readwriteaws,
@@ -105,6 +107,7 @@ Imports:
     sf,
     sims,
     smbr,
+    smbr2,
     snakecase,
     ssdtools,
     stringr,
@@ -189,4 +192,4 @@ Remotes:
 Config/Needs/website: poissonconsulting/poissontemplate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2.9000
+RoxygenNote: 7.3.3.9000
