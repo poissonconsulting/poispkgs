@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# poispkgs 0.2.1.9000
+
+- Added smbr.
+
 # poispkgs 0.2.1
 
 - Added `subfoldr2ext`.
