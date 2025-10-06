@@ -84,6 +84,7 @@ Imports:
     poisplot,
     poisspatial,
     poisutils,
+    priorsense,
     purrr,
     readr,
     readwriteaws,
@@ -106,6 +107,7 @@ Imports:
     sf,
     sims,
     smbr,
+    smbr2,
     snakecase,
     ssdtools,
     stringr,
@@ -190,4 +192,4 @@ Remotes:
 Config/Needs/website: poissonconsulting/poissontemplate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2.9000
+RoxygenNote: 7.3.3.9000
