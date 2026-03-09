@@ -91,7 +91,7 @@ Imports:
     readwritesqlite,
     readxl,
     remotes,
-    rems,
+    renmods,
     reprex,
     rescale,
     reshape2,
@@ -142,7 +142,7 @@ Suggests:
 Remotes:
     bcgov/bcdata,
     bcgov/canwqdata,
-    bcgov/rems,
+    bcgov/renmods,
     bcgov/ssdtools,
     bcgov/wqbc,
     bcgov/wqindex,

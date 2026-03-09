@@ -22,7 +22,7 @@ library(poispkgs)
 #> rprofile: devtools fledge lintr pkgdown remotes reprex rmarkdown roxygen2md styler testthat usethis
 #> legacy: err rpdo plyr reshape2
 #> poisutils: poisspatial poisdata poisix poisplot poisutils poispalette
-#> bc: bcdata rems wqbc wqindex fishbc fwapgr fwatlasbc
+#> bc: bcdata renmods wqbc wqindex fishbc fwapgr fwatlasbc
 #> canada: canwqdata ssdtools
 #> parallel: doParallel foreach
 #> misc: data.table daff naniar readwriteaws snakecase sessioninfo units yesno
