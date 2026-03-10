@@ -8,7 +8,7 @@ pkg_list <- list(
   poisutils = c(
     "poisspatial", "poisdata", "poisix", "poisplot", "poisutils", "poispalette"
   ),
-  bc = c("bcdata", "rems", "wqbc", "wqindex", "fishbc", "fwapgr", "fwatlasbc"),
+  bc = c("bcdata", "renmods", "wqbc", "wqindex", "fishbc", "fwapgr", "fwatlasbc"),
   canada = c("canwqdata", "ssdtools"),
   parallel = c("doParallel", "foreach"),
   misc = c(
