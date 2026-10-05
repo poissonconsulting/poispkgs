@@ -10,7 +10,7 @@ pkg_list <- list(
   ),
   bc = c("bcdata", "renmods", "wqbc", "wqindex", "fishbc", "fwapgr", "fwatlasbc"),
   canada = c("canwqdata", "ssdtools"),
-  parallel = c("doParallel", "foreach"),
+  parallel = c("doFuture", "doParallel", "foreach"),
   misc = c(
     "data.table", "daff", "naniar", "readwriteaws", "snakecase", "sessioninfo",
     "units", "yesno"

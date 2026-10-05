@@ -38,6 +38,7 @@ Imports:
     devtools,
     DiagrammeR,
     dm,
+    doFuture,
     doParallel,
     dplyr,
     dttr2,
