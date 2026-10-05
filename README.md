@@ -1,5 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
 <!-- badges: start -->
 
 [![Lifecycle:
@@ -29,14 +30,18 @@ library(poispkgs)
 #> spatial: mapview sf
 #> tidyverse_extras: blob cli crayon hms glue lubridate magrittr pillar readxl rlang dm tidyplus
 #> tidyverse_core: ggplot2 tibble tidyr readr purrr dplyr stringr forcats
-#> plot: grid ggplot2 ggdag ggmap ggrepel ggspatial ggthemes latex2exp scales viridis tinter
+#> plot: grid ggplot2 ggdag ggmap ggrepel ggspatial ggthemes ggh4x latex2exp scales viridis tinter
 #> utils: chk dttr2 hmstimer
 #> databasing: flobr dbflobr RSQLite readwritesqlite
-#> analysis: universals extras ggdag term loo nlist newdata rescale mcmcr mcmcderive mcmcdata embr tmbr smbr jmbr
-#> reporting: subfoldr2 subreport
+#> analysis: universals extras ggdag term loo nlist newdata rescale mcmcr mcmcderive mcmcdata embr tmbr smbr2 smbr jmbr priorsense
+#> reporting: subfoldr2 subfoldr2ext subreport
 #> conflicts_fix()
 #> conflicted::conflict_scout()
-#> All well
+#> 3 conflicts
+#> • `github_pull()`: remotes and devtools
+#> • `github_release()`: remotes and devtools
+#> • `isoyear()`: lubridate and data.table
+#> 
 ```
 
 ## Installation
@@ -70,4 +75,4 @@ categories in `pkg-list.R`.
 Please note that the poispkgs project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its terms.
+By contributing to this project, you agree to abide by its terms..
