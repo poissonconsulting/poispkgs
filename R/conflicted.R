@@ -91,6 +91,8 @@ conflicts_fix <- function() {
     fledge::release(),
     dplyr::rename(),
     rescale::rescale(),
+    future::reset(),
+    future::run(),
     lubridate::second(),
     dplyr::select(),
     rlang::set_names(),
