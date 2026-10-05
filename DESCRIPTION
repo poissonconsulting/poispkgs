@@ -38,6 +38,7 @@ Imports:
     devtools,
     DiagrammeR,
     dm,
+    doFuture,
     doParallel,
     dplyr,
     dttr2,
@@ -194,4 +195,4 @@ Remotes:
 Config/Needs/website: poissonconsulting/poissontemplate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3.9000
+Config/roxygen2/version: 8.1.0.9000

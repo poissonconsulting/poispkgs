@@ -13,5 +13,6 @@
 ^LICENSE\.md$
 ^_pkgdown\.yml$
 ^README\.Rmd$
+^README\.html$
 ^[.]?air[.]toml$
 ^\.vscode$
