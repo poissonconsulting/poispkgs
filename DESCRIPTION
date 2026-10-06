@@ -67,12 +67,13 @@ Imports:
     jmbr,
     knitr,
     latex2exp,
-    lifecycle,
     lintr,
     loo,
     lubridate,
     magrittr,
     mapview,
+    mcmcdata,
+    mcmcderive,
     mcmcr (>= 0.6.1.9001),
     naniar,
     newdata (>= 0.0.0.9020),
@@ -122,7 +123,6 @@ Imports:
     tibble,
     tidyplus,
     tidyr,
-    timer,
     tinter,
     tmbr,
     tscbh,
@@ -135,12 +135,14 @@ Imports:
     wqindex,
     yesno,
     ypr
-Suggests: 
+Suggests:
     boot,
     covr,
+    desc,
     lattice,
     nnet,
-    tidyselect
+    tidyselect,
+    withr
 Remotes:
     bcgov/bcdata,
     bcgov/canwqdata,
@@ -161,6 +163,8 @@ Remotes:
     poissonconsulting/fwatlasbc,
     poissonconsulting/hmstimer,
     poissonconsulting/jmbr,
+    poissonconsulting/mcmcdata,
+    poissonconsulting/mcmcderive,
     poissonconsulting/mcmcr,
     poissonconsulting/newdata,
     poissonconsulting/nlist,
@@ -183,7 +187,6 @@ Remotes:
     poissonconsulting/subreport,
     poissonconsulting/term,
     poissonconsulting/tidyplus,
-    poissonconsulting/timer,
     poissonconsulting/tinter,
     poissonconsulting/tmbr,
     poissonconsulting/tscbh,

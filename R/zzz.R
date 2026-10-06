@@ -5,11 +5,11 @@
   }
   pkg_list_attach(pkg_list)
 
-  packageStartupMessage("conflicts_fix()")
+  msg("conflicts_fix()")
   conflicts_fix()
 
-  packageStartupMessage("conflicted::conflict_scout()")
-  packageStartupMessage(conflict_scout_format())
+  msg("conflicted::conflict_scout()")
+  msg(conflict_scout_format())
 }
 
 conflict_scout_format <- function() {

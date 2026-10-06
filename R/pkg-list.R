@@ -41,7 +41,11 @@ pkg_list <- list(
     "snakecase",
     "sessioninfo",
     "units",
-    "yesno"
+    "yesno",
+    "rsoi",
+    "rtide",
+    "tscbh",
+    "tsdbr"
   ),
   spatial = c("mapview", "sf"),
   tidyverse_extras = c(
@@ -56,7 +60,8 @@ pkg_list <- list(
     "readxl",
     "rlang",
     "dm",
-    "tidyplus"
+    "tidyplus",
+    "broom"
   ),
   tidyverse_core = c(
     "ggplot2",
@@ -70,8 +75,8 @@ pkg_list <- list(
   ),
   plot = c(
     "grid",
-    "ggplot2",
     "ggdag",
+    "DiagrammeR",
     "ggmap",
     "ggrepel",
     "ggspatial",
@@ -87,7 +92,6 @@ pkg_list <- list(
   analysis = c(
     "universals",
     "extras",
-    "ggdag",
     "term",
     "loo",
     "nlist",
@@ -101,7 +105,9 @@ pkg_list <- list(
     "smbr2",
     "smbr",
     "jmbr",
-    "priorsense"
+    "priorsense",
+    "sims",
+    "ypr"
   ),
-  reporting = c("subfoldr2", "subfoldr2ext", "subreport")
+  reporting = c("knitr", "subfoldr2", "subfoldr2ext", "subreport")
 )
