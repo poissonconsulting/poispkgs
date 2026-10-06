@@ -32,7 +32,7 @@ pkg_list <- list(
     "fwatlasbc"
   ),
   canada = c("canwqdata", "ssdtools"),
-  parallel = c("doFuture", "doParallel", "foreach"),
+  parallel = c("doFuture", "doParallel", "foreach", "future"),
   misc = c(
     "data.table",
     "daff",
