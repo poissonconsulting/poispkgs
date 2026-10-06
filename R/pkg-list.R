@@ -105,3 +105,19 @@ pkg_list <- list(
   ),
   reporting = c("subfoldr2", "subfoldr2ext", "subreport")
 )
+
+pkgs_not_attached <- function() {
+  c(
+    "broom",
+    "DiagrammeR",
+    "knitr",
+    "lifecycle",
+    "rsoi",
+    "rtide",
+    "sims",
+    "timer",
+    "tscbh",
+    "tsdbr",
+    "ypr"
+  )
+}

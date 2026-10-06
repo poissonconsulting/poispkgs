@@ -73,6 +73,8 @@ Imports:
     lubridate,
     magrittr,
     mapview,
+    mcmcdata,
+    mcmcderive,
     mcmcr (>= 0.6.1.9001),
     naniar,
     newdata (>= 0.0.0.9020),
@@ -135,12 +137,14 @@ Imports:
     wqindex,
     yesno,
     ypr
-Suggests: 
+Suggests:
     boot,
     covr,
+    desc,
     lattice,
     nnet,
-    tidyselect
+    tidyselect,
+    withr
 Remotes:
     bcgov/bcdata,
     bcgov/canwqdata,
@@ -148,6 +152,7 @@ Remotes:
     bcgov/ssdtools,
     bcgov/wqbc,
     bcgov/wqindex,
+    cynkra/dm,
     cynkra/fledge,
     poissonconsulting/chk,
     poissonconsulting/dbflobr,
@@ -161,6 +166,8 @@ Remotes:
     poissonconsulting/fwatlasbc,
     poissonconsulting/hmstimer,
     poissonconsulting/jmbr,
+    poissonconsulting/mcmcdata,
+    poissonconsulting/mcmcderive,
     poissonconsulting/mcmcr,
     poissonconsulting/newdata,
     poissonconsulting/nlist,
