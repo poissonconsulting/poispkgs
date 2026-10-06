@@ -70,6 +70,7 @@ pkg_list <- list(
   ),
   plot = c(
     "grid",
+    "ggplot2",
     "ggdag",
     "ggmap",
     "ggrepel",
@@ -86,6 +87,7 @@ pkg_list <- list(
   analysis = c(
     "universals",
     "extras",
+    "ggdag",
     "term",
     "loo",
     "nlist",

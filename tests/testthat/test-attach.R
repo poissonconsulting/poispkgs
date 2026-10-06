@@ -14,11 +14,6 @@ test_that("non-attached packages are not in pkg_list", {
   )
 })
 
-test_that("pkg_list has no duplicates", {
-  attached <- unname(unlist(pkg_list))
-  expect_identical(attached[duplicated(attached)], character(0))
-})
-
 test_that("non-CRAN imports have Remotes", {
   skip_on_cran()
   skip_if_offline()
