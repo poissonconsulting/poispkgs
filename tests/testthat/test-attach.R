@@ -1,10 +1,17 @@
-test_that("pkg_list matches Imports", {
+test_that("Imports match attached and non-attached packages", {
   deps <- desc::desc_get_deps(system.file("DESCRIPTION", package = "poispkgs"))
   imports <- deps$package[deps$type == "Imports"]
-  attached <- unname(unlist(pkg_list))
+  pkgs <- c(unname(unlist(pkg_list)), pkgs_not_attached())
 
-  expect_identical(sort(setdiff(imports, attached)), character(0))
-  expect_identical(sort(setdiff(attached, imports)), character(0))
+  expect_identical(sort(setdiff(imports, pkgs)), character(0))
+  expect_identical(sort(setdiff(pkgs, imports)), character(0))
+})
+
+test_that("non-attached packages are not in pkg_list", {
+  expect_identical(
+    intersect(pkgs_not_attached(), unlist(pkg_list)),
+    character(0)
+  )
 })
 
 test_that("pkg_list has no duplicates", {
