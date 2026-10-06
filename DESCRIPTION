@@ -50,6 +50,7 @@ Imports:
     flobr,
     forcats,
     foreach,
+    future,
     fwapgr,
     fwatlasbc,
     ggdag,
