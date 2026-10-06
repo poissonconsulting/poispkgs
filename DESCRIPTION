@@ -198,7 +198,7 @@ Remotes:
     poissonconsulting/yesno,
     poissonconsulting/ypr,
     r-lib/conflicted
-Config/Needs/website: poissonconsulting/poissontemplate
+Config/Needs/website: DiagrammeRsvg, poissonconsulting/poissontemplate
 Config/roxygen2/version: 8.1.0.9000
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
