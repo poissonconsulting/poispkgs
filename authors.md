@@ -29,13 +29,13 @@ Source:
 [`DESCRIPTION`](https://github.com/poissonconsulting/poispkgs/blob/main/DESCRIPTION)
 
 Thorley J, Müller K, Amies-Galonski E, Dalgarno S (2026). *poispkgs:
-Attach Poisson Packages*. R package version 0.2.3.9002,
+Attach Poisson Packages*. R package version 0.2.3.9003,
 <https://github.com/poissonconsulting/poispkgs>.
 
     @Manual{,
       title = {poispkgs: Attach Poisson Packages},
       author = {Joe Thorley and Kirill Müller and Evan Amies-Galonski and Sebastian Dalgarno},
       year = {2026},
-      note = {R package version 0.2.3.9002},
+      note = {R package version 0.2.3.9003},
       url = {https://github.com/poissonconsulting/poispkgs},
     }

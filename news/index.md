@@ -1,5 +1,17 @@
 # Changelog
 
+## poispkgs 0.2.3.9003
+
+### Chore
+
+- Format with air
+  ([\#41](https://github.com/poissonconsulting/poispkgs/issues/41)).
+
+### Uncategorized
+
+- Added doFuture to packages
+  ([\#43](https://github.com/poissonconsulting/poispkgs/issues/43)).
+
 ## poispkgs 0.2.3.9002
 
 - Same as previous version.
