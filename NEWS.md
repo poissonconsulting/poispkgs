@@ -1,4 +1,15 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# poispkgs 0.2.3.9003
+
+## Chore
+
+- Format with air (#41).
+
+## Uncategorized
+
+- Added doFuture to packages (#43).
+
 
 # poispkgs 0.2.3.9002
 
