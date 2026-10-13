@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# poispkgs 0.2.3.9004
+
+- Same as previous version.
+
+
 # poispkgs 0.2.3.9003
 
 ## Chore
