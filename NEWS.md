@@ -30,11 +30,6 @@
 
 * Add fledge-bump workflow
 * Add fledge-tag-on-merge workflow
-* Add fledge-bump workflow
-* Add fledge-tag-on-merge workflow
-
-
-<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
 
 # poispkgs 0.2.3

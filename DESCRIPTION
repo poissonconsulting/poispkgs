@@ -20,9 +20,9 @@ Description: Attaches CRAN and GitHub packages commonly used in Poisson
     analyses in the preferred order.
 License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/poispkgs
-BugReports: https://github.com/poissonconsulting/poispkgs
+BugReports: https://github.com/poissonconsulting/poispkgs/issues
 Depends:
-    R (>= 3.2)
+    R (>= 4.1)
 Imports:
     bcdata,
     blob,

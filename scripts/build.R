@@ -1,5 +1,5 @@
 roxygen2md::roxygen2md()
-styler::style_pkg(filetype = c("R", "Rmd"))
+system2("air", c("format", "."))
 lintr::lint_package()
 
 devtools::test()
