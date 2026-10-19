@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# poispkgs 0.2.3.9005
+
+- Add doRNG to parallel packages (#53).
+
+- Housekeeping (#52).
+
+
 # poispkgs 0.2.3.9004
 
 - Same as previous version.
