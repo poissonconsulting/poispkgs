@@ -1,5 +1,13 @@
 # Changelog
 
+## poispkgs 0.2.3.9005
+
+- Add doRNG to parallel packages
+  ([\#53](https://github.com/poissonconsulting/poispkgs/issues/53)).
+
+- Housekeeping
+  ([\#52](https://github.com/poissonconsulting/poispkgs/issues/52)).
+
 ## poispkgs 0.2.3.9004
 
 - Same as previous version.
