@@ -103,7 +103,15 @@
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
-<p>To add a package to poispkgs, add the package to the Imports section of the DESCRIPTION. For Poisson packages, add the GitHub address of the package to the remotes section of the DESCRIPTION. This will ensure that we’re using the developmental version. Also, add packages to one or more categories in <code>pkg-list.R</code>.</p>
+<p>To add a package to poispkgs:</p>
+<ul>
+<li>Add the package to the Imports section of the DESCRIPTION.</li>
+<li>For packages installed from GitHub (including Poisson, bcgov and cynkra packages), add the GitHub address of the package to the Remotes section of the DESCRIPTION. This ensures that the development version is used.</li>
+<li>To attach the package, add it to one or more categories of <code>pkg_list</code> in <code>R/pkg-list.R</code>. A package can be in more than one category; it is attached at its first occurrence.</li>
+<li>To install the package without attaching it, add it to <code>pkgs_not_attached()</code> in <code>R/pkg-list.R</code> instead.</li>
+</ul>
+<p>The tests check that every package in Imports is in <code>pkg_list</code> or <code>pkgs_not_attached()</code> (but not both) and vice versa, that every package not on CRAN has a Remotes entry, and that attaching poispkgs leaves no unresolved conflicts.</p>
+<p>If the conflicts test fails after adding a package, run <code>auto_update_conflicted_code()</code> after <code><a href="https://devtools.r-lib.org/reference/load_all.html" class="external-link">devtools::load_all()</a></code> and check the preferences it adds to <code>R/conflicted.R</code>.</p>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
@@ -116,7 +124,7 @@
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/poissonconsulting/poispkgs/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/poissonconsulting/poispkgs" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/poissonconsulting/poispkgs/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 

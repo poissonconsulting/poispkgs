@@ -28,8 +28,6 @@
 
 - Add fledge-bump workflow
 - Add fledge-tag-on-merge workflow
-- Add fledge-bump workflow
-- Add fledge-tag-on-merge workflow
 
 ## poispkgs 0.2.3
 

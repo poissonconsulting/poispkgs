@@ -56,11 +56,28 @@ options(poispkgs.quiet = TRUE)
 
 ## Usage
 
-To add a package to poispkgs, add the package to the Imports section of
-the DESCRIPTION. For Poisson packages, add the GitHub address of the
-package to the remotes section of the DESCRIPTION. This will ensure that
-we’re using the developmental version. Also, add packages to one or more
-categories in `pkg-list.R`.
+To add a package to poispkgs:
+
+- Add the package to the Imports section of the DESCRIPTION.
+- For packages installed from GitHub (including Poisson, bcgov and
+  cynkra packages), add the GitHub address of the package to the Remotes
+  section of the DESCRIPTION. This ensures that the development version
+  is used.
+- To attach the package, add it to one or more categories of `pkg_list`
+  in `R/pkg-list.R`. A package can be in more than one category; it is
+  attached at its first occurrence.
+- To install the package without attaching it, add it to
+  `pkgs_not_attached()` in `R/pkg-list.R` instead.
+
+The tests check that every package in Imports is in `pkg_list` or
+`pkgs_not_attached()` (but not both) and vice versa, that every package
+not on CRAN has a Remotes entry, and that attaching poispkgs leaves no
+unresolved conflicts.
+
+If the conflicts test fails after adding a package, run
+`auto_update_conflicted_code()` after
+[`devtools::load_all()`](https://devtools.r-lib.org/reference/load_all.html)
+and check the preferences it adds to `R/conflicted.R`.
 
 ## Code of Conduct
 
