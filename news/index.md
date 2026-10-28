@@ -1,5 +1,10 @@
 # Changelog
 
+## poispkgs 0.2.3.9006
+
+- Require embr \>= 1.1.0, mcmcr \>= 0.7.0, and extras \>= 0.10.0
+  ([\#54](https://github.com/poissonconsulting/poispkgs/issues/54)).
+
 ## poispkgs 0.2.3.9005
 
 - Add doRNG to parallel packages
