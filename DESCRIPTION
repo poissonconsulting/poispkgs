@@ -78,7 +78,7 @@ Imports:
     mcmcderive,
     mcmcr (>= 0.7.0),
     naniar,
-    newdata (>= 0.0.0.9020),
+    newdata (>= 0.1.0),
     nlist,
     pillar,
     pkgdown,
