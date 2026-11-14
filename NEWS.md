@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# poispkgs 0.2.3.9007
+
+## Features
+
+- Add mgcv and gratia to analysis packages (#58).
+
+
 # poispkgs 0.2.3.9006
 
 - Require embr \>= 1.1.0, mcmcr \>= 0.7.0, and extras \>= 0.10.0 (#54).
