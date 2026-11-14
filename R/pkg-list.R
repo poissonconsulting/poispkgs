@@ -101,7 +101,9 @@ pkg_list <- list(
     "smbr2",
     "smbr",
     "jmbr",
-    "priorsense"
+    "priorsense",
+    "mgcv",
+    "gratia"
   ),
   reporting = c("subfoldr2", "subfoldr2ext", "subreport")
 )
