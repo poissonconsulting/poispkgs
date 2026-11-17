@@ -1,5 +1,10 @@
 # Changelog
 
+## poispkgs 0.2.3.9008
+
+- Require newdata \>= 0.1.0
+  ([\#57](https://github.com/poissonconsulting/poispkgs/issues/57)).
+
 ## poispkgs 0.2.3.9007
 
 ### Features
