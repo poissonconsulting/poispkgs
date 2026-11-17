@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# poispkgs 0.2.3.9008
+
+- Require newdata \>= 0.1.0 (#57).
+
+
 # poispkgs 0.2.3.9007
 
 ## Features
